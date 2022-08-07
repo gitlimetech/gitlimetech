@@ -32,7 +32,7 @@ code {
 }
 
 .navbar a:hover{
-  color:#FFC100 !important;
+  color:#51b037 !important;
 }
 
 @media(max-width:991px){
@@ -48,7 +48,7 @@ code {
 #header{
   width:100%;
   height: 80vh;
-  margin-top:70px;
+  margin-top:30px;
 }
 #header h1{
   margin : 0 0 10px 0;
@@ -57,7 +57,7 @@ code {
   color:black;
 }
 #header .brand-name{
-  color:#FFC100;
+  color:#51b037;
 }
 #header h2 {
   color:#484848;
@@ -71,12 +71,12 @@ code {
   padding: 10px 30px ;
   border-radius: 50px;
   transition: 0.5s;
-  color: #FFC100;
-  border: 2px solid #FFC100;
+  color: #51b037;
+  border: 2px solid #51b037;
   text-decoration: none;
 }
 #header .btn-get-started:hover{
-  background: #FFC100;
+  background: #51b037;
   color: #ffffff;
 }
 .header-img{

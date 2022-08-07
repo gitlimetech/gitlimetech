@@ -1,14 +1,14 @@
 ##running version of this app 
 
 # BONJOUR !
-Panchhi is a serviced based organization , focus on the nature of your business and what you need for a fruitful online presence to ultimately push revenues further up..
+Gitlime , focus on the nature of your business and what you need for a fruitful online presence to ultimately push revenues further up..
 
 
-You can get more details on [पंछी.com](https://panchhi.herokuapp.com/)
+You can get more details on [gitlime.com](https://gitlime.com/)
 
-Click ⭐if you like the project. Pull Request are highly appreciated. Follow me @aviibuzz for technical updates.
+Click ⭐if you like the project. Pull Request are highly appreciated. Follow me @gitlime for technical updates.
 
-### Interested in working with me? Get in [touch](https://aviibuzz.github.io/aviibuzz/#contact) and I’d be happy to talk to you.
+### Interested in working with us? Get in [touch](https://gitlime.com/contact) and we’d be happy to talk to you.
 
  ***
 ## Tech Stakes used in this project
