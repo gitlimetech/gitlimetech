@@ -7,12 +7,12 @@ const Navbar=()=>{
         <>
         <div className="container-fluid nav_bg">
             <div className="row">
-                <div className="col-10 mx-auto">
+                <div className="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 mx-auto">
                     
 <nav className="navbar navbar-expand-lg navbar-light bg-transparent customNavbar">
   <div className="container-fluid">
     <NavLink exact  className="navbar-brand" to="/">
-                    <img src={logo} alt="logo" class="d-inline-block align-top" style={{ maxWidth: '150px', padding:'20px'}}/>
+                    <img src={logo} alt="logo" class="d-inline-block align-top"/>
       </NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>

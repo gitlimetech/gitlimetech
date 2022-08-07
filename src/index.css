@@ -26,6 +26,10 @@ code {
   font-size: 1.3rem;
   text-transform: capitalize;
 }
+.navbar-brand img{
+  max-width: 200px;
+  padding: 20px 0px;
+}
 .menu_active{
   font-weight: bold;
   border-bottom: 1px solid #565387 !important;
@@ -48,7 +52,6 @@ code {
 #header{
   width:100%;
   height: 80vh;
-  margin-top:30px;
 }
 #header h1{
   margin : 0 0 10px 0;
@@ -104,8 +107,13 @@ code {
   }
 }
 /* footer */
+footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
 footer p{
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 /* responsive code */
@@ -134,5 +142,9 @@ footer p{
 }
 #header .header-img img{
   width: 70%;
+}
+.navbar-brand img{
+  max-width: 100px;
+  padding: 20px 0px;
 }
 }
