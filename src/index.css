@@ -109,7 +109,7 @@ code {
 /* footer */
 footer{
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
 }
 footer p{
@@ -131,7 +131,7 @@ footer p{
 }
 @media(max-width:768px){
 #header{
- margin-top: 20px;
+ margin-top: 75px;
 }
 #header h1{
   font-size: 28px;
