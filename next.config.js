@@ -31,4 +31,5 @@ module.exports = withImages({
     config.node = {}
     return config;
   },
+  distDir: 'build',
 });

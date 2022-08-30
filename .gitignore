@@ -1,3 +1,9 @@
 .vercel
 /node_modules
 /build
+./next
+build.zip
+out/
+.next
+.next/BUILD_ID
+.next/BUILD_ID
