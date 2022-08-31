@@ -50,7 +50,7 @@ function About(props) {
             <Typography className={clsx(title.default, text.subtitle)} variant="h4">
               {t('common:agency-landing.about_subtitle')}
             </Typography>
-            <Counter />
+            {/* <Counter /> */}
             <blockquote>
               {t('common:agency-landing.about_quote')}
             </blockquote>

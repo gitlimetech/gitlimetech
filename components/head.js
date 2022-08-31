@@ -44,8 +44,8 @@ const HeadComponent = () => (
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     {/*  Twitter */}
-    <meta property="twitter:site" content="gitlime.com" />
-    <meta property="twitter:domain" content="gitlime.com" />
+    <meta property="twitter:site" content="gitlime" />
+    <meta property="twitter:domain" content="gitlime" />
     <meta property="twitter:creator" content="gitlime" />
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:image:src" content="/images/logos/logo.png" />

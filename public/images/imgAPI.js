@@ -29,16 +29,16 @@ const imgAPI = {
     'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   agency: [
-    'https://via.placeholder.com/964x723/1071ef/FFFFFF',
-    'https://via.placeholder.com/1280x825/99d8ff/FFFFFF',
-    'https://via.placeholder.com/490x327/ffc999/FFFFFF',
-    'https://via.placeholder.com/490x327/ffc999/FFFFFF',
-    'https://via.placeholder.com/490x327/ffc999/FFFFFF',
-    'https://via.placeholder.com/331x690/fdcc0c/FFFFFF',
-    'https://via.placeholder.com/521x309/4a0cfd/FFFFFF',
-    'https://via.placeholder.com/521x309/ffe55b/FFFFFF',
-    'https://via.placeholder.com/713x309/79c0ff/FFFFFF',
-    'https://via.placeholder.com/711x693/52596b/FFFFFF',
+    '/images/media/branding.svg',//branding
+    '/images/media/ui-ux.svg',//ui/ux
+    '/images/media/digital.svg',//Digital-marketing
+   '/images/media/website-development.svg', //website development
+    '/images/media/application-deployment.svg', //application-deployment
+    '/images/media/software-design.svg', //product -design
+     '/images/media/erp.svg', //erp
+    '/images/media/Software.svg',
+    '/images/media/hero-section-image-1.svg',
+    '/images/media/contact_us.0d0f4178.svg',
   ],
 };
 

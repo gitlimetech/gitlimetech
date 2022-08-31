@@ -6,8 +6,8 @@ module.exports = {
     footerText: 'gitlime - All Rights Reserved 2022',
     logoText: 'Gitlime technologies',
     projectName: 'Gitlime',
-    url: 'gitlime.com',
-    img: '/static/images/logos/logo.png',
-    notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
+    url: 'https://www.gitlime.com',
+    img: '/static/images/logos/logo.svg',
+    notifMsg: 'We are launching soon. be first to know who we are and what we do . write us hello@gitlime.com'
   }
 };

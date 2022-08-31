@@ -13,7 +13,8 @@ import Scrollspy from 'react-scrollspy';
 import Settings from './Settings';
 import { withTranslation } from '~/i18n';
 import MobileMenu from './MobileMenu';
-import logo from '~/public/images/logos/logo.png';
+import logo from '~/public/images/logos/logo.svg';
+import logoreverse from '~/public/images/logos/logo-reverse.svg';
 import brand from '~/public/text/brand';
 import routeLink from '~/public/text/link';
 import useStyles from './header-style';
@@ -86,6 +87,7 @@ function Header(props) {
       >
         <Container fixed={isDesktop}>
           <div className={classes.headerContent}>
+            {invert}
             <nav className={clsx(classes.navLogo, invert && classes.invert)}>
               { isMobile && (
                 <IconButton
@@ -101,7 +103,7 @@ function Header(props) {
                 {invert ? (
                   <Link href={routeLink.agency.home}>
                     <a>
-                      <img src={logo} alt="logo" />
+                      <img src={logoreverse} alt="logo" />
                       {/* {brand.agency.name}{'hello'} */}
                     </a>
                   </Link>

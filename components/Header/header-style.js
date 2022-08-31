@@ -45,7 +45,7 @@ const headerStyles = makeStyles(theme => ({
   fixed: {},
   openDrawer: {},
   header: {
-    color: theme.palette.text.primary,
+    color: 'transparent',
     background: 'none',
     boxShadow: 'none',
     transition: 'all 0.5s ease-out',

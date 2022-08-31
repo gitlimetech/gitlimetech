@@ -22,14 +22,14 @@ function CallAction(props) {
   const classes = useStyles();
   return (
     <Fragment>
-      <svg
+      {/* <svg
         fill="#cccccc"
         width={845}
         height={1099}
         className={classes.background}
       >
         <use xlinkHref="/images/decoration/square-deco-primary.svg#square" />
-      </svg>
+      </svg> */}
       <Container fixed={isDesktop}>
         <div className={classes.root}>
           <Paper className={classes.paper}>

@@ -1,15 +1,21 @@
 {
 	"name": "gitlime-website",
 	"version": "2.3.3",
-	"homepage": "https://gitlime.com",
-	"description": "Gitlime website codebase",
+	"homepage": "http://gitlime.com",
+	"description": "Gitlime website",
 	"keywords": [
 		"gitlime",
 		"gitlimetechnologies",
 		"gitlimetech",
-		"gitlime",
+		"git",
 		"corporate",
-		"softwaredevelopment"
+		"softwaredevelopment",
+		"softwaredevelopmentcompany",
+		"application",
+		"applicationdevelopment",
+		"websitedevelopment",
+		"websitedevelopmentcompany"
+
 	],
 	"author": "Abhishek Singh",
 	"license": "gitlime",
@@ -20,10 +26,7 @@
 		"build": "next build",
 		"start": "cross-env NODE_ENV=production node index.js",
 		"export": "next export",
-		"now-build": "next build && next export -o dist",
-		"eject": "react-scripts eject",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"now-build": "next build && next export -o dist"
 	},
 	"dependencies": {
 		"@babel/core": "^7.16.5",

@@ -99,18 +99,18 @@ function Landing(props) {
           <section className={isTablet ? classes.spaceTopShort : classes.spaceTop} id="our-expertise">
             <Expertise />
           </section>
-          <section className={isMobile ? classes.spaceTopShort : classes.spaceTop} id="testimonials">
+          {/* <section className={isMobile ? classes.spaceTopShort : classes.spaceTop} id="testimonials">
             <Testimonials />
-          </section>
-          <section id="case-studies">
+          </section> */}
+          {/* <section id="case-studies">
             <CaseStudies />
-          </section>
+          </section> */}
           <section className={classes.spaceTopShort} id="call-to-action">
             <CallAction />
           </section>
-          <section className={classes.spaceTopShort} id="address">
+          {/* <section className={classes.spaceTopShort} id="address">
             <MapAddress />
-          </section>
+          </section> */}
         </main>
         <Hidden mdDown>
           <PageNav />

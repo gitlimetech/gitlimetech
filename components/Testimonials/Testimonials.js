@@ -14,65 +14,23 @@ import useStyle from './testi-style';
 
 const testiContent = [
   {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    avatar: imgAPI.avatar[10],
-    name: 'John Doe',
+    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
+    avatar: imgAPI.avatar[1],
+    name: 'Harsh',
     title: 'Chief Digital Officer',
-    rating: 5
+    rating: 4
   },
   {
     text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
     avatar: imgAPI.avatar[1],
-    name: 'Jean Doe',
+    name: 'Harsh',
     title: 'Chief Digital Officer',
     rating: 4
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[2],
-    name: 'Jena Doe',
-    title: 'Graphic Designer',
-    rating: 4
-  },
-  {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    avatar: imgAPI.avatar[3],
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer',
-    rating: 3
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[4],
-    name: 'Jihan Doe',
-    title: 'CEO Software House',
-    rating: 5
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[6],
-    name: 'Jovelin Doe',
-    title: 'Senior Graphic Designer',
-    rating: 5
-  },
-  {
-    text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
-    avatar: imgAPI.avatar[7],
-    name: 'John Doe',
-    title: 'Senior Graphic Designer',
-    rating: 4
-  },
-  {
-    text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
-    avatar: imgAPI.avatar[10],
-    name: 'John Doe',
-    title: 'Chief Digital Officer',
-    rating: 5
   },
   {
     text: 'Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.',
     avatar: imgAPI.avatar[1],
-    name: 'Jean Doe',
+    name: 'Harsh',
     title: 'Chief Digital Officer',
     rating: 4
   },
@@ -137,7 +95,9 @@ function Testimonials(props) {
               <div className={classes.itemPropsFirst} />
             </div>
           )}
-          {testiContent.map((item, index) => (
+<h2>Our work is our passion. See what we've created for our happy clients.</h2>
+          {/* uncomment this line for client testimonial */}
+          {/* {testiContent.map((item, index) => (
             <div key={index.toString()} className={classes.item}>
               <TestimonialCard
                 avatar={item.avatar}
@@ -147,7 +107,7 @@ function Testimonials(props) {
                 star={item.rating}
               />
             </div>
-          ))}
+          ))} */}
           {isDesktop && (
             <div className={classes.item}>
               <div className={classes.itemPropsLast} />
@@ -162,7 +122,7 @@ function Testimonials(props) {
           </div>
         </Container>
       </div>
-      <CompanyLogo />
+      {/* <CompanyLogo /> */}
     </div>
   );
 }

@@ -90,7 +90,7 @@ function Footer(props) {
       <Grid container spacing={4}>
         <Grid item xs={12} md={3}>
           <div className={classes.logo}>
-            <img src={logo} alt="logo" />
+            {/* <img src={logo} alt="logo" /> */}
             <Typography variant="h6" color="textPrimary">
               {brand.agency.projectName}
             </Typography>
@@ -158,16 +158,16 @@ function Footer(props) {
         </Grid>
         <Grid item xs={12} md={3}>
           <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small">
+            <IconButton aria-label="FB" className={classes.margin} size="small" onClick={() => { window.open('https://twitter.com/gitlime', "_blank") }}>
               <i className="ion-logo-twitter" />
             </IconButton>
-            <IconButton aria-label="TW" className={classes.margin} size="small">
+            <IconButton aria-label="TW" className={classes.margin} size="small" onClick={() => { window.open('https://www.facebook.com/gitlime', "_blank")}}>
               <i className="ion-logo-facebook" />
             </IconButton>
-            <IconButton aria-label="IG" className={classes.margin} size="small">
+            {/* <IconButton aria-label="IG" className={classes.margin} size="small" onClick={() => { window.open('https://twitter.com/gitlime', "_blank") }}>
               <i className="ion-logo-instagram" />
-            </IconButton>
-            <IconButton aria-label="LI" className={classes.margin} size="small">
+            </IconButton> */}
+            <IconButton aria-label="LI" className={classes.margin} size="small" onClick={() => { window.open('https://www.linkedin.com/company/gitlime', "_blank") }}>
               <i className="ion-logo-linkedin" />
             </IconButton>
           </div>

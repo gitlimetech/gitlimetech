@@ -18,7 +18,11 @@ import { withTranslation } from '~/i18n';
 import imgApi from '~/public/images/imgAPI';
 import yt from '~/youtube';
 import useStyles from './banner-style';
-
+import { useSpring, animated } from 'react-spring';
+const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
+const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`;
+const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`;
 function VideoBanner(props) {
   // Theme breakpoints
   const theme = useTheme();
@@ -34,6 +38,7 @@ function VideoBanner(props) {
   const [play, setPlayed] = useState(false);
   const [playCtrl, setPlayedCtrl] = useState(true);
   const [player, setPlayer] = useState([]);
+   const [position, setPosition] = useSpring(() => ({ xy: [0, 0], config: { mass: 50, tension: 550, friction: 140 } }));
   const classes = useStyles();
 
   useEffect(() => {
@@ -115,8 +120,15 @@ function VideoBanner(props) {
             </div>
           </Grid>
           {isTablet && (
-            <Grid item md={6}>
-              <div className={classes.videoWrap}>
+            <Grid item md={6} onMouseMove={({ clientX: x, clientY: y }) => setPosition({ xy: calc(x, y) })}>
+              <div className=''>
+  <figure className=''>
+          <img src={imgApi.agency[8]} alt="cover" />
+        </figure>
+
+              </div>
+              
+              {/* <div className={classes.videoWrap}>
                 <div className={classes.videoFigure}>
                   <div className={classes.innerFigure}>
                     <Hidden mdDown>
@@ -146,7 +158,7 @@ function VideoBanner(props) {
                     )}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </Grid>
           )}
         </Grid>

@@ -7,9 +7,11 @@ const useStyles = makeStyles(theme => ({
   /* Default Card */
   defaultCard: {
     direction: 'ltr',
+    position:'relative',
     borderRadius: 12,
-    width: 240,
-    height: 350,
+    width: 300,
+    height: 360,
+    textAlign:'center',
     padding: theme.spacing(3, 2),
     margin: theme.spacing(3, 1),
     '& figure': {
@@ -18,6 +20,7 @@ const useStyles = makeStyles(theme => ({
       overflow: 'hidden',
       height: 125,
       margin: theme.spacing(-5, 0, 2),
+      background:'white',
       '& img': {
         height: '100%',
         minWidth: '100%'
@@ -33,7 +36,11 @@ const useStyles = makeStyles(theme => ({
     },
   },
   button: {
-    boxShadow: 'none'
+    boxShadow: 'none',
+    position: 'absolute',
+    bottom: '10px',
+    left: '5%',
+    width:'90%'
   },
   /* Testimonial Card */
   testiCard: {

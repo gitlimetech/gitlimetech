@@ -15,31 +15,36 @@ import Card from '../Cards/Default';
 import DotsParallax from '../Parallax/Dots';
 
 const servicesList = [
-  {
-    title: 'Lorem Ipsum',
-    desc: 'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
-    img: imgApi.agency[2]
+ {
+    title: 'Branding',
+    desc: 'What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.',
+    img: imgApi.agency[0]
   }, {
-    title: 'Etiam rhoncus',
-    desc: 'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
-    img: imgApi.agency[3]
-  }, {
-    title: 'Duis fermentum',
-    desc: 'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
-    img: imgApi.agency[4]
+    title: 'UI/ UX design',
+    desc: 'Ignite your online identity with cornerstone digital assets.Build your presence with superb designs and functionality',
+    img: imgApi.agency[1]
   },
   {
-    title: 'Lorem Ipsum',
-    desc: 'Proin ac arcu nisl. Duis eu molestie lectus. Nam quis mauris faucibus, aliquet elit eu, rhoncus ipsum.',
+    title: 'Digital Marketing and Content',
+    desc:'Our digital marketing expert offers competitive & quality digital marketing services which deliver conversions via SEO, SMO, SEM & online reputation.',
     img: imgApi.agency[2]
-  }, {
-    title: 'Etiam rhoncus',
-    desc: 'Proin quis pellentesque dui. Ut sed leo neque. Nullam aliquet iaculis neque a commodo.',
+  },{
+    title: 'Website development',
+    desc: 'We provide best development of feature-rich web applications that rise above the essentials and work across multiple devices.',
     img: imgApi.agency[3]
-  }, {
-    title: 'Duis fermentum',
-    desc: 'Quisque consectetur lectus vel orci porttitor gravida ac eu erat. Nullam accumsan nibh tortor.',
+  },{
+    title: 'Application Deployment & Maintenance ',
+    desc: 'A typical application deployment process consists of several key phases. An intuitive approach to completing these steps in a synchronized fashion dictates potential deployment success.',
     img: imgApi.agency[4]
+  }, {
+    title: 'Product Design & Development',
+    desc: 'Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.',
+    img: imgApi.agency[5]
+  },
+  {
+    title: 'ERP Development',
+    desc: 'Every enterprise needs to develop new business models to avoid being disrupted, gain efficiencies to fund innovation, and transform mission-critical systems without business risk.',
+    img: imgApi.agency[6]
   }
 ];
 

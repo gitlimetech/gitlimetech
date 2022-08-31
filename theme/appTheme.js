@@ -11,8 +11,8 @@ const appTheme = (color, mode) => ({
   },
   typography: {
     fontFamily: [
-      'Roboto',
-      'Roboto Condensed',
+      'Helvetica',
+      'Arial',
       'sans-serif',
     ].join(','),
   },
