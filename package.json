@@ -21,9 +21,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "dev": "node index.js",
+   "dev": "next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production pm2 start index.js",
+    "start": "next start",
     "export": "next export",
     "now-build": "next build && next export -o dist"
   },
