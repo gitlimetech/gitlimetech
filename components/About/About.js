@@ -10,6 +10,7 @@ import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import TitleDeco from '../Title/WithDecoration';
 import useStyles from './about-style';
+import imgApi from '~/public/images/imgAPI';
 import useTitle from '../Title/title-style';
 import Counter from '../Counter';
 
@@ -26,10 +27,17 @@ function About(props) {
   const title = useTitle();
   return (
     <div className={classes.root}>
-      <Container fixed>
-        <Grid container spacing={6}>
-          <Grid item md={5} xs={12}>
+      <div className={classes.contentBg} fixed>
+        <Grid container>
+          <Grid item md={2} xs={12}>
             <div>
+              {/* <TitleDeco text={t('common:agency-landing.about_title')} /> */}
+              {/* <Typography className={clsx(classes.textHelper, classes.aboutHeading)}>{t('common:agency-landing.about_title')}</Typography> */}
+              <figure className={classes.contentImg}>
+                <img src={imgApi.agency[11]} alt="cover" />
+              </figure>
+            </div>
+            {/* <div>
               <TitleDeco text={t('common:agency-landing.about_title')} />
               {isDesktop && (
                 <div className={classes.puzzle}>
@@ -44,9 +52,15 @@ function About(props) {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
           </Grid>
-          <Grid item md={7} xs={12}>
+          <Grid item md={10} xs={12}>
+            <Typography className={clsx(title.default, text.subtitle)} variant="h4">
+              {t('common:agency-landing.about_subtitle')}
+            </Typography>
+            <Typography className={clsx(title.default, text.subtitle)} variant="h4">
+              {t('common:agency-landing.about_subtitle')}
+            </Typography>
             <Typography className={clsx(title.default, text.subtitle)} variant="h4">
               {t('common:agency-landing.about_subtitle')}
             </Typography>
@@ -56,7 +70,7 @@ function About(props) {
             </blockquote>
           </Grid>
         </Grid>
-      </Container>
+      </div>
     </div>
   );
 }

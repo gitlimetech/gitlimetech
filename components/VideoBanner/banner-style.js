@@ -18,6 +18,14 @@ const useStyles = makeStyles(theme => ({
       paddingBottom: theme.spacing(15)
     },
   },
+  carouselWrap: {
+    background: theme.palette.primary.dark,
+    height: 400,
+  },
+  slider: {
+    marginTop: theme.spacing(12),
+    width: 650,
+  },
   bannerText: {
     position: 'relative',
     zIndex: 10,
@@ -55,7 +63,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center'
   },
   subtitle: {
-    marginBottom: theme.spacing(3),
+    marginTop: theme.spacing(5),
     [theme.breakpoints.up('lg')]: {
       paddingRight: theme.spacing(8)
     },
@@ -66,6 +74,7 @@ const useStyles = makeStyles(theme => ({
   button: {
     minWidth: 200,
     height: 48,
+    marginTop: theme.spacing(5),
     [theme.breakpoints.down('sm')]: {
       color: theme.palette.secondary.light,
       borderColor: theme.palette.secondary.light,

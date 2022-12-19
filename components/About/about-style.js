@@ -3,10 +3,11 @@ import imgApi from '~/public/images/imgAPI';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    margin: theme.spacing(0, 8),
     '& blockquote': {
       fontSize: 28,
       fontStyle: 'italic',
-      color: theme.palette.text.secondary,
+      color: '#fff',
       borderLeft: '4px solid',
       borderLeftColor: theme.palette.type === 'dark' ? 'rgba(0, 0, 0, 0.38)' : '#D8D8D8',
       paddingLeft: theme.spacing(5),
@@ -19,11 +20,39 @@ const useStyles = makeStyles(theme => ({
       }
     },
     '& h4': {
+      color: '#ffff',
       [theme.breakpoints.down('sm')]: {
         textAlign: 'center',
         marginTop: theme.spacing(-3)
       }
     }
+  },
+  contentBg: {
+    background: theme.palette.primary.dark,
+    height: 520,
+    padding: theme.spacing(3),
+  },
+  contentImg: {
+    position: 'absolute',
+    top: 140,
+    left: -210,
+    height: '100%',
+    padding: theme.spacing(5, 8),
+    // alignItems: 'center',
+    '& img': {
+      minWidth: '100%',
+      height: '30%',
+      // opacity: 0.6,
+      transform: 'rotate(-90deg)',
+    }
+  },
+  aboutHeading: {
+    fontSize: 90,
+    fontWeight: 'bold',
+    color: theme.palette.text.secondary,
+    transform: 'rotate(-90deg)',
+    border: '1px solid #fff',
+    marginTop: theme.spacing(10)
   },
   puzzle: {
     position: 'relative',

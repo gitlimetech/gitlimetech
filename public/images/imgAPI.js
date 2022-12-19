@@ -39,6 +39,8 @@ const imgAPI = {
     '/images/media/Software.svg',
     '/images/media/hero-section-image-1.svg',
     '/images/media/contact_us.0d0f4178.svg',
+    '/images/media/title-img.png',
+    '/images/media/gitlime-white.svg',
   ],
 };
 

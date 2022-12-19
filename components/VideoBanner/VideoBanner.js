@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import clsx from 'clsx';
@@ -13,12 +14,38 @@ import YouTube from 'react-youtube';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
+import { borders } from '@mui/system';
+import { useSpring, animated } from 'react-spring';
+import Carousel from 'react-material-ui-carousel';
+import { makeStyles } from '@material-ui/core';
 import { useText } from '~/theme/common';
 import { withTranslation } from '~/i18n';
 import imgApi from '~/public/images/imgAPI';
 import yt from '~/youtube';
-import useStyles from './banner-style';
-import { useSpring, animated } from 'react-spring';
+import useStyle from './banner-style';
+
+const items = [
+  {
+    id: 1,
+    title: 'One Stop Business Solution',
+    desc: 'What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.',
+  },
+  {
+    id: 2,
+    title: 'Digital Marketing & Content',
+    desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.',
+    // img: imgApi.agency[0]
+  },
+  {
+    id: 3,
+    title: 'Product Design & Development',
+    desc: 'Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.',
+    // img: imgApi.agency[0]
+  }
+];
+console.log(items);
+const useStyles = makeStyles((theme) => ({}));
+
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`;
@@ -38,8 +65,8 @@ function VideoBanner(props) {
   const [play, setPlayed] = useState(false);
   const [playCtrl, setPlayedCtrl] = useState(true);
   const [player, setPlayer] = useState([]);
-   const [position, setPosition] = useSpring(() => ({ xy: [0, 0], config: { mass: 50, tension: 550, friction: 140 } }));
-  const classes = useStyles();
+  const [position, setPosition] = useSpring(() => ({ xy: [0, 0], config: { mass: 50, tension: 550, friction: 140 } }));
+  const classes = useStyle();
 
   useEffect(() => {
     if (isDesktop) {
@@ -94,6 +121,14 @@ function VideoBanner(props) {
     }
   };
 
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1
+  // };
+
   return (
     <div className={classes.heroContent}>
       <Hidden smUp>
@@ -103,8 +138,8 @@ function VideoBanner(props) {
       </Hidden>
       <Container fixed={isDesktop}>
         <Grid container spacing={6}>
-          <Grid item md={6} xs={12}>
-            <div className={classes.bannerText}>
+          <Grid sx={{ border: 1 }} item md={6} xs={12}>
+            {/* <div className={classes.bannerText}>
               <div className={classes.title}>
                 <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
                   {t('common:agency-landing.banner_title')}
@@ -117,17 +152,62 @@ function VideoBanner(props) {
                 {t('common:agency-landing.banner_button')}
                 <SendIcon className={classes.icon} />
               </Button>
+            </div> */}
+            {/* <div>
+              <h2>Start editing to see some magic happen!</h2>
+            </div> */}
+            <div className={classes.slider}>
+              <Carousel
+                indicatorIconButtonProps={{
+                  style: {
+                    padding: '10px', // 1
+                    color: 'grey' // 3
+                  }
+                }}
+                indicatorContainerProps={{
+                  style: {
+                    marginTop: '70px', // 5
+                    textAligh: 'center', // 4
+                    color: 'green'
+                  }
+                }}
+              >
+                {items.map((element, index) => (
+                  <>
+                    <Typography key={index} className={clsx(classes.textHelper, text.title2)}>
+                      {element.title}
+                    </Typography>
+                    <Typography key={index} className={clsx(classes.textHelper, text.subtitle, classes.subtitle)}>
+                      {element.desc}
+                    </Typography>
+                    <Link href="/contact">
+                      <Button
+                        variant="outlined"
+                        size="large"
+                        color="secondary"
+                        className={classes.button}
+                      >
+                        {t('common:agency-landing.banner_button')}
+                        <SendIcon className={classes.icon} />
+                      </Button>
+
+                    </Link>
+
+                  </>
+                ))}
+              </Carousel>
             </div>
+
           </Grid>
           {isTablet && (
             <Grid item md={6} onMouseMove={({ clientX: x, clientY: y }) => setPosition({ xy: calc(x, y) })}>
-              <div className=''>
-  <figure className=''>
-          <img src={imgApi.agency[8]} alt="cover" />
-        </figure>
+              <div className="">
+                <figure className="">
+                  <img src={imgApi.agency[8]} alt="cover" />
+                </figure>
 
               </div>
-              
+
               {/* <div className={classes.videoWrap}>
                 <div className={classes.videoFigure}>
                   <div className={classes.innerFigure}>

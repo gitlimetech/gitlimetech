@@ -7,6 +7,7 @@ import Fab from '@material-ui/core/Fab';
 import Carousel from 'react-slick';
 import PrevIcon from '@material-ui/icons/ArrowBack';
 import NextIcon from '@material-ui/icons/ArrowForward';
+// import router, { useRouter } from 'next/router';
 import { withTranslation } from '~/i18n';
 import imgApi from '~/public/images/imgAPI';
 import useStyles from './services-style';
@@ -15,7 +16,7 @@ import Card from '../Cards/Default';
 import DotsParallax from '../Parallax/Dots';
 
 const servicesList = [
- {
+  {
     title: 'Branding',
     desc: 'What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.',
     img: imgApi.agency[0]
@@ -26,13 +27,13 @@ const servicesList = [
   },
   {
     title: 'Digital Marketing and Content',
-    desc:'Our digital marketing expert offers competitive & quality digital marketing services which deliver conversions via SEO, SMO, SEM & online reputation.',
+    desc: 'Our digital marketing expert offers competitive & quality digital marketing services which deliver conversions via SEO, SMO, SEM & online reputation.',
     img: imgApi.agency[2]
-  },{
+  }, {
     title: 'Website development',
     desc: 'We provide best development of feature-rich web applications that rise above the essentials and work across multiple devices.',
     img: imgApi.agency[3]
-  },{
+  }, {
     title: 'Application Deployment & Maintenance ',
     desc: 'A typical application deployment process consists of several key phases. An intuitive approach to completing these steps in a synchronized fashion dictates potential deployment success.',
     img: imgApi.agency[4]
@@ -47,7 +48,6 @@ const servicesList = [
     img: imgApi.agency[6]
   }
 ];
-
 function Services(props) {
   const { t } = props;
   const theme = useTheme();
