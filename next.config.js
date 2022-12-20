@@ -13,6 +13,7 @@ module.exports = withImages({
     return {
       '/': { page: '/' },
       '/contact': { page: '/contact' },
+      '/branding': { page: '/branding' },
       '/blank-page': { page: '/blank-page' },
     };
   },

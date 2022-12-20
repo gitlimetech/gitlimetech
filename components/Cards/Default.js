@@ -11,7 +11,8 @@ function Services(props) {
     img,
     title,
     desc,
-    button
+    button,
+    btnLink
   } = props;
   return (
     <Paper className={classes.defaultCard}>
@@ -22,7 +23,7 @@ function Services(props) {
         <Typography display="block" variant="h6">{title}</Typography>
         <Typography component="p">{desc}</Typography>
       </div>
-      <Button variant="outlined" fullWidth color="primary" className={classes.button}>
+      <Button href={btnLink} variant="outlined" fullWidth color="primary" className={classes.button}>
         {button}
       </Button>
     </Paper>
@@ -34,6 +35,7 @@ Services.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   button: PropTypes.string.isRequired,
+  btnLink: PropTypes.string.isRequired,
 };
 
 export default Services;

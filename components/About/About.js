@@ -34,7 +34,7 @@ function About(props) {
               {/* <TitleDeco text={t('common:agency-landing.about_title')} /> */}
               {/* <Typography className={clsx(classes.textHelper, classes.aboutHeading)}>{t('common:agency-landing.about_title')}</Typography> */}
               <figure className={classes.contentImg}>
-                <img src={imgApi.agency[11]} alt="cover" />
+                <img src={imgApi.agency[10]} alt="cover" />
               </figure>
             </div>
             {/* <div>

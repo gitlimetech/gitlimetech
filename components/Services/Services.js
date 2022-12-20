@@ -19,33 +19,40 @@ const servicesList = [
   {
     title: 'Branding',
     desc: 'What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.',
-    img: imgApi.agency[0]
+    img: imgApi.agency[0],
+    btnLink: '/branding'
   }, {
     title: 'UI/ UX design',
     desc: 'Ignite your online identity with cornerstone digital assets.Build your presence with superb designs and functionality',
-    img: imgApi.agency[1]
+    img: imgApi.agency[1],
+    btnLink: '/branding'
   },
   {
     title: 'Digital Marketing and Content',
     desc: 'Our digital marketing expert offers competitive & quality digital marketing services which deliver conversions via SEO, SMO, SEM & online reputation.',
-    img: imgApi.agency[2]
+    img: imgApi.agency[2],
+    btnLink: '/branding'
   }, {
     title: 'Website development',
     desc: 'We provide best development of feature-rich web applications that rise above the essentials and work across multiple devices.',
-    img: imgApi.agency[3]
+    img: imgApi.agency[3],
+    btnLink: '/branding'
   }, {
     title: 'Application Deployment & Maintenance ',
     desc: 'A typical application deployment process consists of several key phases. An intuitive approach to completing these steps in a synchronized fashion dictates potential deployment success.',
-    img: imgApi.agency[4]
+    img: imgApi.agency[4],
+    btnLink: '/branding'
   }, {
     title: 'Product Design & Development',
     desc: 'Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.',
-    img: imgApi.agency[5]
+    img: imgApi.agency[5],
+    btnLink: '/branding'
   },
   {
     title: 'ERP Development',
     desc: 'Every enterprise needs to develop new business models to avoid being disrupted, gain efficiencies to fund innovation, and transform mission-critical systems without business risk.',
-    img: imgApi.agency[6]
+    img: imgApi.agency[6],
+    btnLink: '/branding'
   }
 ];
 function Services(props) {
