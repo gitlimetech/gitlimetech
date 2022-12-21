@@ -95,7 +95,7 @@ function Testimonials(props) {
               <div className={classes.itemPropsFirst} />
             </div>
           )}
-<h2>Our work is our passion. See what we've created for our happy clients.</h2>
+          <h2>Our work is our passion. See what we've created for our happy clients.</h2>
           {/* uncomment this line for client testimonial */}
           {/* {testiContent.map((item, index) => (
             <div key={index.toString()} className={classes.item}>

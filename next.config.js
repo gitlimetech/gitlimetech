@@ -1,3 +1,4 @@
+/* eslint-disable no-labels */
 const withImages = require('next-images');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
@@ -9,12 +10,18 @@ module.exports = withImages({
   eslint: {
     ignoreDuringBuilds: true,
   },
-  exportPathMap: function() {
+  exportPathMap() {
     return {
       '/': { page: '/' },
       '/contact': { page: '/contact' },
-      '/branding': { page: '/branding' },
       '/blank-page': { page: '/blank-page' },
+      '/branding': { page: '/branding' },
+      '/uxdesign': { page: '/uxdesign' },
+      '/digitalmarketing': { page: '/digitalmarketing' },
+      '/websitedevelopment': { page: '/websitedevelopment' },
+      '/applicationdeployment': { page: '/applicationdeployment' },
+      '/productdesign': { page: '/productdesign' },
+      '/erpdevelopment': { page: '/erpdevelopment' },
     };
   },
   publicRuntimeConfig: {
@@ -23,6 +30,7 @@ module.exports = withImages({
       : 'none',
   },
   webpack: (config, options) => {
+    // eslint-disable-next-line no-restricted-syntax
     cssModules: true,
     config.plugins.push(
       //      new ESLintPlugin({

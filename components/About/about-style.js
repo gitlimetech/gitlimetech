@@ -1,5 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import imgApi from '~/public/images/imgAPI';
+import { lighten, alpha } from '@material-ui/core/styles/colorManipulator';
+// import imgApi from '~/public/images/imgAPI';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -9,7 +10,7 @@ const useStyles = makeStyles(theme => ({
       fontStyle: 'italic',
       color: '#fff',
       borderLeft: '4px solid',
-      borderLeftColor: theme.palette.type === 'dark' ? 'rgba(0, 0, 0, 0.38)' : '#D8D8D8',
+      borderLeftColor: '#fff',
       paddingLeft: theme.spacing(5),
       margin: theme.spacing(5, 0, 0),
       [theme.breakpoints.down('xs')]: {
@@ -28,7 +29,9 @@ const useStyles = makeStyles(theme => ({
     }
   },
   contentBg: {
-    background: theme.palette.primary.dark,
+    // background: theme.palette.primary.dark,
+    // background: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark,
+    background: theme.palette.type === 'dark' ? alpha(theme.palette.primary.dark, 0.4) : lighten(theme.palette.primary.dark, 0),
     height: 520,
     padding: theme.spacing(3),
   },
@@ -54,28 +57,28 @@ const useStyles = makeStyles(theme => ({
     border: '1px solid #fff',
     marginTop: theme.spacing(10)
   },
-  puzzle: {
-    position: 'relative',
-    left: 60,
-    top: -40,
-    '& > div': {
-      transform: 'rotate(45deg)',
-      overflow: 'hidden',
-      position: 'absolute',
-      background: '#dedede'
-    },
-    '& span': {
-      background: `url(${imgApi.agency[1]}) no-repeat fixed`,
-      backgroundSize: 'auto 800px',
-      transform: 'rotate(-45deg)',
-      width: 560,
-      height: 1000,
-      display: 'block',
-      position: 'relative',
-      top: -110,
-      left: 0,
-    }
-  },
+  // puzzle: {
+  //   position: 'relative',
+  //   left: 60,
+  //   top: -40,
+  //   '& > div': {
+  //     transform: 'rotate(45deg)',
+  //     overflow: 'hidden',
+  //     position: 'absolute',
+  //     background: '#dedede'
+  //   },
+  //   '& span': {
+  //     background: `url(${imgApi.agency[1]}) no-repeat fixed`,
+  //     backgroundSize: 'auto 800px',
+  //     transform: 'rotate(-45deg)',
+  //     width: 560,
+  //     height: 1000,
+  //     display: 'block',
+  //     position: 'relative',
+  //     top: -110,
+  //     left: 0,
+  //   }
+  // },
   pieceBig: {
     width: 300,
     height: 150,

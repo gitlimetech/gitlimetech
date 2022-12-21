@@ -6,14 +6,16 @@ import { useTheme } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import { darken, lighten } from '@material-ui/core/styles/colorManipulator';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import TitleDeco from '../Title/WithDecoration';
 import useStyles from './about-style';
 import imgApi from '~/public/images/imgAPI';
+import gitlimewhite from '~/public/images/agency/gitlime-white.svg';
+import gitlimereverse from '~/public/images/agency/gitlime-reverse.svg';
 import useTitle from '../Title/title-style';
 import Counter from '../Counter';
-
 function About(props) {
   // Theme breakpoints
   const theme = useTheme();
@@ -34,7 +36,8 @@ function About(props) {
               {/* <TitleDeco text={t('common:agency-landing.about_title')} /> */}
               {/* <Typography className={clsx(classes.textHelper, classes.aboutHeading)}>{t('common:agency-landing.about_title')}</Typography> */}
               <figure className={classes.contentImg}>
-                <img src={imgApi.agency[10]} alt="cover" />
+                {/* <img src={imgApi.agency[10]} alt="cover" /> */}
+                <img src={darken ? imgApi.agency[11] : imgApi.agency[10]} alt="cover" />
               </figure>
             </div>
             {/* <div>

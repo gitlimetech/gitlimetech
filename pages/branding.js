@@ -1,4 +1,5 @@
 import React from 'react';
+import { withTranslation } from '../i18n';
 
 function Branding() {
     return (
@@ -7,5 +8,8 @@ function Branding() {
       </div>
     );
 }
+Branding.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+});
 
-export default (Branding);
+export default withTranslation('common')(Branding);

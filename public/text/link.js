@@ -1,12 +1,15 @@
 const link = {
   agency: {
     home: '/',
-    contact: '/contact'
+    contact: '/contact',
+     branding: '/branding',
+     uxdesign: '/uxdesign',
+     digitalmarketing: '/digitalmarketing',
+     websitedevelopment: '/websitedevelopment',
+     applicationdeployment: '/applicationdeployment',
+     productdesign: '/productdesign',
+     erpdevelopment: '/erpdevelopment',
   },
-  branding: {
-    home: '/',
-    branding: '/branding'
-  }
 };
 
 export default link;

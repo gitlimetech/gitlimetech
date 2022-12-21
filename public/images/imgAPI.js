@@ -40,6 +40,7 @@ const imgAPI = {
     '/images/media/hero-section-image-1.svg',
     '/images/media/contact_us.0d0f4178.svg',
     '/images/media/gitlime-white.svg',
+    '/images/media/gitlime-reverse.svg',
   ],
 };
 
