@@ -32,13 +32,14 @@ function About(props) {
       <div className={classes.contentBg} fixed>
         <Grid container>
           <Grid item md={2} xs={12}>
-            <div>
+            <div className={classes.imgWrap}>
+              <span className={classes.contentImg} />
+              {/* <img src={gitlimereverse} className={classes.contentImg} alt="cover" /> */}
               {/* <TitleDeco text={t('common:agency-landing.about_title')} /> */}
               {/* <Typography className={clsx(classes.textHelper, classes.aboutHeading)}>{t('common:agency-landing.about_title')}</Typography> */}
-              <figure className={classes.contentImg}>
-                {/* <img src={imgApi.agency[10]} alt="cover" /> */}
-                <img src={darken ? imgApi.agency[11] : imgApi.agency[10]} alt="cover" />
-              </figure>
+              {/* <figure className={classes.contentImg}>
+                <img src={darken ? imgApi.agency[10] : imgApi.agency[11]} alt="cover" />
+              </figure> */}
             </div>
             {/* <div>
               <TitleDeco text={t('common:agency-landing.about_title')} />

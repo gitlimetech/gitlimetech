@@ -43,7 +43,6 @@ const items = [
     // img: imgApi.agency[0]
   }
 ];
-console.log(items);
 const useStyles = makeStyles((theme) => ({}));
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];

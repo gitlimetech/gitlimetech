@@ -7,6 +7,31 @@ import useStyles from './cards-style';
 
 function Services(props) {
   const classes = useStyles();
+  // const settings = {
+  //   dots: false,
+  //   infinite: false,
+  //   speed: 500,
+  //   slidesToShow: 4,
+  //   arrows: false,
+  //   slidesToScroll: 1,
+  //   variableWidth: true,
+  //   responsive: [{
+  //     breakpoint: 1100,
+  //     settings: {
+  //       slidesToShow: 3,
+  //     }
+  //   }, {
+  //     breakpoint: 800,
+  //     settings: {
+  //       slidesToShow: 2,
+  //     }
+  //   }, {
+  //     breakpoint: 600,
+  //     settings: {
+  //       slidesToShow: 1,
+  //     }
+  //   }]
+  // };
   const {
     img,
     title,
@@ -36,6 +61,7 @@ Services.propTypes = {
   desc: PropTypes.string.isRequired,
   button: PropTypes.string.isRequired,
   btnLink: PropTypes.string.isRequired,
+  // settings: PropTypes.string.isRequired,
 };
 
 export default Services;

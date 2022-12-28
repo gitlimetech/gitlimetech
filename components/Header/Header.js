@@ -15,7 +15,7 @@ import { withTranslation } from '~/i18n';
 import MobileMenu from './MobileMenu';
 import logo from '~/public/images/logos/logo.svg';
 import logoreverse from '~/public/images/logos/logo-reverse.svg';
-import brand from '~/public/text/brand';
+// import brand from '~/public/text/brand';
 import routeLink from '~/public/text/link';
 import useStyles from './header-style';
 import navMenu from './menu';
@@ -62,6 +62,7 @@ function Header(props) {
     invert,
     t
   } = props;
+  console.log(invert);
   const [menuList] = useState([
     createData(navMenu[0], '#' + navMenu[0], 200),
     createData(navMenu[1], '#' + navMenu[1], 200),
@@ -74,7 +75,7 @@ function Header(props) {
   };
   return (
     <Fragment>
-      { isMobile && (<MobileMenu open={openDrawer} toggleDrawer={handleOpenDrawer} />) }
+      {isMobile && (<MobileMenu open={openDrawer} toggleDrawer={handleOpenDrawer} />)}
       <AppBar
         component="div"
         position="relative"
@@ -89,7 +90,7 @@ function Header(props) {
           <div className={classes.headerContent}>
             {invert}
             <nav className={clsx(classes.navLogo, invert && classes.invert)}>
-              { isMobile && (
+              {isMobile && (
                 <IconButton
                   onClick={handleOpenDrawer}
                   className={clsx('hamburger hamburger--spin', classes.mobileMenu, openDrawer && 'is-active')}
