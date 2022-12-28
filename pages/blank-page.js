@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 
 function BlankPage(props) {
   const classes = useStyles();
-  const { onToggleDark, onToggleDir, t } = props;
+  const { onToggleDark, onToggleDir, t,invert } = props;
   return (
     <React.Fragment>
       <Head>
@@ -50,7 +50,7 @@ function BlankPage(props) {
         <Header
           onToggleDark={onToggleDark}
           onToggleDir={onToggleDir}
-          invert
+          invert={invert}
         />
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
