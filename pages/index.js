@@ -69,7 +69,7 @@ function Landing(props) {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const { onToggleDark, onToggleDir } = props;
+  const { onToggleDark, onToggleDir,invert } = props;
 
   return (
     <React.Fragment>
@@ -84,6 +84,7 @@ function Landing(props) {
         <Header
           onToggleDark={onToggleDark}
           onToggleDir={onToggleDir}
+          invert={invert}
         />
         <main className={classes.containerWrap}>
           <SquareParallax />
@@ -133,6 +134,7 @@ Landing.getInitialProps = async () => ({
 Landing.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
+  invert: PropTypes.bool,
 };
 
 export default withTranslation(['common', 'agency-landing'])(Landing);
