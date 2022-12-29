@@ -69,7 +69,7 @@ function Landing(props) {
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const { onToggleDark, onToggleDir,invert } = props;
+  const { onToggleDark, onToggleDir, invert } = props;
 
   return (
     <React.Fragment>
