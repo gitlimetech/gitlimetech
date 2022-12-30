@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
       paddingRight: 0
     },
     [theme.breakpoints.up('lg')]: {
-      paddingLeft: theme.spacing(6),
+      // paddingLeft: theme.spacing(6),
       marginBottom: 0
     },
     [theme.breakpoints.down('sm')]: {
@@ -27,6 +27,7 @@ const useStyles = makeStyles(theme => ({
   slider: {
     marginTop: theme.spacing(12),
     width: 670,
+    paddingLeft: theme.spacing(4),
     [theme.breakpoints.down('md')]: {
       paddingLeft: theme.spacing(5),
     },

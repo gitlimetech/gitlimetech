@@ -27,7 +27,7 @@ import useStyle from './banner-style';
 const items = [
   {
     id: 1,
-    title: 'One Stop Business Solution',
+    title: 'One Stop Solution at Gitlime',
     desc: 'We have a strategic family. It’s called Gitlime. yes! You can be a part of it .Our team has an undeniable chemistry to provide you the platform to bring your ideas into actual running products .',
   },
   {

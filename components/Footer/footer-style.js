@@ -53,7 +53,10 @@ const footerStyles = makeStyles(theme => ({
       marginRight: theme.spacing(),
     },
     '& h6': {
-      color: theme.palette.text.disabled,
+      color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.dark,
+      fontSize: 16,
+      textTransform: 'uppercase',
+      fontWeight: theme.typography.fontWeightBold,
     }
   },
   footerDesc: {
