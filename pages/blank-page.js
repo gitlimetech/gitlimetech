@@ -36,12 +36,14 @@ const useStyles = makeStyles(theme => ({
 
 function BlankPage(props) {
   const classes = useStyles();
-  const { onToggleDark, onToggleDir, t, invert } = props;
+  const {
+    onToggleDark, onToggleDir, t, invert
+  } = props;
   return (
     <React.Fragment>
       <Head>
         <title>
-          { brand.agency.name }
+          {brand.agency.name}
           &nbsp; - Blank page
         </title>
       </Head>
@@ -74,9 +76,12 @@ function BlankPage(props) {
 BlankPage.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
+  invert: PropTypes.bool,
   t: PropTypes.func.isRequired,
 };
-
+Header.defaultProps = {
+  invert: false
+};
 BlankPage.getInitialProps = async () => ({
   namespacesRequired: ['common', 'agency-landing'],
 });

@@ -33,7 +33,7 @@ function About(props) {
         <Grid container>
           <Grid item md={2} xs={12}>
             <div className={classes.imgWrap}>
-              <span className={classes.contentImg} />
+              <img src={gitlimewhite} className={classes.contentImg} alt="cover" />
               {/* <img src={gitlimereverse} className={classes.contentImg} alt="cover" /> */}
               {/* <TitleDeco text={t('common:agency-landing.about_title')} /> */}
               {/* <Typography className={clsx(classes.textHelper, classes.aboutHeading)}>{t('common:agency-landing.about_title')}</Typography> */}
@@ -59,19 +59,18 @@ function About(props) {
             </div> */}
           </Grid>
           <Grid item md={10} xs={12}>
-            <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-              {t('common:agency-landing.about_subtitle')}
-            </Typography>
-            <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-              {t('common:agency-landing.about_subtitle')}
-            </Typography>
-            <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-              {t('common:agency-landing.about_subtitle')}
-            </Typography>
-            {/* <Counter /> */}
-            <blockquote>
-              {t('common:agency-landing.about_quote')}
-            </blockquote>
+            <div className={classes.contentText}>
+              <Typography className={clsx(title.default, text.subtitle)} variant="h4">
+                {t('common:agency-landing.about_para')}
+              </Typography>
+              {/* <Typography className={clsx(title.default, text.subtitle)} variant="h4">
+                {t('common:agency-landing.about_subtitle')}
+              </Typography> */}
+              {/* <Counter /> */}
+              <blockquote>
+                {t('common:agency-landing.about_quote')}
+              </blockquote>
+            </div>
           </Grid>
         </Grid>
       </div>

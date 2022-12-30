@@ -16,7 +16,11 @@ const useStyles = makeStyles(theme => ({
 
 function ErrorPage(props) {
   const classes = useStyles();
-  const { onToggleDark, onToggleDir } = props;
+  const {
+    onToggleDark,
+    onToggleDir,
+    invert
+  } = props;
   const { errorCode, stars, t } = props;
 
   if (errorCode) {
@@ -24,13 +28,13 @@ function ErrorPage(props) {
       <Fragment>
         <Head>
           <title>
-            { brand.agency.name }
+            {brand.agency.name}
             &nbsp; -&nbsp;
             {errorCode}
           </title>
         </Head>
         <div className={classes.dedicatedPage}>
-          <Header onToggleDark={onToggleDark} onToggleDir={onToggleDir} invert />
+          <Header onToggleDark={onToggleDark} onToggleDir={onToggleDir} invert={invert} />
           <Error errorCode={errorCode} text={t('common:404')} />
           <Footer />
         </div>
@@ -53,6 +57,7 @@ ErrorPage.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
+  invert: PropTypes.bool,
 };
 
 ErrorPage.defaultProps = {

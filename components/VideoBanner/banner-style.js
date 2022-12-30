@@ -2,7 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme => ({
   decoTop: {},
-  decoBottom: {},
+  decoBottom: {
+  },
   heroContent: {
     position: 'relative',
     '& > div': {
@@ -15,7 +16,8 @@ const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('sm')]: {
       marginBottom: 0,
-      paddingBottom: theme.spacing(15)
+      paddingLeft: theme.spacing(2),
+      paddingBottom: theme.spacing(0),
     },
   },
   carouselWrap: {
@@ -24,24 +26,28 @@ const useStyles = makeStyles(theme => ({
   },
   slider: {
     marginTop: theme.spacing(12),
-    width: 650,
-  },
-  bannerText: {
-    position: 'relative',
-    zIndex: 10,
-    color: theme.palette.text.primary,
-    padding: theme.spacing(4, 0),
+    width: 670,
     [theme.breakpoints.down('md')]: {
-      padding: theme.spacing(4),
+      paddingLeft: theme.spacing(5),
     },
-    [theme.breakpoints.down('sm')]: {
-      padding: theme.spacing(4),
-      maxWidth: 640,
-      margin: '0 auto',
-      textAlign: 'center',
-      color: theme.palette.common.white,
-    }
   },
+  // bannerText: {
+  //   position: 'relative',
+  //   zIndex: 10,
+  //   color: theme.palette.text.primary,
+  //   padding: theme.spacing(4, 0),
+  //   border: '1px solid red',
+  //   [theme.breakpoints.down('md')]: {
+  //     padding: theme.spacing(4),
+  //   },
+  //   [theme.breakpoints.down('sm')]: {
+  //     padding: theme.spacing(4),
+  //     maxWidth: 640,
+  //     margin: '0 auto',
+  //     textAlign: 'center',
+  //     color: theme.palette.common.white,
+  //   }
+  // },
   title: {
     marginTop: theme.spacing(10),
     marginBottom: theme.spacing(3),

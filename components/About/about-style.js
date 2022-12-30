@@ -1,7 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
 import { lighten, alpha } from '@material-ui/core/styles/colorManipulator';
-import gitlimewhite from '~/public/images/agency/gitlime-white.svg';
-import gitlimereverse from '~/public/images/agency/gitlime-reverse.svg';
 // import imgApi from '~/public/images/imgAPI';
 
 const useStyles = makeStyles(theme => ({
@@ -21,18 +19,18 @@ const useStyles = makeStyles(theme => ({
       [theme.breakpoints.down('xs')]: {
         paddingLeft: theme.spacing(2),
         margin: 0,
-        fontSize: 20,
+        fontSize: 22,
         lineHeight: '32px'
       },
       [theme.breakpoints.down('sm')]: {
-        fontSize: 20,
+        fontSize: 22,
         marginTop: theme.spacing(10)
       }
     },
     '& h4': {
       color: '#ffff',
       [theme.breakpoints.down('sm')]: {
-        fontSize: 16,
+        fontSize: 22,
         margin: theme.spacing(-5),
         paddingTop: theme.spacing(6),
       }
@@ -42,45 +40,43 @@ const useStyles = makeStyles(theme => ({
     // background: theme.palette.primary.dark,
     // background: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark,
     background: theme.palette.type === 'dark' ? alpha(theme.palette.primary.dark, 0.4) : lighten(theme.palette.primary.dark, 0),
-    height: 520,
+    // height: 520,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     position: 'relative',
-    border: '1px solid black',
-    padding: theme.spacing(3),
+    padding: theme.spacing(4),
+    [theme.breakpoints.down('sm')]: {
+    }
   },
   imgWrap: {
     // position: 'absolute',
     // top: 200,
     // left: 50,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     height: '100%',
-    padding: theme.spacing(5, 8),
-    [theme.breakpoints.down('md')]: {
-      display: 'block'
-    },
-    [theme.breakpoints.down('sm')]: {
-      display: 'none'
-    },
-    '& span': {
+    // padding: theme.spacing(5, 8),
+    '& img': {
       position: 'absolute',
       transform: 'rotate(-90deg)',
-      width: '52%',
-      height: '25%',
-      top: 130,
-      left: -210,
+      width: '65%',
+      height: '35%',
+      // top: 130,
+      // left: -210,
       padding: theme.spacing(3),
-      background: `url(${gitlimereverse}) no-repeat`,
+      [theme.breakpoints.down('md')]: {
+        display: 'block',
+      },
+      [theme.breakpoints.down('sm')]: {
+        display: 'none'
+      },
     },
-    // '& img': {
-    //   border: '1px solid red',
-    //   position: 'absolute',
-    //   transform: 'rotate(-90deg)',
-    //   width: '53%',
-    //   height: '35%',
-    //   top: 130,
-    //   left: -210,
-    //   padding: theme.spacing(3),
-    // },
   },
-
+  // contentText: {
+  //   border: '1px solid red',
+  // },
   // contentImg: {
   //   position: 'absolute',
   //   top: 140,
@@ -95,6 +91,7 @@ const useStyles = makeStyles(theme => ({
   //     transform: 'rotate(-90deg)',
   //   }
   // },
+
   aboutHeading: {
     fontSize: 90,
     fontWeight: 'bold',

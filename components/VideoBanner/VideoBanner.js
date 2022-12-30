@@ -28,18 +28,24 @@ const items = [
   {
     id: 1,
     title: 'One Stop Business Solution',
-    desc: 'What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.',
+    desc: 'We have a strategic family. It’s called Gitlime. yes! You can be a part of it .Our team has an undeniable chemistry to provide you the platform to bring your ideas into actual running products .',
   },
   {
     id: 2,
-    title: 'Digital Marketing & Content',
-    desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.',
+    title: 'Software Product Design & Development ',
+    desc: 'Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.We use your opinions to start discussions, transforming product ideas to digital realities from design to development ',
     // img: imgApi.agency[0]
   },
   {
     id: 3,
-    title: 'Product Design & Development',
-    desc: 'Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.',
+    title: 'Application Deployment & maintenance ',
+    desc: 'Developing a proficient software product development is really a tough task but to maintain it , it is tougher . We provide the best solution at Git Lime for your product deployment , maintenance , and monitor .',
+    // img: imgApi.agency[0]
+  },
+  {
+    id: 4,
+    title: 'Digital marketing  and Branding',
+    desc: 'Changing consumer behaviour is forcing digital marketers to pivot their strategies, as it becomes increasingly difficult to keep up with customer expectations and maintain a competitive edge, whilst keeping up to date with the latest tech.',
     // img: imgApi.agency[0]
   }
 ];
@@ -130,11 +136,11 @@ function VideoBanner(props) {
 
   return (
     <div className={classes.heroContent}>
-      <Hidden smUp>
+      {/* <Hidden smUp>
         <figure className={classes.mobileCover}>
           <img src={imgApi.agency[0]} alt="cover" />
         </figure>
-      </Hidden>
+      </Hidden> */}
       <Container fixed={isDesktop}>
         <Grid container spacing={6}>
           <Grid sx={{ border: 1 }} item md={6} xs={12}>
@@ -166,17 +172,18 @@ function VideoBanner(props) {
                 indicatorContainerProps={{
                   style: {
                     marginTop: '70px', // 5
+                    marginBottom: '0px', // 5
                     textAligh: 'center', // 4
-                    color: 'green'
+                    color: 'green',
                   }
                 }}
               >
                 {items.map((element, index) => (
-                  <>
-                    <Typography key={index} className={clsx(classes.textHelper, text.title2)}>
+                  <div key={index.toString()}>
+                    <Typography className={clsx(classes.textHelper, text.title2)}>
                       {element.title}
                     </Typography>
-                    <Typography key={index} className={clsx(classes.textHelper, text.subtitle, classes.subtitle)}>
+                    <Typography className={clsx(classes.textHelper, text.subtitle, classes.subtitle)}>
                       {element.desc}
                     </Typography>
                     <Link href="/contact">
@@ -192,7 +199,7 @@ function VideoBanner(props) {
 
                     </Link>
 
-                  </>
+                  </div>
                 ))}
               </Carousel>
             </div>
