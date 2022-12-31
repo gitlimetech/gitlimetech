@@ -29,7 +29,7 @@ function About(props) {
   const title = useTitle();
   return (
     <div className={classes.root}>
-      <div className={classes.contentBg} fixed>
+      <div className={classes.contentBg} fixed="true">
         <Grid container>
           <Grid item md={2} xs={12}>
             <div className={classes.imgWrap}>

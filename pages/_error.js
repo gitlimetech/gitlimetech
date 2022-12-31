@@ -63,6 +63,7 @@ ErrorPage.propTypes = {
 ErrorPage.defaultProps = {
   errorCode: '400',
   stars: 0,
+  invert: false
 };
 
 ErrorPage.getInitialProps = async () => ({

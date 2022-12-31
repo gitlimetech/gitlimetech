@@ -79,9 +79,10 @@ BlankPage.propTypes = {
   invert: PropTypes.bool,
   t: PropTypes.func.isRequired,
 };
-Header.defaultProps = {
+BlankPage.defaultProps = {
   invert: false
 };
+
 BlankPage.getInitialProps = async () => ({
   namespacesRequired: ['common', 'agency-landing'],
 });

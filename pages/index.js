@@ -11,11 +11,11 @@ import VideoBanner from '../components/VideoBanner';
 import SquareParallax from '../components/Parallax/Square';
 import About from '../components/About';
 import Services from '../components/Services';
-import Testimonials from '../components/Testimonials';
+// import Testimonials from '../components/Testimonials';
 import Expertise from '../components/Expertise';
 import CaseStudies from '../components/CaseStudies';
 import CallAction from '../components/CallAction';
-import MapAddress from '../components/MapAddress';
+// import MapAddress from '../components/MapAddress';
 import Footer from '../components/Footer';
 import PageNav from '../components/PageNav';
 import Notification from '../components/Notification';
@@ -68,7 +68,7 @@ function Landing(props) {
   const classes = useStyles();
   const theme = useTheme();
   const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const { onToggleDark, onToggleDir, invert } = props;
 
   return (
@@ -135,6 +135,9 @@ Landing.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
   invert: PropTypes.bool,
+};
+Landing.defaultProps = {
+  invert: false
 };
 
 export default withTranslation(['common', 'agency-landing'])(Landing);

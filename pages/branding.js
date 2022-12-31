@@ -80,5 +80,8 @@ Branding.propTypes = {
 Branding.getInitialProps = async () => ({
   namespacesRequired: ['common', 'agency-landing'],
 });
+Branding.defaultProps = {
+  invert: false
+};
 
 export default withTranslation(['common', 'agency-landing'])(Branding);

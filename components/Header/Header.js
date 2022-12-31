@@ -109,10 +109,10 @@ function Header(props) {
                     </a>
                   </Link>
                 ) : (
-                  <AnchorLink href="#home">
+                  <Link href="/">
                     <img src={logo} alt="logo" />
                     {/* {brand.agency.name} */}
-                  </AnchorLink>
+                  </Link>
                 )}
               </div>
             </nav>

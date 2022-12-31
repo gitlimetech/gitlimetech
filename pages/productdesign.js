@@ -80,5 +80,7 @@ ProductDesign.propTypes = {
 ProductDesign.getInitialProps = async () => ({
   namespacesRequired: ['common', 'agency-landing'],
 });
-
+ProductDesign.defaultProps = {
+  invert: false
+};
 export default withTranslation('common')(ProductDesign);

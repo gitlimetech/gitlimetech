@@ -5,6 +5,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     position: 'relative',
     zIndex: 10,
+    marginTop: theme.spacing(18),
+    paddingTop: theme.spacing(7),
     background: theme.palette.type === 'dark' ? darken(theme.palette.primary.light, 0.8) : lighten(theme.palette.primary.light, 0.8),
     '& nav': {
       [theme.breakpoints.down('sm')]: {

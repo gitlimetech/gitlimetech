@@ -81,5 +81,7 @@ ERPDevelopment.propTypes = {
   onToggleDir: PropTypes.func.isRequired,
   invert: PropTypes.bool,
 };
-
+ERPDevelopment.defaultProps = {
+  invert: false
+};
 export default withTranslation(['common', 'agency-landing'])(ERPDevelopment);

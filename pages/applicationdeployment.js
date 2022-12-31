@@ -81,5 +81,8 @@ ApplicationDeployment.propTypes = {
 ApplicationDeployment.getInitialProps = async () => ({
   namespacesRequired: ['common', 'agency-landing'],
 });
+ApplicationDeployment.defaultProps = {
+  invert: false
+};
 
 export default withTranslation(['common', 'agency-landing'])(ApplicationDeployment);
