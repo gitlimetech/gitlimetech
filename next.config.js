@@ -33,9 +33,9 @@ module.exports = withImages({
     // eslint-disable-next-line no-restricted-syntax
     cssModules: true,
     config.plugins.push(
-      //      new ESLintPlugin({
-      //        exclude: ['node_modules']
-      //      })
+           new ESLintPlugin({
+             exclude: ['node_modules']
+           })
     );
     config.node = {}
     return config;

@@ -106,7 +106,7 @@ function MyApp(props) {
                 {...pageProps}
                 onToggleDark={toggleDarkTheme}
                 onToggleDir={toggleDirection}
-                invert={theme.palette.type === 'dark' ? true : false}
+                invert={theme.palette.type === 'dark'}
                 key={router.route}
               />
             </PageTransition>

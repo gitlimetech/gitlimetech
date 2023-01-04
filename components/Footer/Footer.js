@@ -18,7 +18,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
 import IconButton from '@material-ui/core/IconButton';
 import { i18n, withTranslation } from '~/i18n';
-import logo from '~/public/images/agency-logo.svg';
+// import logo from '~/public/images/agency-logo.svg';
 import brand from '~/public/text/brand';
 import { useTextAlign } from '~/theme/common';
 import useStyles from './footer-style';
@@ -158,16 +158,16 @@ function Footer(props) {
         </Grid>
         <Grid item xs={12} md={3}>
           <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small" onClick={() => { window.open('https://twitter.com/gitlime', "_blank") }}>
+            <IconButton aria-label="FB" className={classes.margin} size="small" onClick={() => { window.open("https://twitter.com/gitlime", "_blank") }}>
               <i className="ion-logo-twitter" />
             </IconButton>
-            <IconButton aria-label="TW" className={classes.margin} size="small" onClick={() => { window.open('https://www.facebook.com/gitlime', "_blank")}}>
+            <IconButton aria-label="TW" className={classes.margin} size="small" onClick={() => { window.open("https://www.facebook.com/gitlime", "_blank")}}>
               <i className="ion-logo-facebook" />
             </IconButton>
-            {/* <IconButton aria-label="IG" className={classes.margin} size="small" onClick={() => { window.open('https://twitter.com/gitlime', "_blank") }}>
+            {/* <IconButton aria-label="IG" className={classes.margin} size="small" onClick={() => { window.open("https://twitter.com/gitlime", "_blank") }}>
               <i className="ion-logo-instagram" />
             </IconButton> */}
-            <IconButton aria-label="LI" className={classes.margin} size="small" onClick={() => { window.open('https://www.linkedin.com/company/gitlime', "_blank") }}>
+            <IconButton aria-label="LI" className={classes.margin} size="small" onClick={() => { window.open("https://www.linkedin.com/company/gitlime", "_blank") }}>
               <i className="ion-logo-linkedin" />
             </IconButton>
           </div>
