@@ -6,3 +6,6 @@ build.zip
 out/
 .next
 .next/BUILD_ID
+.husky
+.env
+.env.local

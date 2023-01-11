@@ -6,27 +6,25 @@ import Icon from '@material-ui/core/Icon';
 import useStyles from './title-style';
 
 function WithDecoration(props) {
-  const classes = useStyles();
-  const { text, extended, icon } = props;
-  return (
-    <div className={clsx(classes.iconDeco, extended && classes.extend)}>
-      <Icon className={classes.icon}>{icon}</Icon>
-      <Typography variant="h3">
-        {text}
-      </Typography>
-    </div>
-  );
+	const classes = useStyles();
+	const { text, extended, icon } = props;
+	return (
+		<div className={clsx(classes.iconDeco, extended && classes.extend)}>
+			<Icon className={classes.icon}>{icon}</Icon>
+			<Typography variant="h3">{text}</Typography>
+		</div>
+	);
 }
 
 WithDecoration.propTypes = {
-  text: PropTypes.string.isRequired,
-  icon: PropTypes.string,
-  extended: PropTypes.bool
+	text: PropTypes.string.isRequired,
+	icon: PropTypes.string,
+	extended: PropTypes.bool,
 };
 
 WithDecoration.defaultProps = {
-  extended: false,
-  icon: 'apps'
+	extended: false,
+	icon: 'apps',
 };
 
 export default WithDecoration;

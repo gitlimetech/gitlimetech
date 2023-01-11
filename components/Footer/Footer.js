@@ -24,194 +24,257 @@ import { useTextAlign } from '~/theme/common';
 import useStyles from './footer-style';
 
 function Copyright() {
-  return (
-    <Typography variant="body2" display="block" color="textSecondary">
-      &copy;&nbsp;
-      {brand.agency.footerText}
-    </Typography>
-  );
+	return (
+		<Typography variant="body2" display="block" color="textSecondary">
+			&copy;&nbsp;
+			{brand.agency.footerText}
+		</Typography>
+	);
 }
 
 const footers = [
-  {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-    link: ['#team', '#history', '#contact-us', '#locations'],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-    link: ['#resource', '#resource-name', '#another-resource', '#final-resource'],
-  },
-  {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
-    link: ['#privacy-policy', '#terms-of-use'],
-  },
+	{
+		title: 'Company',
+		description: ['Team', 'History', 'Contact us', 'Locations'],
+		link: ['#team', '#history', '#contact-us', '#locations'],
+	},
+	{
+		title: 'Resources',
+		description: [
+			'Resource',
+			'Resource name',
+			'Another resource',
+			'Final resource',
+		],
+		link: [
+			'#resource',
+			'#resource-name',
+			'#another-resource',
+			'#final-resource',
+		],
+	},
+	{
+		title: 'Legal',
+		description: ['Privacy policy', 'Terms of use'],
+		link: ['#privacy-policy', '#terms-of-use'],
+	},
 ];
 
 function Footer(props) {
-  const [ctn, setCtn] = useState(null);
-  // Theme breakpoints
-  const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const [ctn, setCtn] = useState(null);
+	// Theme breakpoints
+	const theme = useTheme();
+	const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
+	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  // Translation Function
-  const { t } = props;
+	// Translation Function
+	const { t } = props;
 
-  const classes = useStyles();
-  const align = useTextAlign();
-  const [values, setValues] = useState({
-    lang: 'eng'
-  });
+	const classes = useStyles();
+	const align = useTextAlign();
+	const [values, setValues] = useState({
+		lang: 'eng',
+	});
 
-  useEffect(() => {
-    setValues({ lang: i18n.language });
-    setCtn(document.getElementById('main-wrap'));
-  }, []);
+	useEffect(() => {
+		setValues({ lang: i18n.language });
+		setCtn(document.getElementById('main-wrap'));
+	}, []);
 
-  function handleChange(event) {
-    setValues(oldValues => ({
-      ...oldValues,
-      [event.target.name]: event.target.value,
-    }));
-    if (event.target.value === 'ara') {
-      i18n.changeLanguage('ara');
-      props.toggleDir('rtl');
-    } else {
-      i18n.changeLanguage(event.target.value);
-      props.toggleDir('ltr');
-    }
-  }
+	function handleChange(event) {
+		setValues((oldValues) => ({
+			...oldValues,
+			[event.target.name]: event.target.value,
+		}));
+		if (event.target.value === 'ara') {
+			i18n.changeLanguage('ara');
+			props.toggleDir('rtl');
+		} else {
+			i18n.changeLanguage(event.target.value);
+			props.toggleDir('ltr');
+		}
+	}
 
-  return (
-    <Container maxWidth="lg" component="footer" className={classes.footer}>
-      <Grid container spacing={4}>
-        <Grid item xs={12} md={3}>
-          <div className={classes.logo}>
-            {/* <img src={logo} alt="logo" /> */}
-            <Typography variant="h6" color="textPrimary">
-              {brand.agency.projectName}
-            </Typography>
-          </div>
-          <Typography color="textPrimary" className={classes.footerDesc} gutterBottom>
-            {t('common:agency-landing.footer_paragraph')}
-          </Typography>
-          {isDesktop && <Copyright />}
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Grid container spacing={4} justify-content="space-evenly">
-            {footers.map(footer => (
-              <Grid item xs={12} md={3} key={footer.title} className={classes.siteMapItem}>
-                {isDesktop && (
-                  <div>
-                    <Typography variant="h6" className={classes.title} color="textPrimary" gutterBottom>
-                      {footer.title}
-                    </Typography>
-                    <ul>
-                      {footer.description.map((item, index) => (
-                        <li key={item}>
-                          <Link href={footer.link[index]} variant="subtitle1" color="textSecondary">
-                            {item}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {isMobile && (
-                  <ExpansionPanel
-                    square
-                    classes={{
-                      root: classes.accordionRoot,
-                    }}
-                  >
-                    <ExpansionPanelSummary
-                      expandIcon={<ExpandMoreIcon className={classes.accordionIcon} />}
-                      aria-controls="panel1a-content"
-                      id="panel1a-header"
-                      classes={{
-                        content: classes.accordionContent,
-                      }}
-                    >
-                      <strong>
-                        {footer.title}
-                      </strong>
-                    </ExpansionPanelSummary>
-                    <ExpansionPanelDetails>
-                      <ul>
-                        {footer.description.map((item, index) => (
-                          <li key={item}>
-                            <Link href={footer.link[index]} variant="subtitle1" color="textSecondary">
-                              {item}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </ExpansionPanelDetails>
-                  </ExpansionPanel>
-                )}
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
-        <Grid item xs={12} md={3}>
-          <div className={classes.socmed}>
-            <IconButton aria-label="FB" className={classes.margin} size="small" onClick={() => { window.open("https://twitter.com/gitlime", "_blank") }}>
-              <i className="ion-logo-twitter" />
-            </IconButton>
-            <IconButton aria-label="TW" className={classes.margin} size="small" onClick={() => { window.open("https://www.facebook.com/gitlime", "_blank")}}>
-              <i className="ion-logo-facebook" />
-            </IconButton>
-            {/* <IconButton aria-label="IG" className={classes.margin} size="small" onClick={() => { window.open("https://twitter.com/gitlime", "_blank") }}>
+	return (
+		<Container maxWidth="lg" component="footer" className={classes.footer}>
+			<Grid container spacing={4}>
+				<Grid item xs={12} md={3}>
+					<div className={classes.logo}>
+						{/* <img src={logo} alt="logo" /> */}
+						<Typography variant="h6" color="textPrimary">
+							{brand.agency.projectName}
+						</Typography>
+					</div>
+					<Typography
+						color="textPrimary"
+						className={classes.footerDesc}
+						gutterBottom
+					>
+						{t('common:agency-landing.footer_paragraph')}
+					</Typography>
+					{isDesktop && <Copyright />}
+				</Grid>
+				<Grid item xs={12} md={6}>
+					<Grid container spacing={4} justify-content="space-evenly">
+						{footers.map((footer) => (
+							<Grid
+								item
+								xs={12}
+								md={3}
+								key={footer.title}
+								className={classes.siteMapItem}
+							>
+								{isDesktop && (
+									<div>
+										<Typography
+											variant="h6"
+											className={classes.title}
+											color="textPrimary"
+											gutterBottom
+										>
+											{footer.title}
+										</Typography>
+										<ul>
+											{footer.description.map((item, index) => (
+												<li key={item}>
+													<Link
+														href={footer.link[index]}
+														variant="subtitle1"
+														color="textSecondary"
+													>
+														{item}
+													</Link>
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
+								{isMobile && (
+									<ExpansionPanel
+										square
+										classes={{
+											root: classes.accordionRoot,
+										}}
+									>
+										<ExpansionPanelSummary
+											expandIcon={
+												<ExpandMoreIcon className={classes.accordionIcon} />
+											}
+											aria-controls="panel1a-content"
+											id="panel1a-header"
+											classes={{
+												content: classes.accordionContent,
+											}}
+										>
+											<strong>{footer.title}</strong>
+										</ExpansionPanelSummary>
+										<ExpansionPanelDetails>
+											<ul>
+												{footer.description.map((item, index) => (
+													<li key={item}>
+														<Link
+															href={footer.link[index]}
+															variant="subtitle1"
+															color="textSecondary"
+														>
+															{item}
+														</Link>
+													</li>
+												))}
+											</ul>
+										</ExpansionPanelDetails>
+									</ExpansionPanel>
+								)}
+							</Grid>
+						))}
+					</Grid>
+				</Grid>
+				<Grid item xs={12} md={3}>
+					<div className={classes.socmed}>
+						<IconButton
+							aria-label="FB"
+							className={classes.margin}
+							size="small"
+							onClick={() => {
+								window.open('https://twitter.com/gitlime', '_blank');
+							}}
+						>
+							<i className="ion-logo-twitter" />
+						</IconButton>
+						<IconButton
+							aria-label="TW"
+							className={classes.margin}
+							size="small"
+							onClick={() => {
+								window.open('https://www.facebook.com/gitlime', '_blank');
+							}}
+						>
+							<i className="ion-logo-facebook" />
+						</IconButton>
+						{/* <IconButton aria-label="IG" className={classes.margin} size="small" onClick={() => { window.open("https://twitter.com/gitlime", "_blank") }}>
               <i className="ion-logo-instagram" />
             </IconButton> */}
-            <IconButton aria-label="LI" className={classes.margin} size="small" onClick={() => { window.open("https://www.linkedin.com/company/gitlime", "_blank") }}>
-              <i className="ion-logo-linkedin" />
-            </IconButton>
-          </div>
-          <Select
-            value={values.lang}
-            onChange={handleChange}
-            MenuProps={{
-              container: ctn
-            }}
-            startAdornment={(
-              <InputAdornment className={classes.icon} position="start">
-                <LangIcon />
-              </InputAdornment>
-            )}
-            className={classes.selectLang}
-            input={<OutlinedInput labelWidth={200} name="lang" id="outlined-lang-simple" />}
-          >
-            <MenuItem value="eng">English</MenuItem>
-            <MenuItem value="deu">Deutsch</MenuItem>
-            <MenuItem value="ara">العربيّة</MenuItem>
-            <MenuItem value="ind">Bahasa Indonesia</MenuItem>
-            <MenuItem value="prt">Português</MenuItem>
-            <MenuItem value="zho">简体中文</MenuItem>
-          </Select>
-        </Grid>
-      </Grid>
-      {isMobile && (
-        <div className={align.textCenter}>
-          <Box p={4}>
-            <Copyright />
-          </Box>
-        </div>
-      )}
-    </Container>
-  );
+						<IconButton
+							aria-label="LI"
+							className={classes.margin}
+							size="small"
+							onClick={() => {
+								window.open(
+									'https://www.linkedin.com/company/gitlime',
+									'_blank',
+								);
+							}}
+						>
+							<i className="ion-logo-linkedin" />
+						</IconButton>
+					</div>
+					<Select
+						value={values.lang}
+						onChange={handleChange}
+						MenuProps={{
+							container: ctn,
+						}}
+						startAdornment={
+							<InputAdornment className={classes.icon} position="start">
+								<LangIcon />
+							</InputAdornment>
+						}
+						className={classes.selectLang}
+						input={
+							<OutlinedInput
+								labelWidth={200}
+								name="lang"
+								id="outlined-lang-simple"
+							/>
+						}
+					>
+						<MenuItem value="eng">English</MenuItem>
+						<MenuItem value="deu">Deutsch</MenuItem>
+						<MenuItem value="ara">العربيّة</MenuItem>
+						<MenuItem value="ind">Bahasa Indonesia</MenuItem>
+						<MenuItem value="prt">Português</MenuItem>
+						<MenuItem value="zho">简体中文</MenuItem>
+					</Select>
+				</Grid>
+			</Grid>
+			{isMobile && (
+				<div className={align.textCenter}>
+					<Box p={4}>
+						<Copyright />
+					</Box>
+				</div>
+			)}
+		</Container>
+	);
 }
 
 Footer.propTypes = {
-  t: PropTypes.func.isRequired,
-  toggleDir: PropTypes.func,
+	t: PropTypes.func.isRequired,
+	toggleDir: PropTypes.func,
 };
 
 Footer.defaultProps = {
-  toggleDir: () => {},
+	toggleDir: () => {},
 };
 
 export default withTranslation(['agency-landing'])(Footer);

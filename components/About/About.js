@@ -17,31 +17,35 @@ import gitlimereverse from '~/public/images/agency/gitlime-reverse.svg';
 import useTitle from '../Title/title-style';
 import Counter from '../Counter';
 function About(props) {
-  // Theme breakpoints
-  const theme = useTheme();
-  const text = useText();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
+	// Theme breakpoints
+	const theme = useTheme();
+	const text = useText();
+	const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
 
-  // Translation function
-  const { t } = props;
+	// Translation function
+	const { t } = props;
 
-  const classes = useStyles();
-  const title = useTitle();
-  return (
-    <div className={classes.root}>
-      <div className={classes.contentBg} fixed="true">
-        <Grid container>
-          <Grid item md={2} xs={12}>
-            <div className={classes.imgWrap}>
-              <img src={gitlimewhite} className={classes.contentImg} alt="cover" />
-              {/* <img src={gitlimereverse} className={classes.contentImg} alt="cover" /> */}
-              {/* <TitleDeco text={t('common:agency-landing.about_title')} /> */}
-              {/* <Typography className={clsx(classes.textHelper, classes.aboutHeading)}>{t('common:agency-landing.about_title')}</Typography> */}
-              {/* <figure className={classes.contentImg}>
+	const classes = useStyles();
+	const title = useTitle();
+	return (
+		<div className={classes.root}>
+			<div className={classes.contentBg} fixed="true">
+				<Grid container>
+					<Grid item md={2} xs={12}>
+						<div className={classes.imgWrap}>
+							<img
+								src={gitlimewhite}
+								className={classes.contentImg}
+								alt="cover"
+							/>
+							{/* <img src={gitlimereverse} className={classes.contentImg} alt="cover" /> */}
+							{/* <TitleDeco text={t('common:agency-landing.about_title')} /> */}
+							{/* <Typography className={clsx(classes.textHelper, classes.aboutHeading)}>{t('common:agency-landing.about_title')}</Typography> */}
+							{/* <figure className={classes.contentImg}>
                 <img src={darken ? imgApi.agency[10] : imgApi.agency[11]} alt="cover" />
               </figure> */}
-            </div>
-            {/* <div>
+						</div>
+						{/* <div>
               <TitleDeco text={t('common:agency-landing.about_title')} />
               {isDesktop && (
                 <div className={classes.puzzle}>
@@ -57,29 +61,30 @@ function About(props) {
                 </div>
               )}
             </div> */}
-          </Grid>
-          <Grid item md={10} xs={12}>
-            <div className={classes.contentText}>
-              <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-                {t('common:agency-landing.about_para')}
-              </Typography>
-              {/* <Typography className={clsx(title.default, text.subtitle)} variant="h4">
+					</Grid>
+					<Grid item md={10} xs={12}>
+						<div className={classes.contentText}>
+							<Typography
+								className={clsx(title.default, text.subtitle)}
+								variant="h4"
+							>
+								{t('common:agency-landing.about_para')}
+							</Typography>
+							{/* <Typography className={clsx(title.default, text.subtitle)} variant="h4">
                 {t('common:agency-landing.about_subtitle')}
               </Typography> */}
-              {/* <Counter /> */}
-              <blockquote>
-                {t('common:agency-landing.about_quote')}
-              </blockquote>
-            </div>
-          </Grid>
-        </Grid>
-      </div>
-    </div>
-  );
+							{/* <Counter /> */}
+							<blockquote>{t('common:agency-landing.about_quote')}</blockquote>
+						</div>
+					</Grid>
+				</Grid>
+			</div>
+		</div>
+	);
 }
 
 About.propTypes = {
-  t: PropTypes.func.isRequired,
+	t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['agency-landing'])(About);

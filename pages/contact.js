@@ -6,24 +6,24 @@ import Decoration from '../components/Forms/Decoration';
 import { withTranslation } from '../i18n';
 
 function Contact() {
-  return (
-    <Fragment>
-      <Head>
-        <title>
-          { brand.agency.name }
-          &nbsp; - Contact
-        </title>
-      </Head>
-      <div>
-        <Decoration />
-        <ContactFrm />
-      </div>
-    </Fragment>
-  );
+	return (
+		<Fragment>
+			<Head>
+				<title>
+					{brand.agency.name}
+					&nbsp; - Contact
+				</title>
+			</Head>
+			<div>
+				<Decoration />
+				<ContactFrm />
+			</div>
+		</Fragment>
+	);
 }
 
 Contact.getInitialProps = async () => ({
-  namespacesRequired: ['common'],
+	namespacesRequired: ['common'],
 });
 
 export default withTranslation('common')(Contact);
