@@ -27,25 +27,25 @@ import useStyle from './banner-style';
 const items = [
 	{
 		id: 1,
-		title: 'One Stop Solution at Gitlime',
-		desc: 'We have a strategic family. It’s called Gitlime. yes! You can be a part of it .Our team has an undeniable chemistry to provide you the platform to bring your ideas into actual running products .',
+		title: 'Powering Your Digital Transformation',
+		desc: 'Custom Software, Website, and Web Application Development" - Our ability to help businesses stay ahead of the curve by developing custom software, websites, and web applications that can streamline processes and increase efficiency',
 	},
 	{
 		id: 2,
-		title: 'Software Product Design & Development ',
-		desc: 'Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.We use your opinions to start discussions, transforming product ideas to digital realities from design to development ',
+		title: 'Innovative Solutions for Modern Business',
+		desc: 'Website, Web Application, and Software Development" - This tagline emphasizes our focus on creating cutting-edge technology that is tailored to the unique needs of modern businesses. We develop websites, web applications, and software that are designed to drive growth and success.',
 		// img: imgApi.agency[0]
 	},
 	{
 		id: 3,
-		title: 'Application Deployment & maintenance ',
-		desc: 'Developing a proficient software product development is really a tough task but to maintain it , it is tougher . We provide the best solution at Git Lime for your product deployment , maintenance , and monitor .',
+		title: 'Creating Cutting-Edge Technology',
+		desc: 'Web Application, Website, and Custom Software Development" - This tagline stresses our dedication to staying at the forefront of technology and creating innovative solutions. Whether it is custom software, a website, or a web application, we use the latest tools and technologies to deliver exceptional results.',
 		// img: imgApi.agency[0]
 	},
 	{
 		id: 4,
-		title: 'Digital marketing  and Branding',
-		desc: 'Changing consumer behaviour is forcing digital marketers to pivot their strategies, as it becomes increasingly difficult to keep up with customer expectations and maintain a competitive edge, whilst keeping up to date with the latest tech.',
+		title: 'Bringing Your Ideas to Life',
+		desc: 'Software, Web Application, and Website Development" - This tagline communicates our passion for taking our clients ideas and turning them into reality. We develop software, web applications, and websites that are tailored to their specific needs and goals, helping businesses achieve their vision.',
 		// img: imgApi.agency[0]
 	},
 ];
