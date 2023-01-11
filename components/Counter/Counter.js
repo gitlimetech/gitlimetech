@@ -8,57 +8,62 @@ import { useText } from '~/theme/common';
 import useStyles from './counter-style';
 
 function Counter(props) {
-  const { t } = props;
-  const classes = useStyles();
-  const text = useText();
-  return (
-    <div className={classes.counterWrap}>
-      <Container fixed>
-        <Grid container justify-content="center" alignItems="center" spacing={6}>
-          <Grid md={4} item>
-            <div className={classes.counterItem}>
-              <div className={classes.text}>
-                <Typography variant="h3" className={text.title}>
-                  +200
-                </Typography>
-                <Typography component="p" className={text.subtitle}>
-                  {t('common:agency-landing.about_employee')}
-                </Typography>
-              </div>
-            </div>
-          </Grid>
-          <Grid md={4} item>
-            <div className={classes.counterItem}>
-              <div className={classes.text}>
-                <Typography variant="h3" className={text.title}>
-                  +500
-                </Typography>
-                <Typography component="p" className={text.subtitle}>
-                  {t('common:agency-landing.about_projects')}
-                </Typography>
-              </div>
-            </div>
-          </Grid>
-          <Grid md={4} item>
-            <div className={classes.counterItem}>
-              <div className={classes.text}>
-                <Typography variant="h3" className={text.title}>
-                  +300
-                </Typography>
-                <Typography component="p" className={text.subtitle}>
-                  {t('common:agency-landing.about_client')}
-                </Typography>
-              </div>
-            </div>
-          </Grid>
-        </Grid>
-      </Container>
-    </div>
-  );
+	const { t } = props;
+	const classes = useStyles();
+	const text = useText();
+	return (
+		<div className={classes.counterWrap}>
+			<Container fixed>
+				<Grid
+					container
+					justify-content="center"
+					alignItems="center"
+					spacing={6}
+				>
+					<Grid md={4} item>
+						<div className={classes.counterItem}>
+							<div className={classes.text}>
+								<Typography variant="h3" className={text.title}>
+									+200
+								</Typography>
+								<Typography component="p" className={text.subtitle}>
+									{t('common:agency-landing.about_employee')}
+								</Typography>
+							</div>
+						</div>
+					</Grid>
+					<Grid md={4} item>
+						<div className={classes.counterItem}>
+							<div className={classes.text}>
+								<Typography variant="h3" className={text.title}>
+									+500
+								</Typography>
+								<Typography component="p" className={text.subtitle}>
+									{t('common:agency-landing.about_projects')}
+								</Typography>
+							</div>
+						</div>
+					</Grid>
+					<Grid md={4} item>
+						<div className={classes.counterItem}>
+							<div className={classes.text}>
+								<Typography variant="h3" className={text.title}>
+									+300
+								</Typography>
+								<Typography component="p" className={text.subtitle}>
+									{t('common:agency-landing.about_client')}
+								</Typography>
+							</div>
+						</div>
+					</Grid>
+				</Grid>
+			</Container>
+		</div>
+	);
 }
 
 Counter.propTypes = {
-  t: PropTypes.func.isRequired
+	t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['agency-landing'])(Counter);

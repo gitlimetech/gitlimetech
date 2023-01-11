@@ -1,7 +1,8 @@
 # `Gitlime`
-# BONJOUR !
-Gitlime , focus on the nature of your business and what you need for a fruitful online presence to ultimately push revenues further up..
 
+# BONJOUR !
+
+Gitlime , focus on the nature of your business and what you need for a fruitful online presence to ultimately push revenues further up..
 
 You can get more details on [gitlime.com](https://gitlime.com/)
 

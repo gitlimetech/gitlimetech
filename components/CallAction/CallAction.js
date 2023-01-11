@@ -12,17 +12,17 @@ import { withTranslation } from '~/i18n';
 import useStyles from './action-style';
 
 function CallAction(props) {
-  // Theme breakpoints
-  const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
+	// Theme breakpoints
+	const theme = useTheme();
+	const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
 
-  // Translation Function
-  const { t } = props;
+	// Translation Function
+	const { t } = props;
 
-  const classes = useStyles();
-  return (
-    <Fragment>
-      {/* <svg
+	const classes = useStyles();
+	return (
+		<Fragment>
+			{/* <svg
         fill="#cccccc"
         width={845}
         height={1099}
@@ -30,36 +30,42 @@ function CallAction(props) {
       >
         <use xlinkHref="/images/decoration/square-deco-primary.svg#square" />
       </svg> */}
-      <Container fixed={isDesktop}>
-        <div className={classes.root}>
-          <Paper className={classes.paper}>
-            <Grid container alignItems="center">
-              <Grid item md={9} xs={12}>
-                <Typography variant="h4" gutterBottom display="block">
-                  {t('common:agency-landing.cta_title')}
-                </Typography>
-                <Typography display="block" component="div">
-                  {t('common:agency-landing.cta_subtitle')}
-                </Typography>
-              </Grid>
-              <Grid item md={3} xs={12}>
-                <Grid container alignItems="center">
-                  <Button size="large" variant="outlined" color="secondary" href="/contact" className={classes.button}>
-                    {t('common:agency-landing.cta_btn')}
-                    <SendIcon className={classes.rightIcon} />
-                  </Button>
-                </Grid>
-              </Grid>
-            </Grid>
-          </Paper>
-        </div>
-      </Container>
-    </Fragment>
-  );
+			<Container fixed={isDesktop}>
+				<div className={classes.root}>
+					<Paper className={classes.paper}>
+						<Grid container alignItems="center">
+							<Grid item md={9} xs={12}>
+								<Typography variant="h4" gutterBottom display="block">
+									{t('common:agency-landing.cta_title')}
+								</Typography>
+								<Typography display="block" component="div">
+									{t('common:agency-landing.cta_subtitle')}
+								</Typography>
+							</Grid>
+							<Grid item md={3} xs={12}>
+								<Grid container alignItems="center">
+									<Button
+										size="large"
+										variant="outlined"
+										color="secondary"
+										href="/contact"
+										className={classes.button}
+									>
+										{t('common:agency-landing.cta_btn')}
+										<SendIcon className={classes.rightIcon} />
+									</Button>
+								</Grid>
+							</Grid>
+						</Grid>
+					</Paper>
+				</div>
+			</Container>
+		</Fragment>
+	);
 }
 
 CallAction.propTypes = {
-  t: PropTypes.func.isRequired
+	t: PropTypes.func.isRequired,
 };
 
 export default withTranslation(['agency-landing'])(CallAction);
