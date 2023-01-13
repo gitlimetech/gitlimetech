@@ -62,6 +62,9 @@ const parallaxStyles = makeStyles((theme) => ({
 		height: 405,
 		opacity: 0.08,
 		borderRadius: 80,
+		// [theme.breakpoints.down('sm')]: {
+		// 	display: 'none',
+		// },
 	},
 	parallaxSecondary: {
 		background: theme.palette.secondary.main,

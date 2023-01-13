@@ -4,7 +4,7 @@ import { lighten, alpha } from '@material-ui/core/styles/colorManipulator';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		margin: theme.spacing(0, 8),
+		margin: theme.spacing(8),
 		[theme.breakpoints.down('sm')]: {
 			margin: theme.spacing(0),
 		},
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 			theme.palette.type === 'dark'
 				? alpha(theme.palette.primary.dark, 0.4)
 				: lighten(theme.palette.primary.dark, 0),
-		// height: 520,
+		// height: '100',
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',

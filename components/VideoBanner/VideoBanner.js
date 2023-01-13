@@ -28,7 +28,7 @@ const items = [
 	{
 		id: 1,
 		title: 'Powering Your Digital Transformation',
-		desc: 'Custom Software, Website, and Web Application Development" - Our ability to help businesses stay ahead of the curve by developing custom software, websites, and web applications that can streamline processes and increase efficiency',
+		desc: 'Custom Software, Website, and Web Application Development" - Our ability to help businesses stay ahead of the curve by developing custom software, websites, and web applications that can streamline processes and increase efficiency. We love transforming product ideas into digital realities.',
 	},
 	{
 		id: 2,
@@ -146,7 +146,7 @@ function VideoBanner(props) {
         </figure>
       </Hidden> */}
 			<Container fixed={isDesktop}>
-				<Grid container spacing={6}>
+				<Grid container className={classes.heroSlider}>
 					<Grid sx={{ border: 1 }} item md={6} xs={12}>
 						{/* <div className={classes.bannerText}>
               <div className={classes.title}>
@@ -175,9 +175,9 @@ function VideoBanner(props) {
 								}}
 								indicatorContainerProps={{
 									style: {
-										marginTop: '70px', // 5
+										marginTop: '40px', // 5
 										marginBottom: '0px', // 5
-										textAligh: 'center', // 4
+										textAlign: 'center', // 4
 										color: 'green',
 									},
 								}}
@@ -186,6 +186,7 @@ function VideoBanner(props) {
 									<div key={index.toString()}>
 										<Typography
 											className={clsx(classes.textHelper, text.title2)}
+											variant="h2"
 										>
 											{element.title}
 										</Typography>
@@ -195,6 +196,7 @@ function VideoBanner(props) {
 												text.subtitle,
 												classes.subtitle,
 											)}
+											variant="h4"
 										>
 											{element.desc}
 										</Typography>
@@ -222,8 +224,8 @@ function VideoBanner(props) {
 								setPosition({ xy: calc(x, y) })
 							}
 						>
-							<div className="">
-								<figure className="">
+							<div className={classes.imgContainer}>
+								<figure className={classes.sliderImg}>
 									<img src={imgApi.agency[8]} alt="cover" />
 								</figure>
 							</div>
