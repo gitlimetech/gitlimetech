@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
 				overflow: 'auto',
 			},
 		},
+		[theme.breakpoints.down('sm')]: {
+			marginTop: theme.spacing(8),
+		},
 	},
 	filter: {
 		borderRadius: theme.rounded.small,

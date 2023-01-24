@@ -7,9 +7,9 @@ import violetBuble from '~/public/images/agency/violet_buble.png';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		position: 'relative',
-		marginBottom: theme.spacing(12),
 		[theme.breakpoints.down('sm')]: {
 			textAlign: 'center',
+			marginBottom: theme.spacing(0),
 		},
 		'& h4': {
 			[theme.breakpoints.down('sm')]: {

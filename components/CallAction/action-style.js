@@ -3,7 +3,11 @@ import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
+		marginTop: theme.spacing(20),
 		position: 'relative',
+		[theme.breakpoints.down('sm')]: {
+			marginTop: theme.spacing(0),
+		},
 	},
 	background: {
 		fill:

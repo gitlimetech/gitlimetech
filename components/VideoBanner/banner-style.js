@@ -4,10 +4,26 @@ const useStyles = makeStyles((theme) => ({
 	decoTop: {},
 	decoBottom: {},
 	heroContent: {
+		marginTop: theme.spacing(12),
+		// marginBottom: 0,
 		position: 'relative',
+
 		'& > div': {
 			paddingLeft: 0,
 			paddingRight: 0,
+		},
+		'& h2': {
+			fontSize: 45,
+			[theme.breakpoints.down('sm')]: {
+				fontSize: 32,
+			},
+		},
+		'& h4': {
+			fontSize: 25,
+			[theme.breakpoints.down('sm')]: {
+				fontSize: 20,
+				textAlign: 'justify',
+			},
 		},
 		[theme.breakpoints.up('lg')]: {
 			// paddingLeft: theme.spacing(6),
@@ -15,20 +31,24 @@ const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down('sm')]: {
 			marginBottom: 0,
-			paddingLeft: theme.spacing(2),
+			paddingLeft: theme.spacing(0),
 			paddingBottom: theme.spacing(0),
+			marginTop: theme.spacing(10),
 		},
 	},
-	carouselWrap: {
-		background: theme.palette.primary.dark,
-		height: 400,
+	heroSlider: {
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
 	},
 	slider: {
-		marginTop: theme.spacing(12),
-		width: 670,
+		width: '100',
 		paddingLeft: theme.spacing(4),
 		[theme.breakpoints.down('md')]: {
 			paddingLeft: theme.spacing(5),
+		},
+		[theme.breakpoints.down('sm')]: {
+			padding: theme.spacing(3),
 		},
 	},
 	// bannerText: {
@@ -54,9 +74,6 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down('md')]: {
 			marginTop: theme.spacing(15),
 		},
-		'& h3': {
-			fontFamily: 'Roboto Condensed',
-		},
 	},
 	textHelper: {
 		display: 'inline-block',
@@ -76,14 +93,23 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.down('md')]: {
 			marginBottom: theme.spacing(5),
 		},
+		[theme.breakpoints.up('sm')]: {
+			textAlign: 'justify',
+		},
+	},
+	sliderImg: {
+		'& img': {
+			height: '100',
+		},
 	},
 	button: {
 		minWidth: 200,
 		height: 48,
 		marginTop: theme.spacing(5),
 		[theme.breakpoints.down('sm')]: {
-			color: theme.palette.secondary.light,
-			borderColor: theme.palette.secondary.light,
+			marginTop: theme.spacing(0),
+			color: theme.palette.secondary.dark,
+			borderColor: theme.palette.secondary.dark,
 		},
 	},
 	icon: {
