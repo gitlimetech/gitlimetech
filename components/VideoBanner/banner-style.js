@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme) => ({
 	decoBottom: {},
 	heroContent: {
 		marginTop: theme.spacing(12),
+		// marginBottom: 0,
 		position: 'relative',
 
 		'& > div': {
@@ -40,11 +41,6 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 		alignItems: 'center',
 	},
-
-	carouselWrap: {
-		background: theme.palette.primary.dark,
-		height: 400,
-	},
 	slider: {
 		width: '100',
 		paddingLeft: theme.spacing(4),
@@ -75,7 +71,6 @@ const useStyles = makeStyles((theme) => ({
 	title: {
 		marginTop: theme.spacing(10),
 		marginBottom: theme.spacing(3),
-		border: '1px solid blue',
 		[theme.breakpoints.down('md')]: {
 			marginTop: theme.spacing(15),
 		},
@@ -102,12 +97,6 @@ const useStyles = makeStyles((theme) => ({
 			textAlign: 'justify',
 		},
 	},
-	// imgContainer: {
-	// 	display: 'flex',
-	// 	justifyContent: 'center',
-	// 	alignItems: 'center',
-	// 	border: '1px solid yellow',
-	// },
 	sliderImg: {
 		'& img': {
 			height: '100',

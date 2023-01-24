@@ -68,7 +68,7 @@ function About(props) {
 								className={clsx(title.default, text.subtitle)}
 								variant="h4"
 							>
-								{t('common:agency-landing.about_para')}
+								{t('common:agency-landing.about_desc')}
 							</Typography>
 							{/* <Typography className={clsx(title.default, text.subtitle)} variant="h4">
                 {t('common:agency-landing.about_subtitle')}

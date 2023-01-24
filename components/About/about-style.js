@@ -28,9 +28,10 @@ const useStyles = makeStyles((theme) => ({
 			},
 		},
 		'& h4': {
+			// fontSize: 22,
 			color: '#ffff',
 			[theme.breakpoints.down('sm')]: {
-				fontSize: 22,
+				fontSize: 20,
 				margin: theme.spacing(-5),
 				paddingTop: theme.spacing(6),
 			},
@@ -43,30 +44,26 @@ const useStyles = makeStyles((theme) => ({
 			theme.palette.type === 'dark'
 				? alpha(theme.palette.primary.dark, 0.4)
 				: lighten(theme.palette.primary.dark, 0),
-		// height: 520,
+		height: 800,
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
 		position: 'relative',
 		padding: theme.spacing(4),
-		[theme.breakpoints.down('sm')]: {},
+		[theme.breakpoints.down('sm')]: {
+			height: 980,
+		},
 	},
 	imgWrap: {
-		// position: 'absolute',
-		// top: 200,
-		// left: 50,
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
 		height: '100%',
-		// padding: theme.spacing(5, 8),
 		'& img': {
 			position: 'absolute',
 			transform: 'rotate(-90deg)',
-			width: '65%',
-			height: '35%',
-			// top: 130,
-			// left: -210,
+			width: '60%',
+			height: '30%',
 			padding: theme.spacing(3),
 			[theme.breakpoints.down('md')]: {
 				display: 'block',
