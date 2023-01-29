@@ -36,7 +36,7 @@ const footers = [
 	{
 		title: 'Company',
 		description: ['Team', 'History', 'Contact us', 'Locations'],
-		link: ['#team', '#history', '#contact-us', '#locations'],
+		link: ['#team', '#history', '/contact', '#locations'],
 	},
 	{
 		title: 'Resources',
@@ -56,7 +56,7 @@ const footers = [
 	{
 		title: 'Legal',
 		description: ['Privacy policy', 'Terms of use'],
-		link: ['#privacy-policy', '#terms-of-use'],
+		link: ['/privacypolicy', '/termsofuse'],
 	},
 ];
 

@@ -9,6 +9,8 @@ const link = {
 		applicationdeployment: '/applicationdeployment',
 		productdesign: '/productdesign',
 		erpdevelopment: '/erpdevelopment',
+		privacypolicy: '/privacypolicy',
+		termsofuse: '/termsofuse',
 	},
 };
 
