@@ -22,6 +22,8 @@ module.exports = withImages({
 			'/applicationdeployment': { page: '/applicationdeployment' },
 			'/productdesign': { page: '/productdesign' },
 			'/erpdevelopment': { page: '/erpdevelopment' },
+			'/privacypolicy': { page: '/privacypolicy' },
+			'/termsofuse': { page: '/termsofuse' },
 		};
 	},
 	publicRuntimeConfig: {

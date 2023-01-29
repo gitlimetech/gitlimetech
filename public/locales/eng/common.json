@@ -60,6 +60,9 @@
 		"office_title": "Our Office",
 		"office_head": "Head Quarter",
 		"office_branch": "Branch Office",
-		"footer_paragraph": "We have been in business for almost a decade. Helping you is our top priority."
+		"footer_paragraph": "We have been in business for almost a decade. Helping you is our top priority.",
+		"terms_conditions_title": "Gitlime Terms & Conditions",
+		"terms_conditions_greet": "Welcome to the Gitlime website(the 'site').",
+		"terms_conditions_para": "By accessing or using the Site or any services provided on the Site, you agree to be bound by the following terms and conditions(the 'terms'). If you do not agree to these Terms, you may not access or use the Site or any services provided on the Site."
 	}
 }
