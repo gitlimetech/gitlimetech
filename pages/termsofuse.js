@@ -104,8 +104,8 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	contentWrap: {
-		boxShadow: '14px 14px 70px -20px rgb(17 9 61 / 15%)',
-		margin: theme.spacing(5, 16),
+		// boxShadow: '14px 14px 70px -20px rgb(17 9 61 / 15%)',
+		margin: theme.spacing(9, 16),
 		padding: theme.spacing(8),
 		borderRadius: '12px',
 		// position: 'absolute',

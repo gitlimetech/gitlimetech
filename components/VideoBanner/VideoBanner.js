@@ -139,98 +139,30 @@ function VideoBanner(props) {
 	// };
 
 	return (
-		<div className={classes.heroContent}>
-			{/* <Hidden smUp>
+		<div className={classes.root}>
+			<div className={classes.heroContent}>
+				{/* <Hidden smUp>
         <figure className={classes.mobileCover}>
           <img src={imgApi.agency[0]} alt="cover" />
         </figure>
       </Hidden> */}
-			<Container fixed={isDesktop}>
-				<Grid container className={classes.heroSlider}>
-					<Grid sx={{ border: 1 }} item md={6} xs={12}>
-						{/* <div className={classes.bannerText}>
-              <div className={classes.title}>
-                <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
-                  {t('common:agency-landing.banner_title')}
-                </Typography>
-              </div>
-              <Typography className={clsx(classes.subtitle, text.subtitle)} variant="h5">
-                {t('common:agency-landing.banner_subtitle')}
-              </Typography>
-              <Button variant="outlined" size="large" color="secondary" className={classes.button}>
-                {t('common:agency-landing.banner_button')}
-                <SendIcon className={classes.icon} />
-              </Button>
-            </div> */}
-						{/* <div>
-              <h2>Start editing to see some magic happen!</h2>
-            </div> */}
-						<div className={classes.slider}>
-							<Carousel
-								indicatorIconButtonProps={{
-									style: {
-										padding: '10px', // 1
-										color: 'grey', // 3
-									},
-								}}
-								indicatorContainerProps={{
-									style: {
-										marginTop: '40px', // 5
-										marginBottom: '0px', // 5
-										textAlign: 'center', // 4
-										color: 'green',
-									},
-								}}
+				<Container fixed={isDesktop}>
+					<Grid container className={classes.heroSlider}>
+						{isTablet && (
+							<Grid
+								item
+								md={6}
+								onMouseMove={({ clientX: x, clientY: y }) =>
+									setPosition({ xy: calc(x, y) })
+								}
 							>
-								{items.map((element, index) => (
-									<div key={index.toString()}>
-										<Typography
-											className={clsx(classes.textHelper, text.title2)}
-											variant="h2"
-										>
-											{element.title}
-										</Typography>
-										<Typography
-											className={clsx(
-												classes.textHelper,
-												text.subtitle,
-												classes.subtitle,
-											)}
-											variant="h4"
-										>
-											{element.desc}
-										</Typography>
-										<Link href="/contact">
-											<Button
-												variant="outlined"
-												size="large"
-												color="secondary"
-												className={classes.button}
-											>
-												{t('common:agency-landing.banner_button')}
-												<SendIcon className={classes.icon} />
-											</Button>
-										</Link>
-									</div>
-								))}
-							</Carousel>
-						</div>
-					</Grid>
-					{isTablet && (
-						<Grid
-							item
-							md={6}
-							onMouseMove={({ clientX: x, clientY: y }) =>
-								setPosition({ xy: calc(x, y) })
-							}
-						>
-							<div className={classes.imgContainer}>
-								<figure className={classes.sliderImg}>
-									<img src={imgApi.agency[8]} alt="cover" />
-								</figure>
-							</div>
+								<div className={classes.imgContainer}>
+									<figure className={classes.sliderImg}>
+										<img src={imgApi.agency[8]} alt="cover" />
+									</figure>
+								</div>
 
-							{/* <div className={classes.videoWrap}>
+								{/* <div className={classes.videoWrap}>
                 <div className={classes.videoFigure}>
                   <div className={classes.innerFigure}>
                     <Hidden mdDown>
@@ -261,10 +193,80 @@ function VideoBanner(props) {
                   </div>
                 </div>
               </div> */}
+							</Grid>
+						)}
+						<Grid sx={{ border: 1 }} item md={6} xs={12}>
+							{/* <div className={classes.bannerText}>
+              <div className={classes.title}>
+                <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
+                  {t('common:agency-landing.banner_title')}
+                </Typography>
+              </div>
+              <Typography className={clsx(classes.subtitle, text.subtitle)} variant="h5">
+                {t('common:agency-landing.banner_subtitle')}
+              </Typography>
+              <Button variant="outlined" size="large" color="secondary" className={classes.button}>
+                {t('common:agency-landing.banner_button')}
+                <SendIcon className={classes.icon} />
+              </Button>
+            </div> */}
+							{/* <div>
+              <h2>Start editing to see some magic happen!</h2>
+            </div> */}
+							<div className={classes.slider}>
+								<Carousel
+									indicatorIconButtonProps={{
+										style: {
+											padding: '10px', // 1
+											color: 'grey', // 3
+										},
+									}}
+									indicatorContainerProps={{
+										style: {
+											marginTop: '40px', // 5
+											marginBottom: '0px', // 5
+											textAlign: 'center', // 4
+											color: 'green',
+										},
+									}}
+								>
+									{items.map((element, index) => (
+										<div key={index.toString()}>
+											<Typography
+												className={clsx(classes.textHelper, text.title2)}
+												variant="h2"
+											>
+												{element.title}
+											</Typography>
+											<Typography
+												className={clsx(
+													classes.textHelper,
+													text.subtitle,
+													classes.subtitle,
+												)}
+												variant="h4"
+											>
+												{element.desc}
+											</Typography>
+											<Link href="/contact">
+												<Button
+													variant="outlined"
+													size="large"
+													color="secondary"
+													className={classes.button}
+												>
+													{t('common:agency-landing.banner_button')}
+													<SendIcon className={classes.icon} />
+												</Button>
+											</Link>
+										</div>
+									))}
+								</Carousel>
+							</div>
 						</Grid>
-					)}
-				</Grid>
-			</Container>
+					</Grid>
+				</Container>
+			</div>
 		</div>
 	);
 }
