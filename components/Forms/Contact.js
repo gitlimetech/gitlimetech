@@ -40,6 +40,7 @@ function Contact(props) {
 
 	const handleChange = (name) => (event) => {
 		setValues({ ...values, [name]: event.target.value });
+		// console.log(name);
 	};
 
 	const handleCheck = (event) => {
