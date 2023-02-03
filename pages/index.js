@@ -21,7 +21,7 @@ import PageNav from '../components/PageNav';
 import Notification from '../components/Notification';
 import brand from '~/public/text/brand';
 
-const sectionMargin = (margin) => margin * 20;
+const sectionMargin = (margin) => margin * 13;
 const useStyles = makeStyles((theme) => ({
 	mainWrap: {
 		position: 'relative',

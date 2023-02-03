@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Snackbar from '@material-ui/core/Snackbar';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
+import axios from 'axios';
 import routeLink from '~/public/text/link';
 import { useText } from '~/theme/common';
 import logo from '~public/images/agency-logo.svg';
@@ -22,6 +23,7 @@ function Contact(props) {
 	const { t } = props;
 	const classes = useStyles();
 	const text = useText();
+	const url = 'https://content.abhishek.world/api/website-leads';
 	const [values, setValues] = useState({
 		name: '',
 		email: '',
@@ -33,7 +35,6 @@ function Contact(props) {
 	useEffect(() => {
 		ValidatorForm.addValidationRule('isTruthy', (value) => value);
 	});
-
 	const [openNotif, setNotif] = useState(false);
 
 	const [check, setCheck] = useState(false);
@@ -48,7 +49,24 @@ function Contact(props) {
 	};
 
 	const handleSubmit = () => {
+		console.log('values:', values);
 		setNotif(true);
+		axios.post('/api/formadd', values).then((res) => {
+			console.log(res);
+		});
+
+		// send data to server
+
+		// try {
+		// 	const { data } = await axios({
+		// 		url: '/api/formadd',
+		// 		method: 'POST',
+		// 		data: values,
+		// 	});
+		// 	console.log('Response Back:', data);
+		// } catch (error) {
+		// 	console.log('Error:', error);
+		// }
 	};
 
 	const handleClose = () => {

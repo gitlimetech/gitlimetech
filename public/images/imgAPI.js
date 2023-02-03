@@ -41,6 +41,7 @@ const imgAPI = {
 		'/images/media/contact_us.0d0f4178.svg',
 		'/images/media/gitlime-white.svg',
 		'/images/media/gitlime-reverse.svg',
+		'/images/media/home-bg.svg',
 	],
 };
 
