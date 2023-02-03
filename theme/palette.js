@@ -13,11 +13,12 @@ module.exports = {
 			},
 		},
 	},
+	// default color primary and secondary for gitlime website.
 	greenLeaf: {
 		palette: {
 			primary: {
 				light: '#C8E6C9',
-				main: '#62D464',
+				main: '#63d665',
 				dark: '#1B5E20',
 			},
 			secondary: {

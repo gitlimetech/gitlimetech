@@ -1,11 +1,19 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
+	root: {},
 	decoTop: {},
 	decoBottom: {},
+	item: {
+		direction: 'column-reverse',
+		[theme.breakpoints.down('md')]: {
+			direction: 'column',
+			margin: '20px auto',
+		},
+	},
 	heroContent: {
 		marginTop: theme.spacing(12),
-		// marginBottom: 0,
+		marginBottom: 0,
 		position: 'relative',
 
 		'& > div': {
@@ -14,8 +22,21 @@ const useStyles = makeStyles((theme) => ({
 		},
 		'& h2': {
 			fontSize: 45,
+			textTransform: 'uppercase',
+			fontWeight: theme.typography.fontWeightBold,
 			[theme.breakpoints.down('sm')]: {
 				fontSize: 32,
+				textAlign: 'center',
+			},
+			'& span.highlight': {
+				fontSize: 65,
+				color: theme.palette.primary.main,
+				display: 'block',
+				lineHeight: '72px',
+				[theme.breakpoints.down('sm')]: {
+					fontSize: 50,
+					textAlign: 'center',
+				},
 			},
 		},
 		'& h4': {
@@ -40,9 +61,14 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
+		height: '70vh',
+		[theme.breakpoints.down('sm')]: {
+			marginTop: theme.spacing(16),
+			flexWrap: 'wrap-reverse',
+		},
 	},
 	slider: {
-		width: '100',
+		width: '100%',
 		paddingLeft: theme.spacing(4),
 		[theme.breakpoints.down('md')]: {
 			paddingLeft: theme.spacing(5),
@@ -98,8 +124,10 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sliderImg: {
+		margin: '0px auto',
 		'& img': {
-			height: '100',
+			width: '100%',
+			height: '100%',
 		},
 	},
 	button: {

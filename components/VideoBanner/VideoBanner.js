@@ -23,30 +23,32 @@ import { withTranslation } from '~/i18n';
 import imgApi from '~/public/images/imgAPI';
 import yt from '~/youtube';
 import useStyle from './banner-style';
+import FilterFirstWord from '../utils/helpers/FilterFirstWord';
 
 const items = [
 	{
 		id: 1,
-		title: 'Powering Your Digital Transformation',
-		desc: 'Custom Software, Website, and Web Application Development" - Our ability to help businesses stay ahead of the curve by developing custom software, websites, and web applications that can streamline processes and increase efficiency. We love transforming product ideas into digital realities.',
+		title: 'Transforming ideas into digital solutions',
+		desc: 'Let us help you bring your vision to life with expert software development.',
+		img: imgApi.carousel[4],
 	},
 	{
 		id: 2,
-		title: 'Innovative Solutions for Modern Business',
-		desc: 'Website, Web Application, and Software Development" - This tagline emphasizes our focus on creating cutting-edge technology that is tailored to the unique needs of modern businesses. We develop websites, web applications, and software that are designed to drive growth and success.',
-		// img: imgApi.agency[0]
+		title: 'Bringing your tech dreams to life',
+		desc: 'We deliver custom solutions that meet your unique needs and drive your business forward',
+		img: imgApi.carousel[0],
 	},
 	{
 		id: 3,
 		title: 'Creating Cutting-Edge Technology',
-		desc: 'Web Application, Website, and Custom Software Development" - This tagline stresses our dedication to staying at the forefront of technology and creating innovative solutions. Whether it is custom software, a website, or a web application, we use the latest tools and technologies to deliver exceptional results.',
-		// img: imgApi.agency[0]
+		desc: 'Transform the way you do business with custom software designed to meet your unique needs."',
+		img: imgApi.carousel[1],
 	},
 	{
 		id: 4,
-		title: 'Bringing Your Ideas to Life',
-		desc: 'Software, Web Application, and Website Development" - This tagline communicates our passion for taking our clients ideas and turning them into reality. We develop software, web applications, and websites that are tailored to their specific needs and goals, helping businesses achieve their vision.',
-		// img: imgApi.agency[0]
+		title: 'Innovative software, limitless possibilities',
+		desc: 'Join us as we lead the way in the development of cutting-edge software solutions',
+		img: imgApi.carousel[3],
 	},
 ];
 const useStyles = makeStyles((theme) => ({}));
@@ -139,16 +141,45 @@ function VideoBanner(props) {
 	// };
 
 	return (
-		<div className={classes.heroContent}>
-			{/* <Hidden smUp>
-        <figure className={classes.mobileCover}>
-          <img src={imgApi.agency[0]} alt="cover" />
-        </figure>
-      </Hidden> */}
-			<Container fixed={isDesktop}>
-				<Grid container className={classes.heroSlider}>
-					<Grid sx={{ border: 1 }} item md={6} xs={12}>
-						{/* <div className={classes.bannerText}>
+		<div className={classes.root}>
+			<div className={classes.heroContent}>
+				{/* <Hidden smUp>
+					<figure className={classes.mobileCover}>
+						<img src={imgApi.agency[0]} alt="cover" />
+					</figure>
+				</Hidden> */}
+				<Container fixed={isDesktop}>
+					<div className={classes.slider}>
+						<Carousel
+							indicatorIconButtonProps={{
+								style: {
+									padding: '10px', // 1
+									color: 'grey', // 3
+								},
+							}}
+							indicatorContainerProps={{
+								style: {
+									marginTop: '40px', // 5
+									marginBottom: '0px', // 5
+									textAlign: 'center', // 4
+									color: 'green',
+								},
+							}}
+						>
+							{items.map((element, index) => (
+								<Grid
+									container
+									className={classes.heroSlider}
+									key={index.toString()}
+								>
+									<Grid
+										sx={{ border: 1 }}
+										item
+										md={6}
+										xs={12}
+										className={classes.item}
+									>
+										{/* <div className={classes.bannerText}>
               <div className={classes.title}>
                 <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
                   {t('common:agency-landing.banner_title')}
@@ -162,44 +193,28 @@ function VideoBanner(props) {
                 <SendIcon className={classes.icon} />
               </Button>
             </div> */}
-						{/* <div>
+										{/* <div>
               <h2>Start editing to see some magic happen!</h2>
             </div> */}
-						<div className={classes.slider}>
-							<Carousel
-								indicatorIconButtonProps={{
-									style: {
-										padding: '10px', // 1
-										color: 'grey', // 3
-									},
-								}}
-								indicatorContainerProps={{
-									style: {
-										marginTop: '40px', // 5
-										marginBottom: '0px', // 5
-										textAlign: 'center', // 4
-										color: 'green',
-									},
-								}}
-							>
-								{items.map((element, index) => (
-									<div key={index.toString()}>
+
 										<Typography
 											className={clsx(classes.textHelper, text.title2)}
 											variant="h2"
 										>
-											{element.title}
+											<FilterFirstWord sentence={element.title} />
 										</Typography>
-										<Typography
-											className={clsx(
-												classes.textHelper,
-												text.subtitle,
-												classes.subtitle,
-											)}
-											variant="h4"
-										>
-											{element.desc}
-										</Typography>
+										{element.desc && (
+											<Typography
+												className={clsx(
+													classes.textHelper,
+													text.subtitle,
+													classes.subtitle,
+												)}
+												variant="h4"
+											>
+												{element.desc}
+											</Typography>
+										)}
 										<Link href="/contact">
 											<Button
 												variant="outlined"
@@ -211,26 +226,22 @@ function VideoBanner(props) {
 												<SendIcon className={classes.icon} />
 											</Button>
 										</Link>
-									</div>
-								))}
-							</Carousel>
-						</div>
-					</Grid>
-					{isTablet && (
-						<Grid
-							item
-							md={6}
-							onMouseMove={({ clientX: x, clientY: y }) =>
-								setPosition({ xy: calc(x, y) })
-							}
-						>
-							<div className={classes.imgContainer}>
-								<figure className={classes.sliderImg}>
-									<img src={imgApi.agency[8]} alt="cover" />
-								</figure>
-							</div>
+									</Grid>
+									{/* {isTablet && ( */}
+									<Grid
+										item
+										md={6}
+										onMouseMove={({ clientX: x, clientY: y }) =>
+											setPosition({ xy: calc(x, y) })
+										}
+									>
+										<div className={classes.imgContainer}>
+											<figure className={classes.sliderImg}>
+												<img src={element.img} alt="cover" />
+											</figure>
+										</div>
 
-							{/* <div className={classes.videoWrap}>
+										{/* <div className={classes.videoWrap}>
                 <div className={classes.videoFigure}>
                   <div className={classes.innerFigure}>
                     <Hidden mdDown>
@@ -261,10 +272,14 @@ function VideoBanner(props) {
                   </div>
                 </div>
               </div> */}
-						</Grid>
-					)}
-				</Grid>
-			</Container>
+									</Grid>
+									{/* )} */}
+								</Grid>
+							))}
+						</Carousel>
+					</div>
+				</Container>
+			</div>
 		</div>
 	);
 }

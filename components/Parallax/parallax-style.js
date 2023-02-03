@@ -7,7 +7,7 @@ const parallaxStyles = makeStyles((theme) => ({
 		height: '100%',
 		overflow: 'hidden',
 		left: 0,
-		zIndex: 0,
+		zIndex: 1,
 		[theme.breakpoints.down('md')]: {
 			display: 'none',
 		},
@@ -52,6 +52,7 @@ const parallaxStyles = makeStyles((theme) => ({
 	parallaxSquare: {
 		transform: 'rotate(45deg)',
 		position: 'absolute',
+		zIndex: -99,
 		[theme.breakpoints.up('xl')]: {
 			display: 'none',
 		},
@@ -80,7 +81,7 @@ const parallaxStyles = makeStyles((theme) => ({
 	banner: {
 		top: 400,
 		'& $parallaxPrimary': {
-			right: 340,
+			left: 170,
 		},
 		'& $parallaxSecondary': {
 			right: 100,

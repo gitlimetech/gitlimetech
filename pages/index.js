@@ -20,9 +20,18 @@ import Footer from '../components/Footer';
 import PageNav from '../components/PageNav';
 import Notification from '../components/Notification';
 import brand from '~/public/text/brand';
+import imgApi from '~/public/images/imgAPI';
 
-const sectionMargin = (margin) => margin * 20;
+const sectionMargin = (margin) => margin * 13;
 const useStyles = makeStyles((theme) => ({
+	root: {
+		background: `url(${imgApi.agency[12]})`,
+		backgroundPosition: 'center',
+		backgroundSize: 'auto',
+		height: '100vh',
+		position: 'fixed',
+		width: '100%',
+	},
 	mainWrap: {
 		position: 'relative',
 		width: '100%',
@@ -71,7 +80,9 @@ function Landing(props) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-	// const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const isDesktop = useMediaQuery(theme.breakpoints.down('lg'));
+
 	const { onToggleDark, onToggleDir, invert } = props;
 
 	return (
@@ -84,6 +95,9 @@ function Landing(props) {
 			</Head>
 			<CssBaseline />
 			<div className={classes.mainWrap}>
+				{isDesktop && theme.palette.type === 'light' && (
+					<div className={classes.root} />
+				)}
 				<Header
 					onToggleDark={onToggleDark}
 					onToggleDir={onToggleDir}

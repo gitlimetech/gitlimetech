@@ -5,13 +5,18 @@ import { lighten, alpha } from '@material-ui/core/styles/colorManipulator';
 const useStyles = makeStyles((theme) => ({
 	root: {
 		margin: theme.spacing(0, 8),
+		zIndex: 3,
 		[theme.breakpoints.down('sm')]: {
 			margin: theme.spacing(0),
 		},
 		'& blockquote': {
-			fontSize: 28,
+			fontSize: 30,
 			fontStyle: 'italic',
-			color: '#fff',
+			fontWeight: theme.typography.fontWeightBold,
+			color:
+				theme.palette.type === 'dark'
+					? theme.palette.primary.light
+					: theme.palette.primary.dark,
 			borderLeft: '4px solid',
 			borderLeftColor: '#fff',
 			paddingLeft: theme.spacing(5),
@@ -23,15 +28,18 @@ const useStyles = makeStyles((theme) => ({
 				lineHeight: '32px',
 			},
 			[theme.breakpoints.down('sm')]: {
-				fontSize: 22,
+				fontSize: 24,
 				marginTop: theme.spacing(10),
 			},
 		},
 		'& h4': {
-			// fontSize: 22,
-			color: '#ffff',
+			fontSize: 22,
+			color:
+				theme.palette.type === 'dark'
+					? theme.palette.primary.light
+					: theme.palette.primary.dark,
 			[theme.breakpoints.down('sm')]: {
-				fontSize: 20,
+				fontSize: 18,
 				margin: theme.spacing(-5),
 				paddingTop: theme.spacing(6),
 			},
@@ -39,32 +47,40 @@ const useStyles = makeStyles((theme) => ({
 	},
 	contentBg: {
 		// background: theme.palette.primary.dark,
-		// background: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark,
 		background:
 			theme.palette.type === 'dark'
-				? alpha(theme.palette.primary.dark, 0.4)
-				: lighten(theme.palette.primary.dark, 0),
-		height: 800,
+				? theme.palette.primary.dark
+				: theme.palette.primary.main,
+		color:
+			theme.palette.type === 'dark'
+				? theme.palette.primary.light
+				: theme.palette.primary.dark,
+		// background:
+		// 	theme.palette.type === 'dark'
+		// 		? alpha(theme.palette.primary.dark, 0.4)
+		// 		: lighten(theme.palette.primary.dark, 0),
+		// height: 800,
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
 		position: 'relative',
 		padding: theme.spacing(4),
 		[theme.breakpoints.down('sm')]: {
-			height: 980,
+			// height: 980,
 		},
 	},
 	imgWrap: {
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
+		// border: '1px solid black',
 		height: '100%',
 		'& img': {
 			position: 'absolute',
 			transform: 'rotate(-90deg)',
-			width: '60%',
-			height: '30%',
-			padding: theme.spacing(3),
+			width: '42%',
+			// height: '30',
+			// padding: theme.spacing(0),
 			[theme.breakpoints.down('md')]: {
 				display: 'block',
 			},
@@ -73,27 +89,10 @@ const useStyles = makeStyles((theme) => ({
 			},
 		},
 	},
-	// contentText: {
-	//   border: '1px solid red',
-	// },
-	// contentImg: {
-	//   position: 'absolute',
-	//   top: 140,
-	//   left: -210,
-	//   height: '100%',
-	//   padding: theme.spacing(5, 8),
-	//   // alignItems: 'center',
-	//   '& img': {
-	//     minWidth: '100%',
-	//     height: '30%',
-	//     // opacity: 0.6,
-	//     transform: 'rotate(-90deg)',
-	//   }
-	// },
 
 	aboutHeading: {
 		fontSize: 90,
-		fontWeight: 'bold',
+		fontWeight: theme.typography.fontWeightBold,
 		color: theme.palette.text.secondary,
 		transform: 'rotate(-90deg)',
 		marginTop: theme.spacing(2),

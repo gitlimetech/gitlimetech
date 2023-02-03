@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 			color: theme.palette.common.white,
 			fontSize: 106,
 			textTransform: 'capitalize',
-			fontWeight: 700,
+			fontWeight: theme.typography.fontWeightBold,
 			paddingTop: 40,
 			paddingLeft: 20,
 			position: 'relative',
