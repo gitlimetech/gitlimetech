@@ -70,10 +70,13 @@ function About(props) {
 							>
 								{t('common:agency-landing.about_desc')}
 							</Typography>
-							{/* <Typography className={clsx(title.default, text.subtitle)} variant="h4">
-                {t('common:agency-landing.about_subtitle')}
-              </Typography> */}
-							{/* <Counter /> */}
+							<Typography
+								className={clsx(title.default, text.subtitle)}
+								variant="h4"
+							>
+								{t('common:agency-landing.about_subtitle')}
+							</Typography>
+							<Counter />
 							<blockquote>{t('common:agency-landing.about_quote')}</blockquote>
 						</div>
 					</Grid>
