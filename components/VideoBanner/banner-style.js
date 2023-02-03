@@ -1,15 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
-import imgApi from '~/public/images/imgAPI';
 
 const useStyles = makeStyles((theme) => ({
-	root: {
-		background: `url(${imgApi.agency[12]})`,
-	},
+	root: {},
 	decoTop: {},
 	decoBottom: {},
 	heroContent: {
 		marginTop: theme.spacing(12),
-		// marginBottom: 0,
+		marginBottom: 0,
 		position: 'relative',
 
 		'& > div': {
