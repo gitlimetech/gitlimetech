@@ -4,6 +4,13 @@ const useStyles = makeStyles((theme) => ({
 	root: {},
 	decoTop: {},
 	decoBottom: {},
+	item: {
+		direction: 'column-reverse',
+		[theme.breakpoints.down('md')]: {
+			direction: 'column',
+			margin: '20px auto',
+		},
+	},
 	heroContent: {
 		marginTop: theme.spacing(12),
 		marginBottom: 0,
@@ -19,14 +26,16 @@ const useStyles = makeStyles((theme) => ({
 			fontWeight: theme.typography.fontWeightBold,
 			[theme.breakpoints.down('sm')]: {
 				fontSize: 32,
+				textAlign: 'center',
 			},
 			'& span.highlight': {
-				fontSize: 60,
+				fontSize: 65,
 				color: theme.palette.primary.main,
 				display: 'block',
 				lineHeight: '72px',
 				[theme.breakpoints.down('sm')]: {
-					fontSize: 40,
+					fontSize: 50,
+					textAlign: 'center',
 				},
 			},
 		},
@@ -53,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
 		justifyContent: 'center',
 		alignItems: 'center',
 		height: '70vh',
+		[theme.breakpoints.down('sm')]: {
+			marginTop: theme.spacing(16),
+			flexWrap: 'wrap-reverse',
+		},
 	},
 	slider: {
 		width: '100%',

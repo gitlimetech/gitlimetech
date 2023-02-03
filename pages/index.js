@@ -80,7 +80,9 @@ function Landing(props) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-	// const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const isDesktop = useMediaQuery(theme.breakpoints.down('lg'));
+
 	const { onToggleDark, onToggleDir, invert } = props;
 
 	return (
@@ -93,7 +95,9 @@ function Landing(props) {
 			</Head>
 			<CssBaseline />
 			<div className={classes.mainWrap}>
-				{theme.palette.type === 'light' && <div className={classes.root} />}
+				{isDesktop && theme.palette.type === 'light' && (
+					<div className={classes.root} />
+				)}
 				<Header
 					onToggleDark={onToggleDark}
 					onToggleDir={onToggleDir}

@@ -144,10 +144,10 @@ function VideoBanner(props) {
 		<div className={classes.root}>
 			<div className={classes.heroContent}>
 				{/* <Hidden smUp>
-        <figure className={classes.mobileCover}>
-          <img src={imgApi.agency[0]} alt="cover" />
-        </figure>
-      </Hidden> */}
+					<figure className={classes.mobileCover}>
+						<img src={imgApi.agency[0]} alt="cover" />
+					</figure>
+				</Hidden> */}
 				<Container fixed={isDesktop}>
 					<div className={classes.slider}>
 						<Carousel
@@ -172,7 +172,13 @@ function VideoBanner(props) {
 									className={classes.heroSlider}
 									key={index.toString()}
 								>
-									<Grid sx={{ border: 1 }} item md={6} xs={12}>
+									<Grid
+										sx={{ border: 1 }}
+										item
+										md={6}
+										xs={12}
+										className={classes.item}
+									>
 										{/* <div className={classes.bannerText}>
               <div className={classes.title}>
                 <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
@@ -221,21 +227,21 @@ function VideoBanner(props) {
 											</Button>
 										</Link>
 									</Grid>
-									{isTablet && (
-										<Grid
-											item
-											md={6}
-											onMouseMove={({ clientX: x, clientY: y }) =>
-												setPosition({ xy: calc(x, y) })
-											}
-										>
-											<div className={classes.imgContainer}>
-												<figure className={classes.sliderImg}>
-													<img src={element.img} alt="cover" />
-												</figure>
-											</div>
+									{/* {isTablet && ( */}
+									<Grid
+										item
+										md={6}
+										onMouseMove={({ clientX: x, clientY: y }) =>
+											setPosition({ xy: calc(x, y) })
+										}
+									>
+										<div className={classes.imgContainer}>
+											<figure className={classes.sliderImg}>
+												<img src={element.img} alt="cover" />
+											</figure>
+										</div>
 
-											{/* <div className={classes.videoWrap}>
+										{/* <div className={classes.videoWrap}>
                 <div className={classes.videoFigure}>
                   <div className={classes.innerFigure}>
                     <Hidden mdDown>
@@ -266,8 +272,8 @@ function VideoBanner(props) {
                   </div>
                 </div>
               </div> */}
-										</Grid>
-									)}
+									</Grid>
+									{/* )} */}
 								</Grid>
 							))}
 						</Carousel>
