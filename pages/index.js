@@ -93,7 +93,7 @@ function Landing(props) {
 			</Head>
 			<CssBaseline />
 			<div className={classes.mainWrap}>
-				<div className={classes.root} />
+				{theme.palette.type === 'light' && <div className={classes.root} />}
 				<Header
 					onToggleDark={onToggleDark}
 					onToggleDir={onToggleDir}

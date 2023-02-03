@@ -15,8 +15,19 @@ const useStyles = makeStyles((theme) => ({
 		},
 		'& h2': {
 			fontSize: 45,
+			textTransform: 'uppercase',
+			fontWeight: theme.typography.fontWeightBold,
 			[theme.breakpoints.down('sm')]: {
 				fontSize: 32,
+			},
+			'& span.highlight': {
+				fontSize: 60,
+				color: theme.palette.primary.main,
+				display: 'block',
+				lineHeight: '72px',
+				[theme.breakpoints.down('sm')]: {
+					fontSize: 40,
+				},
 			},
 		},
 		'& h4': {
@@ -41,9 +52,10 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
+		height: '70vh',
 	},
 	slider: {
-		width: '100',
+		width: '100%',
 		paddingLeft: theme.spacing(4),
 		[theme.breakpoints.down('md')]: {
 			paddingLeft: theme.spacing(5),
@@ -99,8 +111,10 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	sliderImg: {
+		margin: '0px auto',
 		'& img': {
-			height: '100',
+			width: '100%',
+			height: '100%',
 		},
 	},
 	button: {

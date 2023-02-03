@@ -30,7 +30,10 @@ const useStyles = makeStyles((theme) => ({
 		},
 		'& h4': {
 			fontSize: 22,
-			color: '#ffff',
+			color:
+				theme.palette.type === 'dark'
+					? theme.palette.primary.light
+					: theme.palette.primary.dark,
 			[theme.breakpoints.down('sm')]: {
 				fontSize: 18,
 				margin: theme.spacing(-5),
@@ -40,11 +43,18 @@ const useStyles = makeStyles((theme) => ({
 	},
 	contentBg: {
 		// background: theme.palette.primary.dark,
-		// background: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark,
 		background:
 			theme.palette.type === 'dark'
-				? alpha(theme.palette.primary.dark, 0.4)
-				: lighten(theme.palette.primary.dark, 0),
+				? theme.palette.primary.dark
+				: theme.palette.primary.main,
+		color:
+			theme.palette.type === 'dark'
+				? theme.palette.primary.light
+				: theme.palette.primary.dark,
+		// background:
+		// 	theme.palette.type === 'dark'
+		// 		? alpha(theme.palette.primary.dark, 0.4)
+		// 		: lighten(theme.palette.primary.dark, 0),
 		// height: 800,
 		display: 'flex',
 		justifyContent: 'center',

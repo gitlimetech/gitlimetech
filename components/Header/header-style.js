@@ -193,11 +193,11 @@ const headerStyles = makeStyles((theme) => ({
 				position: 'relative',
 				display: 'inline-block',
 				'& a': {
-					color: theme.palette.common.white,
+					color: theme.palette.primary,
 					marginTop: theme.spacing(0.5),
 					textTransform: 'capitalize',
 					fontSize: 18,
-					fontWeight: theme.typography.fontWeightMedium,
+					fontWeight: theme.typography.fontWeightBold,
 					background: 'none !important',
 					boxShadow: 'none',
 					position: 'relative',

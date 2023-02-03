@@ -27,7 +27,7 @@ function Copyright() {
 	return (
 		<Typography variant="body2" display="block" color="textSecondary">
 			&copy;&nbsp;
-			{brand.agency.footerText}
+			{brand.agency.footerText}&nbsp;{new Date().getFullYear()}
 		</Typography>
 	);
 }
@@ -105,6 +105,7 @@ function Footer(props) {
 							{brand.agency.projectName}
 						</Typography>
 					</div>
+					<Typography className={classes.mail}>{brand.agency.mail}</Typography>
 					<Typography
 						color="textPrimary"
 						className={classes.footerDesc}

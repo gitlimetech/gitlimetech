@@ -73,6 +73,14 @@ const footerStyles = makeStyles((theme) => ({
 			textAlign: 'center',
 		},
 	},
+	mail: {
+		display: 'block',
+		fontSize: 14,
+		marginBottom: theme.spacing(2),
+		[theme.breakpoints.down('sm')]: {
+			textAlign: 'center',
+		},
+	},
 	socmed: {
 		display: 'flex',
 		justifyContent: 'center',

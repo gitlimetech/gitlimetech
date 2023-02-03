@@ -43,6 +43,19 @@ const imgAPI = {
 		'/images/media/gitlime-reverse.svg',
 		'/images/media/home-bg.svg',
 	],
+	carousel: [
+		'/images/media/carousel/frame-1.svg',
+		'/images/media/carousel/frame-2.svg',
+		'/images/media/carousel/frame-3.svg',
+		'/images/media/carousel/frame-4.svg',
+		'/images/media/carousel/frame-5.svg',
+	],
+	logos: [
+		'/images/gitlime-logos/gitlime-black.svg',
+		'/images/gitlime-logos/gitlime-color.svg',
+		'/images/gitlime-logos/gitlime-reverse.svg',
+		'/images/gitlime-logos/gitlime-white.svg',
+	],
 };
 
 export default imgAPI;

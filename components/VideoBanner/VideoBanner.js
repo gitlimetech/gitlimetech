@@ -23,31 +23,32 @@ import { withTranslation } from '~/i18n';
 import imgApi from '~/public/images/imgAPI';
 import yt from '~/youtube';
 import useStyle from './banner-style';
+import FilterFirstWord from '../utils/helpers/FilterFirstWord';
 
 const items = [
 	{
 		id: 1,
 		title: 'Transforming ideas into digital solutions',
 		desc: 'Let us help you bring your vision to life with expert software development.',
-		img: '',
+		img: imgApi.carousel[4],
 	},
 	{
 		id: 2,
 		title: 'Bringing your tech dreams to life',
 		desc: 'We deliver custom solutions that meet your unique needs and drive your business forward',
-		// img: imgApi.agency[0]
+		img: imgApi.carousel[0],
 	},
 	{
 		id: 3,
 		title: 'Creating Cutting-Edge Technology',
 		desc: 'Transform the way you do business with custom software designed to meet your unique needs."',
-		// img: imgApi.agency[0]
+		img: imgApi.carousel[1],
 	},
 	{
 		id: 4,
 		title: 'Innovative software, limitless possibilities',
 		desc: 'Join us as we lead the way in the development of cutting-edge software solutions',
-		// img: imgApi.agency[0]
+		img: imgApi.carousel[3],
 	},
 ];
 const useStyles = makeStyles((theme) => ({}));
@@ -194,7 +195,7 @@ function VideoBanner(props) {
 											className={clsx(classes.textHelper, text.title2)}
 											variant="h2"
 										>
-											{element.title}
+											<FilterFirstWord sentence={element.title} />
 										</Typography>
 										{element.desc && (
 											<Typography
@@ -230,7 +231,7 @@ function VideoBanner(props) {
 										>
 											<div className={classes.imgContainer}>
 												<figure className={classes.sliderImg}>
-													<img src={imgApi.agency[8]} alt="cover" />
+													<img src={element.img} alt="cover" />
 												</figure>
 											</div>
 

@@ -12,8 +12,6 @@ import { useText } from '~/theme/common';
 import TitleDeco from '../Title/WithDecoration';
 import useStyles from './about-style';
 import imgApi from '~/public/images/imgAPI';
-import gitlimewhite from '~/public/images/agency/gitlime-white.svg';
-import gitlimereverse from '~/public/images/agency/gitlime-reverse.svg';
 import useTitle from '../Title/title-style';
 import Counter from '../Counter';
 function About(props) {
@@ -34,7 +32,11 @@ function About(props) {
 					<Grid item md={2} xs={12}>
 						<div className={classes.imgWrap}>
 							<img
-								src={gitlimewhite}
+								src={
+									theme.palette.type === 'light'
+										? imgApi.logos[3]
+										: imgApi.logos[2]
+								}
 								className={classes.contentImg}
 								alt="cover"
 							/>
@@ -77,6 +79,12 @@ function About(props) {
 								{t('common:agency-landing.about_subtitle')}
 							</Typography>
 							<Counter />
+							<Typography
+								className={clsx(title.default, text.subtitle)}
+								variant="h4"
+							>
+								{t('common:agency-landing.about_para')}
+							</Typography>
 							<blockquote>{t('common:agency-landing.about_quote')}</blockquote>
 						</div>
 					</Grid>
