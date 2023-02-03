@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
 			textAlign: 'center',
 		},
 		'& h4': {
-			fontWeight: 700,
+			fontWeight: theme.typography.fontWeightBold,
 			color:
 				theme.palette.type === 'dark'
 					? theme.palette.secondary.light

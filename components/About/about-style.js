@@ -10,8 +10,9 @@ const useStyles = makeStyles((theme) => ({
 			margin: theme.spacing(0),
 		},
 		'& blockquote': {
-			fontSize: 22,
+			fontSize: 30,
 			fontStyle: 'italic',
+			fontWeight: theme.typography.fontWeightBold,
 			color:
 				theme.palette.type === 'dark'
 					? theme.palette.primary.light
@@ -91,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
 
 	aboutHeading: {
 		fontSize: 90,
-		fontWeight: 'bold',
+		fontWeight: theme.typography.fontWeightBold,
 		color: theme.palette.text.secondary,
 		transform: 'rotate(-90deg)',
 		marginTop: theme.spacing(2),

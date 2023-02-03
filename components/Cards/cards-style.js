@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
 			lineHeight: '22px',
 			marginBottom: theme.spacing(2),
 			fontSize: '1.25rem',
-			fontWeight: '500',
+			fontWeight: theme.typography.fontWeightMedium,
 		},
 		'& $logo': {
 			display: 'block',
