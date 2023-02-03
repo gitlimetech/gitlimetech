@@ -12,7 +12,10 @@ const useStyles = makeStyles((theme) => ({
 		'& blockquote': {
 			fontSize: 22,
 			fontStyle: 'italic',
-			color: '#fff',
+			color:
+				theme.palette.type === 'dark'
+					? theme.palette.primary.light
+					: theme.palette.primary.dark,
 			borderLeft: '4px solid',
 			borderLeftColor: '#fff',
 			paddingLeft: theme.spacing(5),
