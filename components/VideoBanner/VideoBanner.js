@@ -27,25 +27,26 @@ import useStyle from './banner-style';
 const items = [
 	{
 		id: 1,
-		title: 'Powering Your Digital Transformation',
-		desc: 'Custom Software, Website, and Web Application Development" - Our ability to help businesses stay ahead of the curve by developing custom software, websites, and web applications that can streamline processes and increase efficiency. We love transforming product ideas into digital realities.',
+		title: 'Transforming ideas into digital solutions',
+		desc: 'Let us help you bring your vision to life with expert software development.',
+		img: '',
 	},
 	{
 		id: 2,
-		title: 'Innovative Solutions for Modern Business',
-		desc: 'Website, Web Application, and Software Development" - This tagline emphasizes our focus on creating cutting-edge technology that is tailored to the unique needs of modern businesses. We develop websites, web applications, and software that are designed to drive growth and success.',
+		title: 'Bringing your tech dreams to life',
+		desc: 'We deliver custom solutions that meet your unique needs and drive your business forward',
 		// img: imgApi.agency[0]
 	},
 	{
 		id: 3,
 		title: 'Creating Cutting-Edge Technology',
-		desc: 'Web Application, Website, and Custom Software Development" - This tagline stresses our dedication to staying at the forefront of technology and creating innovative solutions. Whether it is custom software, a website, or a web application, we use the latest tools and technologies to deliver exceptional results.',
+		desc: 'Transform the way you do business with custom software designed to meet your unique needs."',
 		// img: imgApi.agency[0]
 	},
 	{
 		id: 4,
-		title: 'Bringing Your Ideas to Life',
-		desc: 'Software, Web Application, and Website Development" - This tagline communicates our passion for taking our clients ideas and turning them into reality. We develop software, web applications, and websites that are tailored to their specific needs and goals, helping businesses achieve their vision.',
+		title: 'Innovative software, limitless possibilities',
+		desc: 'Join us as we lead the way in the development of cutting-edge software solutions',
 		// img: imgApi.agency[0]
 	},
 ];
@@ -147,22 +148,93 @@ function VideoBanner(props) {
         </figure>
       </Hidden> */}
 				<Container fixed={isDesktop}>
-					<Grid container className={classes.heroSlider}>
-						{isTablet && (
-							<Grid
-								item
-								md={6}
-								onMouseMove={({ clientX: x, clientY: y }) =>
-									setPosition({ xy: calc(x, y) })
-								}
-							>
-								<div className={classes.imgContainer}>
-									<figure className={classes.sliderImg}>
-										<img src={imgApi.agency[8]} alt="cover" />
-									</figure>
-								</div>
+					<div className={classes.slider}>
+						<Carousel
+							indicatorIconButtonProps={{
+								style: {
+									padding: '10px', // 1
+									color: 'grey', // 3
+								},
+							}}
+							indicatorContainerProps={{
+								style: {
+									marginTop: '40px', // 5
+									marginBottom: '0px', // 5
+									textAlign: 'center', // 4
+									color: 'green',
+								},
+							}}
+						>
+							{items.map((element, index) => (
+								<Grid
+									container
+									className={classes.heroSlider}
+									key={index.toString()}
+								>
+									<Grid sx={{ border: 1 }} item md={6} xs={12}>
+										{/* <div className={classes.bannerText}>
+              <div className={classes.title}>
+                <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
+                  {t('common:agency-landing.banner_title')}
+                </Typography>
+              </div>
+              <Typography className={clsx(classes.subtitle, text.subtitle)} variant="h5">
+                {t('common:agency-landing.banner_subtitle')}
+              </Typography>
+              <Button variant="outlined" size="large" color="secondary" className={classes.button}>
+                {t('common:agency-landing.banner_button')}
+                <SendIcon className={classes.icon} />
+              </Button>
+            </div> */}
+										{/* <div>
+              <h2>Start editing to see some magic happen!</h2>
+            </div> */}
 
-								{/* <div className={classes.videoWrap}>
+										<Typography
+											className={clsx(classes.textHelper, text.title2)}
+											variant="h2"
+										>
+											{element.title}
+										</Typography>
+										{element.desc && (
+											<Typography
+												className={clsx(
+													classes.textHelper,
+													text.subtitle,
+													classes.subtitle,
+												)}
+												variant="h4"
+											>
+												{element.desc}
+											</Typography>
+										)}
+										<Link href="/contact">
+											<Button
+												variant="outlined"
+												size="large"
+												color="secondary"
+												className={classes.button}
+											>
+												{t('common:agency-landing.banner_button')}
+												<SendIcon className={classes.icon} />
+											</Button>
+										</Link>
+									</Grid>
+									{isTablet && (
+										<Grid
+											item
+											md={6}
+											onMouseMove={({ clientX: x, clientY: y }) =>
+												setPosition({ xy: calc(x, y) })
+											}
+										>
+											<div className={classes.imgContainer}>
+												<figure className={classes.sliderImg}>
+													<img src={imgApi.agency[8]} alt="cover" />
+												</figure>
+											</div>
+
+											{/* <div className={classes.videoWrap}>
                 <div className={classes.videoFigure}>
                   <div className={classes.innerFigure}>
                     <Hidden mdDown>
@@ -193,78 +265,12 @@ function VideoBanner(props) {
                   </div>
                 </div>
               </div> */}
-							</Grid>
-						)}
-						<Grid sx={{ border: 1 }} item md={6} xs={12}>
-							{/* <div className={classes.bannerText}>
-              <div className={classes.title}>
-                <Typography variant="h3" className={clsx(classes.textHelper, text.title)}>
-                  {t('common:agency-landing.banner_title')}
-                </Typography>
-              </div>
-              <Typography className={clsx(classes.subtitle, text.subtitle)} variant="h5">
-                {t('common:agency-landing.banner_subtitle')}
-              </Typography>
-              <Button variant="outlined" size="large" color="secondary" className={classes.button}>
-                {t('common:agency-landing.banner_button')}
-                <SendIcon className={classes.icon} />
-              </Button>
-            </div> */}
-							{/* <div>
-              <h2>Start editing to see some magic happen!</h2>
-            </div> */}
-							<div className={classes.slider}>
-								<Carousel
-									indicatorIconButtonProps={{
-										style: {
-											padding: '10px', // 1
-											color: 'grey', // 3
-										},
-									}}
-									indicatorContainerProps={{
-										style: {
-											marginTop: '40px', // 5
-											marginBottom: '0px', // 5
-											textAlign: 'center', // 4
-											color: 'green',
-										},
-									}}
-								>
-									{items.map((element, index) => (
-										<div key={index.toString()}>
-											<Typography
-												className={clsx(classes.textHelper, text.title2)}
-												variant="h2"
-											>
-												{element.title}
-											</Typography>
-											<Typography
-												className={clsx(
-													classes.textHelper,
-													text.subtitle,
-													classes.subtitle,
-												)}
-												variant="h4"
-											>
-												{element.desc}
-											</Typography>
-											<Link href="/contact">
-												<Button
-													variant="outlined"
-													size="large"
-													color="secondary"
-													className={classes.button}
-												>
-													{t('common:agency-landing.banner_button')}
-													<SendIcon className={classes.icon} />
-												</Button>
-											</Link>
-										</div>
-									))}
-								</Carousel>
-							</div>
-						</Grid>
-					</Grid>
+										</Grid>
+									)}
+								</Grid>
+							))}
+						</Carousel>
+					</div>
 				</Container>
 			</div>
 		</div>
