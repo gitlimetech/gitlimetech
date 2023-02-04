@@ -215,7 +215,7 @@ function VideoBanner(props) {
 												{element.desc}
 											</Typography>
 										)}
-										<Link href="/contact">
+										<Link href="/contact" target="_blank">
 											<Button
 												variant="outlined"
 												size="large"

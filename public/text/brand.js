@@ -12,5 +12,7 @@ module.exports = {
 		mail: 'hello@gitlime.com',
 		notifMsg:
 			'We are launching soon. be first to know who we are and what we do . write us hello@gitlime.com',
+		thankyouMsg:
+			'Thank you for reaching out to us! We appreciate your interest in our products and services. A member of our sales team will be in touch with you shortly. If you need immediate assistance, please feel free to say hello at hello@gitlime.com',
 	},
 };
