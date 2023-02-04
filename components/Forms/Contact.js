@@ -18,30 +18,36 @@ import logo from '~public/images/agency-logo.svg';
 import { withTranslation } from '~/i18n';
 import Checkbox from './Checkbox';
 import useStyles from './form-style';
+import brand from '~/public/text/brand';
 
 function Contact(props) {
 	const { t } = props;
 	const classes = useStyles();
 	const text = useText();
 	const url = 'https://content.abhishek.world/api/website-leads';
+	const headers = {
+		'Content-Type': 'application/json',
+	};
+
 	const [values, setValues] = useState({
 		name: '',
 		email: '',
 		phone: '',
 		company: '',
 		message: '',
+		origin: 'gitlime',
 	});
 
 	useEffect(() => {
 		ValidatorForm.addValidationRule('isTruthy', (value) => value);
 	});
 	const [openNotif, setNotif] = useState(false);
+	const [msg, setmsg] = useState('Message sent');
 
 	const [check, setCheck] = useState(false);
 
 	const handleChange = (name) => (event) => {
 		setValues({ ...values, [name]: event.target.value });
-		// console.log(name);
 	};
 
 	const handleCheck = (event) => {
@@ -51,8 +57,16 @@ function Contact(props) {
 	const handleSubmit = () => {
 		console.log('values:', values);
 		setNotif(true);
-		axios.post('/api/formadd', values).then((res) => {
-			console.log(res);
+		const options = {
+			headers,
+			data: { ...values },
+		};
+		axios.post(url, options).then((res) => {
+			setmsg(
+				res?.status === 200
+					? brand.agency.thankyouMsg
+					: 'Opps! something went wrong,',
+			);
 		});
 
 		// send data to server
