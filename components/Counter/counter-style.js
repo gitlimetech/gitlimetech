@@ -3,6 +3,12 @@ import { makeStyles } from '@material-ui/core/styles';
 const counterStyles = makeStyles((theme) => ({
 	counterWrap: {
 		margin: theme.spacing(3, 0),
+		[theme.breakpoints.down('sm')]: {
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+			marginTop: theme.spacing(6),
+		},
 	},
 	text: {},
 	counterItem: {
@@ -15,6 +21,11 @@ const counterStyles = makeStyles((theme) => ({
 		},
 		alignItems: 'center',
 		justifyContent: 'center',
+		[theme.breakpoints.down('sm')]: {
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+		},
 		'& $text': {
 			textAlign: 'center',
 			'& h3': {
@@ -22,6 +33,10 @@ const counterStyles = makeStyles((theme) => ({
 				fontWeight: 'bold',
 				paddingBottom: theme.spacing(2),
 				marginBottom: theme.spacing(4),
+				[theme.breakpoints.down('sm')]: {
+					paddingBottom: theme.spacing(1),
+					marginBottom: theme.spacing(3),
+				},
 				'&:after': {
 					content: '""',
 					width: 50,

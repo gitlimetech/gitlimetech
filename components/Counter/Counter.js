@@ -20,7 +20,7 @@ function Counter(props) {
 					alignItems="center"
 					spacing={6}
 				>
-					<Grid md={4} item>
+					<Grid md={4} xs={4} item>
 						<div className={classes.counterItem}>
 							<div className={classes.text}>
 								<Typography variant="h3" className={text.title}>
@@ -32,7 +32,7 @@ function Counter(props) {
 							</div>
 						</div>
 					</Grid>
-					<Grid md={4} item>
+					<Grid md={4} xs={4} item>
 						<div className={classes.counterItem}>
 							<div className={classes.text}>
 								<Typography variant="h3" className={text.title}>
@@ -44,7 +44,7 @@ function Counter(props) {
 							</div>
 						</div>
 					</Grid>
-					<Grid md={4} item>
+					<Grid md={4} xs={4} item>
 						<div className={classes.counterItem}>
 							<div className={classes.text}>
 								<Typography variant="h3" className={text.title}>

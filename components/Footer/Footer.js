@@ -35,24 +35,24 @@ function Copyright() {
 const footers = [
 	{
 		title: 'Company',
-		description: ['Team', 'History', 'Contact us', 'Locations'],
-		link: ['#team', '#history', '/contact', '#locations'],
+		description: ['Contact us', 'Locations'],
+		link: ['/contact', '#locations'],
 	},
-	{
-		title: 'Resources',
-		description: [
-			'Resource',
-			'Resource name',
-			'Another resource',
-			'Final resource',
-		],
-		link: [
-			'#resource',
-			'#resource-name',
-			'#another-resource',
-			'#final-resource',
-		],
-	},
+	// {
+	// 	title: 'Resources',
+	// 	description: [
+	// 		'Resource',
+	// 		'Resource name',
+	// 		'Another resource',
+	// 		'Final resource',
+	// 	],
+	// 	link: [
+	// 		'#resource',
+	// 		'#resource-name',
+	// 		'#another-resource',
+	// 		'#final-resource',
+	// 	],
+	// },
 	{
 		title: 'Legal',
 		description: ['Privacy policy', 'Terms of use'],
@@ -227,6 +227,26 @@ function Footer(props) {
 							}}
 						>
 							<i className="ion-logo-linkedin" />
+						</IconButton>
+						<IconButton
+							aria-label="LI"
+							className={classes.margin}
+							size="small"
+							onClick={() => {
+								window.open('https://www.pinterest.com/gitlime', '_blank');
+							}}
+						>
+							<i className="ion-logo-pinterest" />
+						</IconButton>
+						<IconButton
+							aria-label="LI"
+							className={classes.margin}
+							size="small"
+							onClick={() => {
+								window.open('https://github.com/gitlimetech', '_blank');
+							}}
+						>
+							<i className="ion-logo-github" />
 						</IconButton>
 					</div>
 					<Select

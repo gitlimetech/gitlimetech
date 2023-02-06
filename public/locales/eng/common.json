@@ -64,5 +64,33 @@
 		"terms_conditions_title": "Gitlime Terms & Conditions",
 		"terms_conditions_greet": "Welcome to the Gitlime website(the 'site').",
 		"terms_conditions_para": "By accessing or using the Site or any services provided on the Site, you agree to be bound by the following terms and conditions(the 'terms'). If you do not agree to these Terms, you may not access or use the Site or any services provided on the Site."
+	},
+	"hero-carousel": {
+		"carouselItems": [
+			{
+				"id": 1,
+				"title": "Transforming ideas into digital solutions",
+				"desc": "Let us help you bring your vision to life with expert software development.",
+				"img": "imgApi.carousel[4]"
+			},
+			{
+				"id": 2,
+				"title": "Bringing your tech dreams to life",
+				"desc": "We deliver custom solutions that meet your unique needs and drive your business forward",
+				"img": "imgApi.carousel[0]"
+			},
+			{
+				"id": 3,
+				"title": "Creating Cutting-Edge Technology",
+				"desc": "Transform the way you do business with custom software designed to meet your unique needs.",
+				"img": "imgApi.carousel[1]"
+			},
+			{
+				"id": 4,
+				"title": "Innovative software, limitless possibilities",
+				"desc": "Join us as we lead the way in the development of cutting-edge software solutions",
+				"img": "imgApi.carousel[3]"
+			}
+		]
 	}
 }

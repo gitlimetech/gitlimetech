@@ -30,7 +30,7 @@ const items = [
 		id: 1,
 		title: 'Transforming ideas into digital solutions',
 		desc: 'Let us help you bring your vision to life with expert software development.',
-		img: imgApi.carousel[4],
+		img: imgApi.carousel[2],
 	},
 	{
 		id: 2,
@@ -155,6 +155,7 @@ function VideoBanner(props) {
 								style: {
 									padding: '10px', // 1
 									color: 'grey', // 3
+									display: 'none',
 								},
 							}}
 							indicatorContainerProps={{
@@ -231,6 +232,7 @@ function VideoBanner(props) {
 									<Grid
 										item
 										md={6}
+										xs={12}
 										onMouseMove={({ clientX: x, clientY: y }) =>
 											setPosition({ xy: calc(x, y) })
 										}

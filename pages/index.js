@@ -22,7 +22,7 @@ import Notification from '../components/Notification';
 import brand from '~/public/text/brand';
 import imgApi from '~/public/images/imgAPI';
 
-const sectionMargin = (margin) => margin * 13;
+const sectionMargin = (margin) => margin * 16;
 const useStyles = makeStyles((theme) => ({
 	root: {
 		background: `url(${imgApi.agency[12]})`,

@@ -4,18 +4,13 @@ const useStyles = makeStyles((theme) => ({
 	root: {},
 	decoTop: {},
 	decoBottom: {},
-	item: {
-		direction: 'column-reverse',
-		[theme.breakpoints.down('md')]: {
-			direction: 'column',
-			margin: '20px auto',
-		},
-	},
 	heroContent: {
-		marginTop: theme.spacing(12),
-		marginBottom: 0,
-		position: 'relative',
-
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
+		[theme.breakpoints.down('md')]: {
+			marginTop: theme.spacing(1),
+		},
 		'& > div': {
 			paddingLeft: 0,
 			paddingRight: 0,
@@ -25,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 			textTransform: 'uppercase',
 			fontWeight: theme.typography.fontWeightBold,
 			[theme.breakpoints.down('sm')]: {
-				fontSize: 32,
+				fontSize: 26,
 				textAlign: 'center',
 			},
 			'& span.highlight': {
@@ -34,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 				display: 'block',
 				lineHeight: '72px',
 				[theme.breakpoints.down('sm')]: {
-					fontSize: 50,
+					fontSize: 42,
 					textAlign: 'center',
 				},
 			},
@@ -48,33 +43,62 @@ const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.up('lg')]: {
 			// paddingLeft: theme.spacing(6),
-			marginBottom: 0,
+			// marginBottom: 0,
 		},
 		[theme.breakpoints.down('sm')]: {
-			marginBottom: 0,
+			// marginBottom: 0,
 			paddingLeft: theme.spacing(0),
 			paddingBottom: theme.spacing(0),
-			marginTop: theme.spacing(10),
+			// marginTop: theme.spacing(10),
+		},
+	},
+	slider: {
+		width: '100%',
+		margin: theme.spacing(0),
+		[theme.breakpoints.down('md')]: {},
+		[theme.breakpoints.down('sm')]: {
+			// padding: theme.spacing(2),
+			paddingBottom: theme.spacing(0),
+			paddingTop: theme.spacing(0),
 		},
 	},
 	heroSlider: {
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',
-		height: '70vh',
+		marginTop: theme.spacing(5),
+		padding: theme.spacing(0, 2),
 		[theme.breakpoints.down('sm')]: {
-			marginTop: theme.spacing(16),
+			padding: theme.spacing(0, 2),
 			flexWrap: 'wrap-reverse',
 		},
 	},
-	slider: {
-		width: '100%',
-		paddingLeft: theme.spacing(4),
+	item: {
+		direction: 'column-reverse',
 		[theme.breakpoints.down('md')]: {
-			paddingLeft: theme.spacing(5),
+			direction: 'column',
+			textAlign: 'center',
+			margin: '20px auto',
 		},
+		[theme.breakpoints.down('sm')]: {},
+	},
+	imgContainer: {
 		[theme.breakpoints.down('sm')]: {
-			padding: theme.spacing(3),
+			marginTop: theme.spacing(3),
+		},
+	},
+	sliderImg: {
+		margin: '0 auto',
+		[theme.breakpoints.down('sm')]: {},
+		'& img': {
+			height: '70vh',
+			width: '100%',
+			[theme.breakpoints.down('md')]: {
+				width: '100%',
+			},
+			[theme.breakpoints.down('sm')]: {
+				height: '40vh',
+			},
 		},
 	},
 	// bannerText: {
@@ -121,13 +145,6 @@ const useStyles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.up('sm')]: {
 			textAlign: 'justify',
-		},
-	},
-	sliderImg: {
-		margin: '0px auto',
-		'& img': {
-			width: '100%',
-			height: '100%',
 		},
 	},
 	button: {
