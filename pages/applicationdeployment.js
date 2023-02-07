@@ -8,6 +8,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Notification from '../components/Notification';
+import imgApi from '~/public/images/imgAPI';
 import brand from '~/public/text/brand';
 import { withTranslation } from '../i18n';
 
@@ -18,19 +19,38 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 		overflow: 'hidden',
 		background: theme.palette.background.paper,
+		[theme.breakpoints.down('md')]: {},
 	},
-	spaceBottom: {
-		marginBottom: sectionMargin(theme.spacing()),
-	},
-	spaceTop: {
-		paddingTop: sectionMargin(theme.spacing()),
-	},
+	// spaceBottom: {
+	// 	marginBottom: sectionMargin(theme.spacing()),
+	// },
+	// spaceTop: {
+	// 	paddingTop: sectionMargin(theme.spacing()),
+	// },
 	containerWrap: {
-		marginTop: theme.spacing(10),
-		padding: theme.spacing(4),
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+		margin: theme.spacing(13, 0),
+		// padding: theme.spacing(4),
 		'& > section': {
 			position: 'relative',
 		},
+		[theme.breakpoints.down('md')]: {
+			margin: theme.spacing(8, 0),
+			'& h2': {
+				fontSize: 36,
+			},
+			'& h4': {
+				fontSize: 22,
+			},
+		},
+	},
+	bannerImg: {
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+		width: '100%',
 	},
 }));
 
@@ -55,6 +75,11 @@ function ApplicationDeployment(props) {
 				/>
 				<main className={classes.containerWrap}>
 					<section className={clsx(classes.spaceTop, classes.spaceBottom)}>
+						<div>
+							<figure className={classes.bannerImg}>
+								<img src={imgApi.carousel[4]} alt="cover" />
+							</figure>
+						</div>
 						<Typography variant="h2" align="center" gutterBottom>
 							ApplicationDeployment
 						</Typography>
