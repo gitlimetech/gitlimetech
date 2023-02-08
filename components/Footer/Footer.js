@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
 import { useTheme } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -121,7 +122,7 @@ function Footer(props) {
 							<Grid
 								item
 								xs={12}
-								md={3}
+								md={6}
 								key={footer.title}
 								className={classes.siteMapItem}
 							>

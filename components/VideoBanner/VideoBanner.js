@@ -216,17 +216,17 @@ function VideoBanner(props) {
 												{element.desc}
 											</Typography>
 										)}
-										<Link href="/contact" target="_blank">
-											<Button
-												variant="outlined"
-												size="large"
-												color="secondary"
-												className={classes.button}
-											>
-												{t('common:agency-landing.banner_button')}
-												<SendIcon className={classes.icon} />
-											</Button>
-										</Link>
+										<Button
+											target="_blank"
+											href="/contact"
+											variant="outlined"
+											size="large"
+											color="secondary"
+											className={classes.button}
+										>
+											{t('common:agency-landing.banner_button')}
+											<SendIcon className={classes.icon} />
+										</Button>
 									</Grid>
 									{/* {isTablet && ( */}
 									<Grid
