@@ -65,32 +65,108 @@
 		"terms_conditions_greet": "Welcome to the Gitlime website(the 'site').",
 		"terms_conditions_para": "By accessing or using the Site or any services provided on the Site, you agree to be bound by the following terms and conditions(the 'terms'). If you do not agree to these Terms, you may not access or use the Site or any services provided on the Site."
 	},
-	"hero-carousel": {
-		"carouselItems": [
-			{
-				"id": 1,
-				"title": "Transforming ideas into digital solutions",
-				"desc": "Let us help you bring your vision to life with expert software development.",
-				"img": "imgApi.carousel[4]"
-			},
-			{
-				"id": 2,
-				"title": "Bringing your tech dreams to life",
-				"desc": "We deliver custom solutions that meet your unique needs and drive your business forward",
-				"img": "imgApi.carousel[0]"
-			},
-			{
-				"id": 3,
-				"title": "Creating Cutting-Edge Technology",
-				"desc": "Transform the way you do business with custom software designed to meet your unique needs.",
-				"img": "imgApi.carousel[1]"
-			},
-			{
-				"id": 4,
-				"title": "Innovative software, limitless possibilities",
-				"desc": "Join us as we lead the way in the development of cutting-edge software solutions",
-				"img": "imgApi.carousel[3]"
-			}
-		]
-	}
+	"carouselItems": [
+		{
+			"id": 1,
+			"title": "Transforming ideas into digital solutions",
+			"desc": "Let us help you bring your vision to life with expert software development.",
+			"img": "imgApi.carousel[4]"
+		},
+		{
+			"id": 2,
+			"title": "Bringing your tech dreams to life",
+			"desc": "We deliver custom solutions that meet your unique needs and drive your business forward",
+			"img": "imgApi.carousel[0]"
+		},
+		{
+			"id": 3,
+			"title": "Creating Cutting-Edge Technology",
+			"desc": "Transform the way you do business with custom software designed to meet your unique needs.",
+			"img": "imgApi.carousel[1]"
+		},
+		{
+			"id": 4,
+			"title": "Innovative software, limitless possibilities",
+			"desc": "Join us as we lead the way in the development of cutting-edge software solutions",
+			"img": "imgApi.carousel[3]"
+		}
+	],
+	"servicesList": [
+		{
+			"title": "Branding",
+			"desc": "What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.",
+			"img": "imgApi.agency[0]",
+			"btnLink": "/branding"
+		},
+		{
+			"title": "UI/ UX design",
+			"desc": "Ignite your online identity with cornerstone digital assets.Build your presence with superb designs and functionality",
+			"img": "imgApi.agency[1]",
+			"btnLink": "/uxdesign"
+		},
+		{
+			"title": "Digital Marketing and Content",
+			"desc": "Our digital marketing expert offers competitive & quality digital marketing services which deliver conversions via SEO, SMO, SEM & online reputation.",
+			"img": "imgApi.agency[2]",
+			"btnLink": "/digitalmarketing"
+		},
+		{
+			"title": "Website development",
+			"desc": "We provide best development of feature-rich web applications that rise above the essentials and work across multiple devices.",
+			"img": "imgApi.agency[3]",
+			"btnLink": "/websitedevelopment"
+		},
+		{
+			"title": "Application Deployment & Maintenance ",
+			"desc": "A typical application deployment process consists of several key phases. An intuitive approach to completing these steps in a synchronized fashion dictates potential deployment success.",
+			"img": "imgApi.agency[4]",
+			"btnLink": "/applicationdeployment"
+		},
+		{
+			"title": "Product Design & Development",
+			"desc": "Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.",
+			"img": "imgApi.agency[5]",
+			"btnLink": "/productdesign"
+		},
+		{
+			"title": "ERP Development",
+			"desc": "Every enterprise needs to develop new business models to avoid being disrupted, gain efficiencies to fund innovation, and transform mission-critical systems without business risk.",
+			"img": "imgApi.agency[6]",
+			"btnLink": "/erpdevelopment"
+		}
+	],
+	"termsList": [
+		{
+			"terms": "Use of the Site",
+			"terms_details": "The Site and its contents, including but not limited to text, images, and software, are the property of Gitlime and are protected by copyright and other intellectual property laws. You may not use the Site or its contents for any commercial purpose without the express written consent of Gitlime."
+		},
+		{
+			"terms": "Services",
+			"terms_details": "Gitlime provides website development and web application development services to its clients. By using the Site or any services provided on the Site, you agree to be bound by the terms and conditions of any agreement between you and Gitlime regarding the use of such services."
+		},
+		{
+			"terms": "Disclaimer",
+			"terms_details": "The Site and its contents are provided on an as is basis. Gitlime makes no representations or warranties of any kind, express or implied, as to the operation of the Site or the information, content, materials, or products included on the Site."
+		},
+		{
+			"terms": "Limitation of Liability",
+			"terms_details": "Gitlime shall not be liable for any damages of any kind arising from the use of the Site or any services provided on the Site, including but not limited to direct, indirect, incidental, punitive, and consequential damages."
+		},
+		{
+			"terms": "Indemnification",
+			"terms_details": "You agree to indemnify and hold Gitlime, its officers, directors, employees, agents, and assigns harmless from any claims, damages, and expenses, including reasonable attorneys fees, arising from your use of the Site or any services provided on the Site."
+		},
+		{
+			"terms": "Governing Law",
+			"terms_details": "These Terms shall be governed by and construed in accordance with the laws of the State of [STATE], without giving effect to any principles of conflicts of law."
+		},
+		{
+			"terms": "Changes to the Terms",
+			"terms_details": "Gitlime reserves the right to make changes to the Terms at any time. Your continued use of the Site following the posting of changes to the Terms will indicate your acceptance of those changes"
+		},
+		{
+			"terms": "Contact Us",
+			"terms_details": "If you have any questions about these Terms, please contact us at: Email: hello@gitlime.com "
+		}
+	]
 }
