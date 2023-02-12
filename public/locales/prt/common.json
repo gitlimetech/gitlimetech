@@ -68,105 +68,105 @@
 		"carouselItems": [
 			{
 				"id": 1,
-				"title": "Transforming ideas into digital solutions",
-				"desc": "Let us help you bring your vision to life with expert software development.",
+				"title": "Transformando ideias em soluções digitais",
+				"desc": "Deixe-nos ajudá-lo a dar vida à sua visão com o desenvolvimento de software especializado.",
 				"img": "imgApi.carousel[4]"
 			},
 			{
 				"id": 2,
-				"title": "Bringing your tech dreams to life",
-				"desc": "We deliver custom solutions that meet your unique needs and drive your business forward",
+				"title": "Dando vida aos seus sonhos tecnológicos",
+				"desc": "Oferecemos soluções personalizadas que atendem às suas necessidades exclusivas e impulsionam seus negócios",
 				"img": "imgApi.carousel[0]"
 			},
 			{
 				"id": 3,
-				"title": "Creating Cutting-Edge Technology",
-				"desc": "Transform the way you do business with custom software designed to meet your unique needs.",
+				"title": "Criando tecnologia de ponta",
+				"desc": "Transforme a maneira como você faz negócios com software personalizado projetado para atender às suas necessidades exclusivas.",
 				"img": "imgApi.carousel[1]"
 			},
 			{
 				"id": 4,
-				"title": "Innovative software, limitless possibilities",
-				"desc": "Join us as we lead the way in the development of cutting-edge software solutions",
+				"title": "Software inovador, possibilidades ilimitadas",
+				"desc": "Junte-se a nós enquanto lideramos o caminho no desenvolvimento de soluções de software de ponta",
 				"img": "imgApi.carousel[3]"
 			}
 		],
 		"servicesList": [
 			{
-				"title": "Branding",
-				"desc": "What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.",
+				"title": "Marca",
+				"desc": "Quais são as coisas em que somos bons? filmes, publicidade, fotografia, produção de vídeo ao vivo, estratégia visual de marca e design de comunicação, para citar alguns.",
 				"img": "imgApi.agency[0]",
 				"btnLink": "/branding"
 			},
 			{
-				"title": "UI/ UX design",
-				"desc": "Ignite your online identity with cornerstone digital assets.Build your presence with superb designs and functionality",
+				"title": "Design de interface do usuário/UX",
+				"desc": "Ilumine sua identidade on-line com ativos digitais fundamentais. Construa sua presença com designs e funcionalidades excelentes",
 				"img": "imgApi.agency[1]",
 				"btnLink": "/uxdesign"
 			},
 			{
-				"title": "Digital Marketing and Content",
-				"desc": "Our digital marketing expert offers competitive & quality digital marketing services which deliver conversions via SEO, SMO, SEM & online reputation.",
+				"title": "Marketing Digital e Conteúdo",
+				"desc": "Nosso especialista em marketing digital oferece serviços de marketing digital competitivos e de qualidade que fornecem conversões via SEO, SMO, SEM e reputação online.",
 				"img": "imgApi.agency[2]",
 				"btnLink": "/digitalmarketing"
 			},
 			{
-				"title": "Website development",
-				"desc": "We provide best development of feature-rich web applications that rise above the essentials and work across multiple devices.",
+				"title": "Desenvolvimento de sites",
+				"desc": "Nós fornecemos o melhor desenvolvimento de aplicativos da web ricos em recursos que vão além do essencial e funcionam em vários dispositivos.",
 				"img": "imgApi.agency[3]",
 				"btnLink": "/websitedevelopment"
 			},
 			{
-				"title": "Application Deployment & Maintenance ",
-				"desc": "A typical application deployment process consists of several key phases. An intuitive approach to completing these steps in a synchronized fashion dictates potential deployment success.",
+				"title": "Implantação e manutenção de aplicativos",
+				"desc": "Um processo típico de implantação de aplicativo consiste em várias fases importantes. Uma abordagem intuitiva para concluir essas etapas de maneira sincronizada determina o possível sucesso da implantação.",
 				"img": "imgApi.agency[4]",
 				"btnLink": "/applicationdeployment"
 			},
 			{
-				"title": "Product Design & Development",
-				"desc": "Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.",
+				"title": "Design e Desenvolvimento de Produto",
+				"desc": "Desenvolva produtos orientados a resultados para empreendedores, startups e empresas com uma empresa líder em desenvolvimento de software.",
 				"img": "imgApi.agency[5]",
 				"btnLink": "/productdesign"
 			},
 			{
-				"title": "ERP Development",
-				"desc": "Every enterprise needs to develop new business models to avoid being disrupted, gain efficiencies to fund innovation, and transform mission-critical systems without business risk.",
+				"title": "Desenvolvimento de ERP",
+				"desc": "Toda empresa precisa desenvolver novos modelos de negócios para evitar interrupções, ganhar eficiência para financiar a inovação e transformar sistemas de missão crítica sem riscos para os negócios.",
 				"img": "imgApi.agency[6]",
 				"btnLink": "/erpdevelopment"
 			}
 		],
 		"termsList": [
 			{
-				"terms": "Use of the Site",
-				"terms_details": "The Site and its contents, including but not limited to text, images, and software, are the property of Gitlime and are protected by copyright and other intellectual property laws. You may not use the Site or its contents for any commercial purpose without the express written consent of Gitlime."
+				"terms": "Uso do Site",
+				"terms_details": "O Site e seu conteúdo, incluindo, entre outros, texto, imagens e software, são propriedade da Gitlime e são protegidos por direitos autorais e outras leis de propriedade intelectual. Você não pode usar o Site ou seu conteúdo para qualquer finalidade comercial sem o consentimento expresso por escrito da Gitlime."
 			},
 			{
-				"terms": "Services",
-				"terms_details": "Gitlime provides website development and web application development services to its clients. By using the Site or any services provided on the Site, you agree to be bound by the terms and conditions of any agreement between you and Gitlime regarding the use of such services."
+				"terms": "Serviços",
+				"terms_details": "A Gitlime fornece serviços de desenvolvimento de sites e aplicativos da web para seus clientes. Ao usar o Site ou quaisquer serviços fornecidos no Site, você concorda em cumprir os termos e condições de qualquer contrato entre você e a Gitlime em relação ao uso de tais serviços."
 			},
 			{
-				"terms": "Disclaimer",
-				"terms_details": "The Site and its contents are provided on an as is basis. Gitlime makes no representations or warranties of any kind, express or implied, as to the operation of the Site or the information, content, materials, or products included on the Site."
+				"terms": "Isenção de responsabilidade",
+				"terms_details": "O Site e seu conteúdo são fornecidos no estado em que se encontram. A Gitlime não faz representações ou garantias de qualquer tipo, expressas ou implícitas, quanto à operação do Site ou às informações, conteúdo, materiais ou produtos incluídos no Site."
 			},
 			{
-				"terms": "Limitation of Liability",
-				"terms_details": "Gitlime shall not be liable for any damages of any kind arising from the use of the Site or any services provided on the Site, including but not limited to direct, indirect, incidental, punitive, and consequential damages."
+				"terms": "Limitação de responsabilidade",
+				"terms_details": "A Gitlime não será responsável por quaisquer danos de qualquer tipo decorrentes do uso do Site ou quaisquer serviços prestados no Site, incluindo, entre outros, danos diretos, indiretos, incidentais, punitivos e consequentes."
 			},
 			{
-				"terms": "Indemnification",
-				"terms_details": "You agree to indemnify and hold Gitlime, its officers, directors, employees, agents, and assigns harmless from any claims, damages, and expenses, including reasonable attorneys fees, arising from your use of the Site or any services provided on the Site."
+				"terms": "Indenização",
+				"terms_details": "Você concorda em indenizar e isentar a Gitlime, seus executivos, diretores, funcionários, agentes e cessionários de quaisquer reivindicações, danos e despesas, incluindo honorários advocatícios razoáveis, decorrentes do seu uso do Site ou de quaisquer serviços prestados no Site."
 			},
 			{
-				"terms": "Governing Law",
-				"terms_details": "These Terms shall be governed by and construed in accordance with the laws of the State of [STATE], without giving effect to any principles of conflicts of law."
+				"terms": "Lei Aplicável",
+				"terms_details": "Estes Termos serão regidos e interpretados de acordo com as leis do Estado de [ESTADO], sem dar efeito a quaisquer princípios de conflitos de leis."
 			},
 			{
-				"terms": "Changes to the Terms",
-				"terms_details": "Gitlime reserves the right to make changes to the Terms at any time. Your continued use of the Site following the posting of changes to the Terms will indicate your acceptance of those changes"
+				"terms": "Alterações nos Termos",
+				"terms_details": "O Gitlime se reserva o direito de fazer alterações nos Termos a qualquer momento. Seu uso continuado do Site após a publicação de alterações nos Termos indicará sua aceitação dessas alterações"
 			},
 			{
-				"terms": "Contact Us",
-				"terms_details": "If you have any questions about these Terms, please contact us at: Email: hello@gitlime.com "
+				"terms": "Contate-nos",
+				"terms_details": "Se você tiver alguma dúvida sobre estes Termos, entre em contato conosco: Email: hello@gitlime.com"
 			}
 		]
 	}

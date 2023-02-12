@@ -70,20 +70,20 @@ function About(props) {
 								className={clsx(title.default, text.subtitle)}
 								variant="h4"
 							>
-								{t('common:agency-landing.about_desc')}
+								{t('common:agency-landing.about_para_one')}
 							</Typography>
 							<Typography
 								className={clsx(title.default, text.subtitle)}
 								variant="h4"
 							>
-								{t('common:agency-landing.about_subtitle')}
+								{t('common:agency-landing.about_para_two')}
 							</Typography>
 							<Counter />
 							<Typography
 								className={clsx(title.default, text.subtitle)}
 								variant="h4"
 							>
-								{t('common:agency-landing.about_para')}
+								{t('common:agency-landing.about_para_three')}
 							</Typography>
 							<blockquote>{t('common:agency-landing.about_quote')}</blockquote>
 						</div>
