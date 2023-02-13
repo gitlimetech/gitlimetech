@@ -151,6 +151,8 @@ function VideoBanner(props) {
 				<Container fixed={isDesktop}>
 					<div className={classes.slider}>
 						<Carousel
+							animation="fade"
+							duration={3000}
 							indicatorIconButtonProps={{
 								style: {
 									padding: '10px', // 1

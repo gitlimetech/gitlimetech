@@ -11,7 +11,7 @@ import VideoBanner from '../components/VideoBanner';
 import SquareParallax from '../components/Parallax/Square';
 import About from '../components/About';
 import Services from '../components/Services';
-// import Testimonials from '../components/Testimonials';
+import Testimonials from '../components/Testimonials';
 import Expertise from '../components/Expertise';
 import CaseStudies from '../components/CaseStudies';
 import CallAction from '../components/CallAction';
@@ -123,9 +123,12 @@ function Landing(props) {
 					>
 						<Expertise />
 					</section>
-					{/* <section className={isMobile ? classes.spaceTopShort : classes.spaceTop} id="testimonials">
-            <Testimonials />
-          </section> */}
+					{/* <section
+						className={isMobile ? classes.spaceTopShort : classes.spaceTop}
+						id="testimonials"
+					>
+						<Testimonials />
+					</section> */}
 					{/* <section id="case-studies">
 						<CaseStudies />
 					</section> */}
