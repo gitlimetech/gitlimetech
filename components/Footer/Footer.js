@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
+import Button from '@material-ui/core/Button';
 import { useTheme } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -35,24 +36,24 @@ function Copyright() {
 const footers = [
 	{
 		title: 'Company',
-		description: ['Team', 'History', 'Contact us', 'Locations'],
-		link: ['#team', '#history', '/contact', '#locations'],
+		description: ['Contact us', 'Locations'],
+		link: ['/contact', '#locations'],
 	},
-	{
-		title: 'Resources',
-		description: [
-			'Resource',
-			'Resource name',
-			'Another resource',
-			'Final resource',
-		],
-		link: [
-			'#resource',
-			'#resource-name',
-			'#another-resource',
-			'#final-resource',
-		],
-	},
+	// {
+	// 	title: 'Resources',
+	// 	description: [
+	// 		'Resource',
+	// 		'Resource name',
+	// 		'Another resource',
+	// 		'Final resource',
+	// 	],
+	// 	link: [
+	// 		'#resource',
+	// 		'#resource-name',
+	// 		'#another-resource',
+	// 		'#final-resource',
+	// 	],
+	// },
 	{
 		title: 'Legal',
 		description: ['Privacy policy', 'Terms of use'],
@@ -121,7 +122,7 @@ function Footer(props) {
 							<Grid
 								item
 								xs={12}
-								md={3}
+								md={6}
 								key={footer.title}
 								className={classes.siteMapItem}
 							>
@@ -227,6 +228,26 @@ function Footer(props) {
 							}}
 						>
 							<i className="ion-logo-linkedin" />
+						</IconButton>
+						<IconButton
+							aria-label="LI"
+							className={classes.margin}
+							size="small"
+							onClick={() => {
+								window.open('https://www.pinterest.com/gitlime', '_blank');
+							}}
+						>
+							<i className="ion-logo-pinterest" />
+						</IconButton>
+						<IconButton
+							aria-label="LI"
+							className={classes.margin}
+							size="small"
+							onClick={() => {
+								window.open('https://github.com/gitlimetech', '_blank');
+							}}
+						>
+							<i className="ion-logo-github" />
 						</IconButton>
 					</div>
 					<Select

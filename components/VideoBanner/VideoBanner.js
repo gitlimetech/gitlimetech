@@ -30,7 +30,7 @@ const items = [
 		id: 1,
 		title: 'Transforming ideas into digital solutions',
 		desc: 'Let us help you bring your vision to life with expert software development.',
-		img: imgApi.carousel[4],
+		img: imgApi.carousel[2],
 	},
 	{
 		id: 2,
@@ -151,10 +151,13 @@ function VideoBanner(props) {
 				<Container fixed={isDesktop}>
 					<div className={classes.slider}>
 						<Carousel
+							animation="fade"
+							duration={3000}
 							indicatorIconButtonProps={{
 								style: {
 									padding: '10px', // 1
 									color: 'grey', // 3
+									display: 'none',
 								},
 							}}
 							indicatorContainerProps={{
@@ -215,22 +218,23 @@ function VideoBanner(props) {
 												{element.desc}
 											</Typography>
 										)}
-										<Link href="/contact" target="_blank">
-											<Button
-												variant="outlined"
-												size="large"
-												color="secondary"
-												className={classes.button}
-											>
-												{t('common:agency-landing.banner_button')}
-												<SendIcon className={classes.icon} />
-											</Button>
-										</Link>
+										<Button
+											target="_blank"
+											href="/contact"
+											variant="outlined"
+											size="large"
+											color="secondary"
+											className={classes.button}
+										>
+											{t('common:agency-landing.banner_button')}
+											<SendIcon className={classes.icon} />
+										</Button>
 									</Grid>
 									{/* {isTablet && ( */}
 									<Grid
 										item
 										md={6}
+										xs={12}
 										onMouseMove={({ clientX: x, clientY: y }) =>
 											setPosition({ xy: calc(x, y) })
 										}

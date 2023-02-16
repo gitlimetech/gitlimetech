@@ -46,6 +46,7 @@ function Services(props) {
 			</div>
 			<Button
 				href={btnLink}
+				target="_blank"
 				variant="outlined"
 				fullWidth
 				color="primary"
