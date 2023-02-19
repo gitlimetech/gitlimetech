@@ -114,6 +114,9 @@ const headerStyles = makeStyles((theme) => ({
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'space-between',
+		[theme.breakpoints.down('sm')]: {
+			justifyContent: 'center',
+		},
 		'& nav': {
 			alignItems: 'center',
 			padding: theme.spacing(2),

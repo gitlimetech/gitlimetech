@@ -41,9 +41,9 @@
 		"banner_button": "Schreiben Sie uns",
 		"about_title": "Über uns",
 		"about_subtitle": "Durch unsere große Kapazität trauen wir uns zu sagen, dass wir anders sind.",
-		"about_para_one": "Welcome to Gitlime, a leading provider of website and web application development services.We Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.",
-		"about_para_two": "At Gitlime,with a focus on understanding your goals and utilizing the latest technology, we deliver exceptional results for a variety of industries. Trust us to be with you every step of your digital transformation journey.Our team works hard to help you piece ideas together getting started on the developing aspect of the project you’re working on. To make your application more organised and complied to give you the ability to stick to “Gitlime",
-		"about_para_three": "Our team of skilled developers and engineers are dedicated to creating innovative solutions that meet your unique needs and drive business success.We give our best so that our users get the best result. Build yours, create a better future today. Build apps with blazing fast speed and incredible performance in record time. App development isn’t luxury. It’s a tool for success which will drive you to the Gitlime.",
+		"about_para_one": "Welkom bij Gitlime, een toonaangevende leverancier van diensten voor het ontwikkelen van websites en webapplicaties. We ontwikkelen resultaatgerichte producten voor ondernemers, startups en ondernemingen met een toonaangevend softwareontwikkelingsbedrijf.",
+		"about_para_two": "Bij Gitlime, met een focus op het begrijpen van uw doelen en het gebruik van de nieuwste technologie, leveren we uitzonderlijke resultaten voor verschillende industrieën. Vertrouw erop dat we bij elke stap van uw digitale transformatietraject bij u zijn. Ons team werkt er hard aan om u te helpen ideeën op te doen om aan de slag te gaan met het ontwikkelingsaspect van het project waaraan u werkt. Om uw aanvraag beter georganiseerd en nageleefd te maken, zodat u zich aan Gitlime kunt houden",
+		"about_para_three": "Ons team van bekwame ontwikkelaars en ingenieurs is toegewijd aan het creëren van innovatieve oplossingen die voldoen aan uw unieke behoeften en zakelijk succes stimuleren. We doen ons best zodat onze gebruikers het beste resultaat behalen. Bouw de jouwe, creëer vandaag een betere toekomst. Bouw apps met razendsnelle snelheid en ongelooflijke prestaties in recordtijd. App-ontwikkeling is geen luxe. Het is een hulpmiddel voor succes dat je naar de Gitlime zal drijven.",
 		"about_employee": "employee",
 		"about_projects": "projekte",
 		"about_client": "clients",
@@ -64,109 +64,109 @@
 		"footer_paragraph": "Wir sind seit fast einem Jahrzehnt im Geschäft. Es ist unsere oberste Priorität, Ihnen zu helfen.",
 		"terms_conditions_title": "Gitlime Terms & Conditions",
 		"terms_conditions_greet": "Welcome to the Gitlime website(the 'site').",
-		"terms_conditions_para": "By accessing or using the Site or any services provided on the Site, you agree to be bound by the following terms and conditions(the 'terms'). If you do not agree to these Terms, you may not access or use the Site or any services provided on the Site.",
+		"terms_conditions_para": "Door toegang te krijgen tot of gebruik te maken van de Site of enige diensten die op de Site worden aangeboden, stemt u ermee in gebonden te zijn aan de volgende voorwaarden (de 'voorwaarden'). Als u niet akkoord gaat met deze voorwaarden, mag u de site of de services die op de site worden aangeboden, niet openen of gebruiken.",
 		"carouselItems": [
 			{
 				"id": 1,
-				"title": "Transforming ideas into digital solutions",
-				"desc": "Let us help you bring your vision to life with expert software development.",
+				"title": "Ideeën omzetten in digitale oplossingen",
+				"desc": "Laat ons u helpen uw visie tot leven te brengen met deskundige softwareontwikkeling.",
 				"img": "imgApi.carousel[4]"
 			},
 			{
 				"id": 2,
-				"title": "Bringing your tech dreams to life",
-				"desc": "We deliver custom solutions that meet your unique needs and drive your business forward",
+				"title": "Breng uw technische dromen tot leven",
+				"desc": "Wij leveren op maat gemaakte oplossingen die voldoen aan uw unieke behoeften en uw bedrijf vooruit helpen",
 				"img": "imgApi.carousel[0]"
 			},
 			{
 				"id": 3,
-				"title": "Creating Cutting-Edge Technology",
-				"desc": "Transform the way you do business with custom software designed to meet your unique needs.",
+				"title": "Geavanceerde technologie creëren",
+				"desc": "Transformeer de manier waarop u zaken doet met op maat gemaakte software die is ontworpen om aan uw unieke behoeften te voldoen.",
 				"img": "imgApi.carousel[1]"
 			},
 			{
 				"id": 4,
-				"title": "Innovative software, limitless possibilities",
-				"desc": "Join us as we lead the way in the development of cutting-edge software solutions",
+				"title": "Innovatieve software, grenzeloze mogelijkheden",
+				"desc": "Doe met ons mee terwijl we voorop lopen in de ontwikkeling van geavanceerde softwareoplossingen",
 				"img": "imgApi.carousel[3]"
 			}
 		],
 		"servicesList": [
 			{
 				"title": "Branding",
-				"desc": "What are the things we’re good at? films, advertising, photography, live stream video production, visual brand strategy, and communication design, to name a few.",
+				"desc": "Waar zijn we goed in? films, reclame, fotografie, livestream-videoproductie, visuele merkstrategie en communicatieontwerp, om er maar een paar te noemen.",
 				"img": "imgApi.agency[0]",
 				"btnLink": "/branding"
 			},
 			{
-				"title": "UI/ UX design",
-				"desc": "Ignite your online identity with cornerstone digital assets.Build your presence with superb designs and functionality",
+				"title": "UI/UX-ontwerp",
+				"desc": "Geef uw online identiteit een boost met de belangrijkste digitale middelen.Bouw uw aanwezigheid op met prachtige ontwerpen en functionaliteit",
 				"img": "imgApi.agency[1]",
 				"btnLink": "/uxdesign"
 			},
 			{
-				"title": "Digital Marketing and Content",
-				"desc": "Our digital marketing expert offers competitive & quality digital marketing services which deliver conversions via SEO, SMO, SEM & online reputation.",
+				"title": "Digitale marketing en inhoud",
+				"desc": "Onze digitale marketingexpert biedt concurrerende en hoogwaardige digitale marketingdiensten die conversies opleveren via SEO, SMO, SEM en online reputatie.",
 				"img": "imgApi.agency[2]",
 				"btnLink": "/digitalmarketing"
 			},
 			{
-				"title": "Website development",
-				"desc": "We provide best development of feature-rich web applications that rise above the essentials and work across multiple devices.",
+				"title": "Website ontwikkeling",
+				"desc": "We bieden de beste ontwikkeling van feature-rijke webapplicaties die boven de essentie uitstijgen en op meerdere apparaten werken.",
 				"img": "imgApi.agency[3]",
 				"btnLink": "/websitedevelopment"
 			},
 			{
-				"title": "Application Deployment & Maintenance ",
-				"desc": "A typical application deployment process consists of several key phases. An intuitive approach to completing these steps in a synchronized fashion dictates potential deployment success.",
+				"title": "Implementatie en onderhoud van applicaties",
+				"desc": "Een typisch applicatie-implementatieproces bestaat uit verschillende belangrijke fasen. Een intuïtieve benadering om deze stappen op een gesynchroniseerde manier uit te voeren, bepaalt het potentiële succes van de implementatie.",
 				"img": "imgApi.agency[4]",
 				"btnLink": "/applicationdeployment"
 			},
 			{
-				"title": "Product Design & Development",
-				"desc": "Develop results-driven products for entrepreneurs, startups, and enterprises with a leading software development company.",
+				"title": "Productontwerp en -ontwikkeling",
+				"desc": "Ontwikkel resultaatgerichte producten voor ondernemers, startups en ondernemingen met een toonaangevend softwareontwikkelingsbedrijf.",
 				"img": "imgApi.agency[5]",
 				"btnLink": "/productdesign"
 			},
 			{
-				"title": "ERP Development",
-				"desc": "Every enterprise needs to develop new business models to avoid being disrupted, gain efficiencies to fund innovation, and transform mission-critical systems without business risk.",
+				"title": "ERP-ontwikkeling",
+				"desc": "Elke onderneming moet nieuwe bedrijfsmodellen ontwikkelen om verstoringen te voorkomen, efficiëntie te winnen om innovatie te financieren en bedrijfskritische systemen te transformeren zonder bedrijfsrisico's.",
 				"img": "imgApi.agency[6]",
 				"btnLink": "/erpdevelopment"
 			}
 		],
 		"termsList": [
 			{
-				"terms": "Use of the Site",
-				"terms_details": "The Site and its contents, including but not limited to text, images, and software, are the property of Gitlime and are protected by copyright and other intellectual property laws. You may not use the Site or its contents for any commercial purpose without the express written consent of Gitlime."
+				"terms": "Gebruik van de Site",
+				"terms_details": "De site en de inhoud ervan, inclusief maar niet beperkt tot tekst, afbeeldingen en software, zijn eigendom van Gitlime en worden beschermd door copyright en andere intellectuele eigendomsrechten. U mag de site of de inhoud ervan niet gebruiken voor commerciële doeleinden zonder de uitdrukkelijke schriftelijke toestemming van Gitlime."
 			},
 			{
-				"terms": "Services",
-				"terms_details": "Gitlime provides website development and web application development services to its clients. By using the Site or any services provided on the Site, you agree to be bound by the terms and conditions of any agreement between you and Gitlime regarding the use of such services."
+				"terms": "Diensten",
+				"terms_details": "Gitlime levert website-ontwikkeling en webapplicatie-ontwikkelingsdiensten aan haar klanten. Door gebruik te maken van de Site of een van de diensten die op de Site worden aangeboden, stemt u ermee in gebonden te zijn aan de voorwaarden van een overeenkomst tussen u en Gitlime met betrekking tot het gebruik van dergelijke diensten."
 			},
 			{
-				"terms": "Disclaimer",
-				"terms_details": "The Site and its contents are provided on an as is basis. Gitlime makes no representations or warranties of any kind, express or implied, as to the operation of the Site or the information, content, materials, or products included on the Site."
+				"terms": "Vrijwaring",
+				"terms_details": "De site en de inhoud ervan worden geleverd op een 'as is'-basis. Gitlime geeft geen verklaringen of garanties van welke aard dan ook, expliciet of impliciet, met betrekking tot de werking van de site of de informatie, inhoud, materialen of producten op de site."
 			},
 			{
-				"terms": "Limitation of Liability",
-				"terms_details": "Gitlime shall not be liable for any damages of any kind arising from the use of the Site or any services provided on the Site, including but not limited to direct, indirect, incidental, punitive, and consequential damages."
+				"terms": "Beperking van aansprakelijkheid",
+				"terms_details": "Gitlime is niet aansprakelijk voor enige schade van welke aard dan ook die voortvloeit uit het gebruik van de Site of diensten die op de Site worden aangeboden, inclusief maar niet beperkt tot directe, indirecte, incidentele, punitieve en gevolgschade."
 			},
 			{
-				"terms": "Indemnification",
-				"terms_details": "You agree to indemnify and hold Gitlime, its officers, directors, employees, agents, and assigns harmless from any claims, damages, and expenses, including reasonable attorneys fees, arising from your use of the Site or any services provided on the Site."
+				"terms": "Vrijwaring",
+				"terms_details": "U stemt ermee in Gitlime, zijn functionarissen, directeuren, werknemers, agenten en rechtverkrijgenden schadeloos te stellen en te vrijwaren van alle claims, schade en uitgaven, inclusief redelijke advocaatkosten, die voortvloeien uit uw gebruik van de Site of enige op de Site geleverde diensten."
 			},
 			{
-				"terms": "Governing Law",
-				"terms_details": "These Terms shall be governed by and construed in accordance with the laws of the State of [STATE], without giving effect to any principles of conflicts of law."
+				"terms": "Toepasselijk recht",
+				"terms_details": "Deze voorwaarden worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van de staat [STAAT], zonder uitvoering te geven aan principes van wetsconflicten."
 			},
 			{
-				"terms": "Changes to the Terms",
-				"terms_details": "Gitlime reserves the right to make changes to the Terms at any time. Your continued use of the Site following the posting of changes to the Terms will indicate your acceptance of those changes"
+				"terms": "Wijzigingen in de voorwaarden",
+				"terms_details": "Gitlime behoudt zich het recht voor om op elk moment wijzigingen aan te brengen in de Voorwaarden. Als u de site blijft gebruiken na het plaatsen van wijzigingen in de voorwaarden, geeft u aan dat u deze wijzigingen accepteert"
 			},
 			{
-				"terms": "Contact Us",
-				"terms_details": "If you have any questions about these Terms, please contact us at: Email: hello@gitlime.com "
+				"terms": "Neem contact met ons op",
+				"terms_details": "Als u vragen heeft over deze Voorwaarden, neem dan contact met ons op via: E-mail: hello@gitlime.com"
 			}
 		]
 	}

@@ -152,7 +152,8 @@ function VideoBanner(props) {
 					<div className={classes.slider}>
 						<Carousel
 							animation="fade"
-							duration={3000}
+							interval={10000}
+							duration={1000}
 							indicatorIconButtonProps={{
 								style: {
 									padding: '10px', // 1
