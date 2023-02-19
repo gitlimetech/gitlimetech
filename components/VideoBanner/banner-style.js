@@ -153,8 +153,16 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: theme.spacing(5),
 		[theme.breakpoints.down('sm')]: {
 			marginTop: theme.spacing(0),
-			color: theme.palette.secondary.dark,
-			borderColor: theme.palette.secondary.dark,
+			// color: theme.palette.secondary.dark,
+			color:
+				theme.palette.type === 'dark'
+					? theme.palette.secondary.light
+					: theme.palette.secondary.dark,
+			// borderColor: theme.palette.secondary.dark,
+			borderColor:
+				theme.palette.type === 'dark'
+					? theme.palette.secondary.light
+					: theme.palette.secondary.dark,
 		},
 	},
 	icon: {

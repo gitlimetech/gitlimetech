@@ -141,6 +141,7 @@ function Footer(props) {
 												<li key={item}>
 													<Link
 														href={footer.link[index]}
+														target="_blank"
 														variant="subtitle1"
 														color="textSecondary"
 													>
@@ -176,6 +177,7 @@ function Footer(props) {
 													<li key={item}>
 														<Link
 															href={footer.link[index]}
+															target="_blank"
 															variant="subtitle1"
 															color="textSecondary"
 														>

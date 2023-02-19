@@ -8,6 +8,9 @@ const footerStyles = makeStyles((theme) => ({
 		position: 'relative',
 		paddingBottom: theme.spacing(8),
 		zIndex: 1,
+		[theme.breakpoints.down('md')]: {
+			paddingBottom: theme.spacing(2),
+		},
 		'& ul': {
 			margin: 0,
 			padding: 0,

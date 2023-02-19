@@ -8,6 +8,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Notification from '../components/Notification';
+import imgApi from '~/public/images/imgAPI';
 import brand from '~/public/text/brand';
 import { withTranslation } from '../i18n';
 
@@ -18,18 +19,49 @@ const useStyles = makeStyles((theme) => ({
 		width: '100%',
 		overflow: 'hidden',
 		background: theme.palette.background.paper,
-	},
-	spaceBottom: {
-		marginBottom: sectionMargin(theme.spacing()),
-	},
-	spaceTop: {
-		paddingTop: sectionMargin(theme.spacing()),
+		[theme.breakpoints.down('md')]: {},
 	},
 	containerWrap: {
-		marginTop: theme.spacing(10),
-		padding: theme.spacing(4),
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+		margin: theme.spacing(5, 0),
+		padding: theme.spacing(8, 0),
 		'& > section': {
 			position: 'relative',
+		},
+		'& h2': {
+			fontSize: 36,
+			margin: theme.spacing(6, 12, 3),
+		},
+		'& h4': {
+			fontSize: 22,
+			margin: theme.spacing(0, 12),
+		},
+		[theme.breakpoints.down('md')]: {
+			margin: theme.spacing(2, 0),
+			padding: theme.spacing(4, 0),
+			'& h2': {
+				fontSize: 32,
+				margin: theme.spacing(3, 6),
+			},
+			'& h4': {
+				fontSize: 20,
+				margin: theme.spacing(0, 4),
+			},
+		},
+	},
+	bannerImg: {
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+		width: '100%',
+		margin: '0 auto',
+		'& img': {
+			maxWidth: '100%',
+			[theme.breakpoints.down('md')]: {
+				padding: theme.spacing(6, 10, 2),
+			},
 		},
 	},
 }));
@@ -42,7 +74,7 @@ function DigitalMarketingContent(props) {
 			<Head>
 				<title>
 					{brand.agency.name}
-					&nbsp; - Blank page
+					&nbsp; - Digital Marketing Content
 				</title>
 			</Head>
 			<CssBaseline />
@@ -54,6 +86,11 @@ function DigitalMarketingContent(props) {
 				/>
 				<main className={classes.containerWrap}>
 					<section className={clsx(classes.spaceTop, classes.spaceBottom)}>
+						<div>
+							<figure className={classes.bannerImg}>
+								<img src={imgApi.carousel[1]} alt="cover" />
+							</figure>
+						</div>
 						<Typography variant="h2" align="center" gutterBottom>
 							DigitalMarketingContent
 						</Typography>

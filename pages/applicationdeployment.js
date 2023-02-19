@@ -21,28 +21,33 @@ const useStyles = makeStyles((theme) => ({
 		background: theme.palette.background.paper,
 		[theme.breakpoints.down('md')]: {},
 	},
-	// spaceBottom: {
-	// 	marginBottom: sectionMargin(theme.spacing()),
-	// },
-	// spaceTop: {
-	// 	paddingTop: sectionMargin(theme.spacing()),
-	// },
 	containerWrap: {
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',
-		margin: theme.spacing(13, 0),
-		// padding: theme.spacing(4),
+		margin: theme.spacing(5, 0),
+		padding: theme.spacing(8, 0),
 		'& > section': {
 			position: 'relative',
 		},
+		'& h2': {
+			fontSize: 36,
+			margin: theme.spacing(6, 12, 3),
+		},
+		'& h4': {
+			fontSize: 22,
+			margin: theme.spacing(0, 12),
+		},
 		[theme.breakpoints.down('md')]: {
-			margin: theme.spacing(8, 0),
+			margin: theme.spacing(2, 0),
+			padding: theme.spacing(4, 0),
 			'& h2': {
-				fontSize: 36,
+				fontSize: 32,
+				margin: theme.spacing(3, 6),
 			},
 			'& h4': {
-				fontSize: 22,
+				fontSize: 20,
+				margin: theme.spacing(0, 4),
 			},
 		},
 	},
@@ -51,9 +56,15 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: 'center',
 		justifyContent: 'center',
 		width: '100%',
+		margin: '0 auto',
+		'& img': {
+			maxWidth: '100%',
+			[theme.breakpoints.down('md')]: {
+				padding: theme.spacing(6, 10, 2),
+			},
+		},
 	},
 }));
-
 function ApplicationDeployment(props) {
 	const classes = useStyles();
 	const { onToggleDark, onToggleDir, invert } = props;
@@ -63,7 +74,7 @@ function ApplicationDeployment(props) {
 			<Head>
 				<title>
 					{brand.agency.name}
-					&nbsp; - Blank page
+					&nbsp; - Application Deployment
 				</title>
 			</Head>
 			<CssBaseline />

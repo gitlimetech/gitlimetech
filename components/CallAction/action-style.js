@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { lighten, darken } from '@material-ui/core/styles/colorManipulator';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -12,8 +11,8 @@ const useStyles = makeStyles((theme) => ({
 	background: {
 		fill:
 			theme.palette.type === 'dark'
-				? darken(theme.palette.primary.light, 0.8)
-				: lighten(theme.palette.primary.light, 0.8),
+				? theme.palette.secondary.light
+				: theme.palette.primary.dark,
 		width: 560,
 		height: 560,
 		top: theme.spacing(-50),
@@ -35,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
 		padding: theme.spacing(4),
 		border: `2px solid ${theme.palette.secondary.main}`,
 		[theme.breakpoints.down('sm')]: {
+			textAlign: 'center',
+		},
+		[theme.breakpoints.down('md')]: {
 			textAlign: 'center',
 		},
 		[theme.breakpoints.up('lg')]: {
@@ -70,6 +72,9 @@ const useStyles = makeStyles((theme) => ({
 				marginBottom: theme.spacing(3),
 			},
 		},
+	},
+	btnContainer: {
+		margin: theme.spacing(2, 0),
 	},
 	rightIcon: {
 		marginLeft: theme.spacing(),

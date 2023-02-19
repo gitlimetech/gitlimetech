@@ -33,19 +33,20 @@ function CallAction(props) {
 			<Container fixed={isDesktop}>
 				<div className={classes.root}>
 					<Paper className={classes.paper}>
-						<Grid container alignItems="center">
+						<Grid container>
 							<Grid item md={9} xs={12}>
 								<Typography variant="h4" gutterBottom display="block">
 									{t('common:agency-landing.cta_title')}
 								</Typography>
-								<Typography display="block" component="div">
+								<Typography display="block" gutterBottom component="div">
 									{t('common:agency-landing.cta_subtitle')}
 								</Typography>
 							</Grid>
 							<Grid item md={3} xs={12}>
-								<Grid container alignItems="center">
+								<Grid container className={classes.btnContainer}>
 									<Button
 										size="large"
+										target="_blank"
 										variant="outlined"
 										color="secondary"
 										href="/contact"

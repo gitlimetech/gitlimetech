@@ -40,6 +40,7 @@ function MobileMenu(props) {
 						button
 						component="a"
 						href={routeLink.agency.contact}
+						target="_blank"
 						style={{ animationDuration: navMenu.length * 0.15 + 's' }}
 					>
 						<ListItemText
