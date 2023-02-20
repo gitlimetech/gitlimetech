@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Header from '../Header';
 import Footer from '../Footer';
 import Notification from '../Notification';
 import useStyles from './term-style';
