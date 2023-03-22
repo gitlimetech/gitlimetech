@@ -77,7 +77,6 @@ function VideoBanner(props) {
 		config: { mass: 50, tension: 550, friction: 140 },
 	}));
 	const classes = useStyle();
-
 	useEffect(() => {
 		if (isDesktop) {
 			/* Attention
@@ -128,7 +127,7 @@ function VideoBanner(props) {
 			rel: 0,
 			showinfo: 0,
 			mute: 1,
-			origin: 'http://localhost:3001',
+			origin: 'ORIGIN_URL',
 		},
 	};
 

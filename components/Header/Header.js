@@ -102,22 +102,22 @@ function Header(props) {
 									</span>
 								</IconButton>
 							)}
-							<div className={classes.logo}>
-								{invert ? (
-									<Link href={routeLink.agency.home}>
-										<a>
-											<img src={logoreverse} alt="logo" />
-											{/* {brand.agency.name}{'hello'} */}
-										</a>
-									</Link>
-								) : (
-									<Link href="/">
-										<img src={logo} alt="logo" />
-										{/* {brand.agency.name} */}
-									</Link>
-								)}
-							</div>
 						</nav>
+						<div className={classes.logo}>
+							{invert ? (
+								<Link href={routeLink.agency.home}>
+									<a>
+										<img src={logoreverse} alt="logo" />
+										{/* {brand.agency.name}{'hello'} */}
+									</a>
+								</Link>
+							) : (
+								<Link href="/">
+									<img src={logo} alt="logo" />
+									{/* {brand.agency.name} */}
+								</Link>
+							)}
+						</div>
 						<nav className={clsx(classes.navMenu, invert && classes.invert)}>
 							{isDesktop && (
 								<Scrollspy items={navMenu} currentClassName="active">

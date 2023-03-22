@@ -111,11 +111,12 @@ const headerStyles = makeStyles((theme) => ({
 		},
 	},
 	headerContent: {
+		position: 'relative',
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'space-between',
 		[theme.breakpoints.down('sm')]: {
-			justifyContent: 'center',
+			// justifyContent: 'center',
 		},
 		'& nav': {
 			alignItems: 'center',
@@ -127,6 +128,8 @@ const headerStyles = makeStyles((theme) => ({
 		},
 	},
 	logo: {
+		display: 'flex',
+		alignItems: 'center',
 		'& a': {
 			textDecoration: 'none',
 			display: 'flex',
@@ -142,7 +145,10 @@ const headerStyles = makeStyles((theme) => ({
 			transition: 'all 0.3s ease-out',
 			width: 140,
 			height: 'auto',
-			marginRight: theme.spacing(),
+			[theme.breakpoints.up('md')]: {
+				position: 'absolute',
+				left: '0px',
+			},
 			[theme.breakpoints.only('md')]: {
 				marginLeft: theme.spacing(2),
 			},
