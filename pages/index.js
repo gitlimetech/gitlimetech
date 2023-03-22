@@ -129,9 +129,9 @@ function Landing(props) {
 					>
 						<Testimonials />
 					</section> */}
-					{/* <section id="case-studies">
+					<section id="case-studies">
 						<CaseStudies />
-					</section> */}
+					</section>
 					<section className={classes.spaceTopShort} id="call-to-action">
 						<CallAction />
 					</section>
